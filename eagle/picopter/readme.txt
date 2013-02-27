@@ -1,0 +1,1 @@
+see http://www.instructables.com/id/Picopter/ for all instructions

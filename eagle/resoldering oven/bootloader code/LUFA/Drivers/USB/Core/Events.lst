@@ -1,0 +1,55 @@
+   1               		.file	"Events.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+  14               	.Ltext0:
+  15               		.section	.text.USB_Event_Stub,"ax",@progbits
+  16               	.global	USB_Event_Stub
+  18               	USB_Event_Stub:
+  19               	.LFB13:
+  20               	.LSM0:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	/* stack size = 0 */
+  24               	.L__stack_usage = 0
+  25               	/* epilogue start */
+  26               	.LSM1:
+  27 0000 0895      		ret
+  28               	.LFE13:
+  30               		.weak	EVENT_USB_Device_Connect
+  31               		.set	EVENT_USB_Device_Connect,USB_Event_Stub
+  32               		.weak	EVENT_USB_Device_Disconnect
+  33               		.set	EVENT_USB_Device_Disconnect,USB_Event_Stub
+  34               		.weak	EVENT_USB_Device_ControlRequest
+  35               		.set	EVENT_USB_Device_ControlRequest,USB_Event_Stub
+  36               		.weak	EVENT_USB_Device_ConfigurationChanged
+  37               		.set	EVENT_USB_Device_ConfigurationChanged,USB_Event_Stub
+  38               		.weak	EVENT_USB_Device_Suspend
+  39               		.set	EVENT_USB_Device_Suspend,USB_Event_Stub
+  40               		.weak	EVENT_USB_Device_WakeUp
+  41               		.set	EVENT_USB_Device_WakeUp,USB_Event_Stub
+  42               		.weak	EVENT_USB_Device_Reset
+  43               		.set	EVENT_USB_Device_Reset,USB_Event_Stub
+  44               		.weak	EVENT_USB_Device_StartOfFrame
+  45               		.set	EVENT_USB_Device_StartOfFrame,USB_Event_Stub
+  70               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 Events.c
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:2      *ABS*:0000003f __SREG__
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:3      *ABS*:0000003e __SP_H__
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:4      *ABS*:0000003d __SP_L__
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:18     .text.USB_Event_Stub:00000000 USB_Event_Stub
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:18     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Connect
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:18     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Disconnect
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:18     .text.USB_Event_Stub:00000000 EVENT_USB_Device_ControlRequest
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:18     .text.USB_Event_Stub:00000000 EVENT_USB_Device_ConfigurationChanged
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:18     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Suspend
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:18     .text.USB_Event_Stub:00000000 EVENT_USB_Device_WakeUp
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:18     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Reset
+C:\Users\Frank\AppData\Local\Temp\ccdGAffL.s:18     .text.USB_Event_Stub:00000000 EVENT_USB_Device_StartOfFrame
+
+NO UNDEFINED SYMBOLS

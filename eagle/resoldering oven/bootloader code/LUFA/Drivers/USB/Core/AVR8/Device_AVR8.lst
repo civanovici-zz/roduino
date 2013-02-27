@@ -1,0 +1,64 @@
+   1               		.file	"Device_AVR8.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+  14               	.Ltext0:
+  15               		.section	.text.USB_Device_SendRemoteWakeup,"ax",@progbits
+  16               	.global	USB_Device_SendRemoteWakeup
+  18               	USB_Device_SendRemoteWakeup:
+  19               	.LFB81:
+  20               	.LSM0:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	/* stack size = 0 */
+  24               	.L__stack_usage = 0
+  25               	.LBB8:
+  26               	.LBB9:
+  27               	.LSM1:
+  28 0000 80E1      		ldi r24,lo8(16)
+  29 0002 89BD      		out 73-0x20,r24
+  30               	.LSM2:
+  31 0004 89B5      		in r24,73-0x20
+  32 0006 8260      		ori r24,lo8(2)
+  33 0008 89BD      		out 73-0x20,r24
+  34               	.L2:
+  35               	.LBE9:
+  36               	.LBE8:
+  37               	.LSM3:
+  38 000a 09B4      		in __tmp_reg__,73-0x20
+  39 000c 00FE      		sbrs __tmp_reg__,0
+  40 000e 00C0      		rjmp .L2
+  41               	.LBB10:
+  42               	.LBB11:
+  43               	.LSM4:
+  44 0010 8091 D800 		lds r24,216
+  45 0014 8F7D      		andi r24,lo8(-33)
+  46 0016 8093 D800 		sts 216,r24
+  47               	.LBE11:
+  48               	.LBE10:
+  49               	.LSM5:
+  50 001a 8091 E000 		lds r24,224
+  51 001e 8260      		ori r24,lo8(2)
+  52 0020 8093 E000 		sts 224,r24
+  53               	.L3:
+  54               	.LSM6:
+  55 0024 8091 E000 		lds r24,224
+  56 0028 81FD      		sbrc r24,1
+  57 002a 00C0      		rjmp .L3
+  58               	/* epilogue start */
+  59               	.LSM7:
+  60 002c 0895      		ret
+  61               	.LFE81:
+  87               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 Device_AVR8.c
+C:\Users\Frank\AppData\Local\Temp\cc8yHt1A.s:2      *ABS*:0000003f __SREG__
+C:\Users\Frank\AppData\Local\Temp\cc8yHt1A.s:3      *ABS*:0000003e __SP_H__
+C:\Users\Frank\AppData\Local\Temp\cc8yHt1A.s:4      *ABS*:0000003d __SP_L__
+C:\Users\Frank\AppData\Local\Temp\cc8yHt1A.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\Frank\AppData\Local\Temp\cc8yHt1A.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\Frank\AppData\Local\Temp\cc8yHt1A.s:18     .text.USB_Device_SendRemoteWakeup:00000000 USB_Device_SendRemoteWakeup
+
+NO UNDEFINED SYMBOLS

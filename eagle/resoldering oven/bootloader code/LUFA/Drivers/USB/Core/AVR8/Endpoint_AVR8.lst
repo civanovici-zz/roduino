@@ -1,0 +1,376 @@
+   1               		.file	"Endpoint_AVR8.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+  14               	.Ltext0:
+  15               		.section	.text.Endpoint_ConfigureEndpoint_Prv,"ax",@progbits
+  16               	.global	Endpoint_ConfigureEndpoint_Prv
+  18               	Endpoint_ConfigureEndpoint_Prv:
+  19               	.LFB81:
+  20               	.LSM0:
+  21               	.LVL0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	/* stack size = 0 */
+  25               	.L__stack_usage = 0
+  26               	.LBB40:
+  27               	.LSM1:
+  28 0000 982F      		mov r25,r24
+  29 0002 00C0      		rjmp .L2
+  30               	.LVL1:
+  31               	.L6:
+  32               	.LBB41:
+  33               	.LBB48:
+  34               	.LBB49:
+  35               	.LSM2:
+  36 0004 9093 E900 		sts 233,r25
+  37               	.LBE49:
+  38               	.LBE48:
+  39               	.LSM3:
+  40 0008 9817      		cp r25,r24
+  41 000a 01F0      		breq .L7
+  42               	.LSM4:
+  43 000c 7091 EC00 		lds r23,236
+  44               	.LVL2:
+  45               	.LSM5:
+  46 0010 2091 ED00 		lds r18,237
+  47               	.LVL3:
+  48               	.LSM6:
+  49 0014 5091 F000 		lds r21,240
+  50               	.LVL4:
+  51 0018 00C0      		rjmp .L3
+  52               	.LVL5:
+  53               	.L7:
+  54               	.LSM7:
+  55 001a 242F      		mov r18,r20
+  56               	.LSM8:
+  57 001c 762F      		mov r23,r22
+  58               	.LSM9:
+  59 001e 50E0      		ldi r21,lo8(0)
+  60               	.L3:
+  61               	.LVL6:
+  62               	.LSM10:
+  63 0020 21FF      		sbrs r18,1
+  64 0022 00C0      		rjmp .L4
+  65               	.LBB46:
+  66               	.LBB47:
+  67               	.LSM11:
+  68 0024 3091 EB00 		lds r19,235
+  69 0028 3E7F      		andi r19,lo8(-2)
+  70 002a 3093 EB00 		sts 235,r19
+  71               	.LBE47:
+  72               	.LBE46:
+  73               	.LSM12:
+  74 002e 3091 ED00 		lds r19,237
+  75 0032 3270      		andi r19,lo8(2)
+  76 0034 3093 ED00 		sts 237,r19
+  77               	.LBB44:
+  78               	.LBB45:
+  79               	.LSM13:
+  80 0038 3091 EB00 		lds r19,235
+  81 003c 3160      		ori r19,lo8(1)
+  82 003e 3093 EB00 		sts 235,r19
+  83               	.LBE45:
+  84               	.LBE44:
+  85               	.LSM14:
+  86 0042 7093 EC00 		sts 236,r23
+  87               	.LSM15:
+  88 0046 2093 ED00 		sts 237,r18
+  89               	.LSM16:
+  90 004a 5093 F000 		sts 240,r21
+  91               	.LBB42:
+  92               	.LBB43:
+  93               	.LSM17:
+  94 004e 2091 EE00 		lds r18,238
+  95               	.LVL7:
+  96               	.LBE43:
+  97               	.LBE42:
+  98               	.LSM18:
+  99 0052 27FF      		sbrs r18,7
+ 100 0054 00C0      		rjmp .L8
+ 101               	.LVL8:
+ 102               	.L4:
+ 103               	.LBE41:
+ 104               	.LSM19:
+ 105 0056 9F5F      		subi r25,lo8(-(1))
+ 106               	.LVL9:
+ 107               	.L2:
+ 108               	.LSM20:
+ 109 0058 9730      		cpi r25,lo8(7)
+ 110 005a 00F0      		brlo .L6
+ 111               	.LVL10:
+ 112               	.LBE40:
+ 113               	.LBB51:
+ 114               	.LBB52:
+ 115               	.LSM21:
+ 116 005c 8093 E900 		sts 233,r24
+ 117               	.LBE52:
+ 118               	.LBE51:
+ 119               	.LSM22:
+ 120 0060 81E0      		ldi r24,lo8(1)
+ 121               	.LVL11:
+ 122 0062 0895      		ret
+ 123               	.LVL12:
+ 124               	.L8:
+ 125               	.LBB53:
+ 126               	.LBB50:
+ 127               	.LSM23:
+ 128 0064 80E0      		ldi r24,lo8(0)
+ 129               	.LVL13:
+ 130               	.LBE50:
+ 131               	.LBE53:
+ 132               	.LSM24:
+ 133 0066 0895      		ret
+ 134               	.LFE81:
+ 136               		.section	.text.Endpoint_ClearEndpoints,"ax",@progbits
+ 137               	.global	Endpoint_ClearEndpoints
+ 139               	Endpoint_ClearEndpoints:
+ 140               	.LFB82:
+ 141               	.LSM25:
+ 142               	/* prologue: function */
+ 143               	/* frame size = 0 */
+ 144               	/* stack size = 0 */
+ 145               	.L__stack_usage = 0
+ 146               	.LSM26:
+ 147 0000 1092 F400 		sts 244,__zero_reg__
+ 148               	.LVL14:
+ 149               	.LSM27:
+ 150 0004 80E0      		ldi r24,lo8(0)
+ 151               	.LVL15:
+ 152               	.L10:
+ 153               	.LBB54:
+ 154               	.LBB55:
+ 155               	.LBB56:
+ 156               	.LSM28:
+ 157 0006 8093 E900 		sts 233,r24
+ 158               	.LBE56:
+ 159               	.LBE55:
+ 160               	.LSM29:
+ 161 000a 1092 F000 		sts 240,__zero_reg__
+ 162               	.LSM30:
+ 163 000e 1092 E800 		sts 232,__zero_reg__
+ 164               	.LSM31:
+ 165 0012 1092 ED00 		sts 237,__zero_reg__
+ 166               	.LBB57:
+ 167               	.LBB58:
+ 168               	.LSM32:
+ 169 0016 9091 EB00 		lds r25,235
+ 170 001a 9E7F      		andi r25,lo8(-2)
+ 171 001c 9093 EB00 		sts 235,r25
+ 172               	.LBE58:
+ 173               	.LBE57:
+ 174               	.LSM33:
+ 175 0020 8F5F      		subi r24,lo8(-(1))
+ 176               	.LVL16:
+ 177 0022 8730      		cpi r24,lo8(7)
+ 178 0024 01F4      		brne .L10
+ 179               	/* epilogue start */
+ 180               	.LBE54:
+ 181               	.LSM34:
+ 182 0026 0895      		ret
+ 183               	.LFE82:
+ 185               		.section	.text.Endpoint_ClearStatusStage,"ax",@progbits
+ 186               	.global	Endpoint_ClearStatusStage
+ 188               	Endpoint_ClearStatusStage:
+ 189               	.LFB83:
+ 190               	.LSM35:
+ 191               	/* prologue: function */
+ 192               	/* frame size = 0 */
+ 193               	/* stack size = 0 */
+ 194               	.L__stack_usage = 0
+ 195               	.LSM36:
+ 196 0000 8091 0000 		lds r24,USB_ControlRequest
+ 197 0004 87FF      		sbrs r24,7
+ 198 0006 00C0      		rjmp .L19
+ 199 0008 00C0      		rjmp .L18
+ 200               	.L16:
+ 201               	.LSM37:
+ 202 000a 8091 0000 		lds r24,USB_DeviceState
+ 203 000e 8823      		tst r24
+ 204 0010 01F0      		breq .L12
+ 205               	.L18:
+ 206               	.LBB59:
+ 207               	.LBB60:
+ 208               	.LSM38:
+ 209 0012 8091 E800 		lds r24,232
+ 210               	.LBE60:
+ 211               	.LBE59:
+ 212               	.LSM39:
+ 213 0016 82FF      		sbrs r24,2
+ 214 0018 00C0      		rjmp .L16
+ 215               	.LBB61:
+ 216               	.LBB62:
+ 217               	.LSM40:
+ 218 001a 8091 E800 		lds r24,232
+ 219 001e 8B77      		andi r24,lo8(123)
+ 220 0020 8093 E800 		sts 232,r24
+ 221 0024 0895      		ret
+ 222               	.L17:
+ 223               	.LBE62:
+ 224               	.LBE61:
+ 225               	.LSM41:
+ 226 0026 8091 0000 		lds r24,USB_DeviceState
+ 227 002a 8823      		tst r24
+ 228 002c 01F0      		breq .L12
+ 229               	.L19:
+ 230               	.LBB63:
+ 231               	.LBB64:
+ 232               	.LSM42:
+ 233 002e 8091 E800 		lds r24,232
+ 234               	.LBE64:
+ 235               	.LBE63:
+ 236               	.LSM43:
+ 237 0032 80FF      		sbrs r24,0
+ 238 0034 00C0      		rjmp .L17
+ 239               	.LBB65:
+ 240               	.LBB66:
+ 241               	.LSM44:
+ 242 0036 8091 E800 		lds r24,232
+ 243 003a 8E77      		andi r24,lo8(126)
+ 244 003c 8093 E800 		sts 232,r24
+ 245               	.L12:
+ 246 0040 0895      		ret
+ 247               	.LBE66:
+ 248               	.LBE65:
+ 249               	.LFE83:
+ 251               		.section	.text.Endpoint_WaitUntilReady,"ax",@progbits
+ 252               	.global	Endpoint_WaitUntilReady
+ 254               	Endpoint_WaitUntilReady:
+ 255               	.LFB84:
+ 256               	.LSM45:
+ 257               	/* prologue: function */
+ 258               	/* frame size = 0 */
+ 259               	/* stack size = 0 */
+ 260               	.L__stack_usage = 0
+ 261               	.LVL17:
+ 262               	.LBB67:
+ 263               	.LBB68:
+ 264               	.LSM46:
+ 265 0000 8091 E400 		lds r24,228
+ 266 0004 9091 E500 		lds r25,228+1
+ 267               	.LSM47:
+ 268 0008 44E6      		ldi r20,lo8(100)
+ 269               	.LVL18:
+ 270               	.L34:
+ 271               	.LBE68:
+ 272               	.LBE67:
+ 273               	.LBB69:
+ 274               	.LBB70:
+ 275               	.LBB71:
+ 276               	.LSM48:
+ 277 000a 2091 EC00 		lds r18,236
+ 278               	.LBE71:
+ 279               	.LBE70:
+ 280               	.LSM49:
+ 281 000e 20FF      		sbrs r18,0
+ 282 0010 00C0      		rjmp .L21
+ 283               	.LBB72:
+ 284               	.LBB73:
+ 285               	.LSM50:
+ 286 0012 2091 E800 		lds r18,232
+ 287               	.LBE73:
+ 288               	.LBE72:
+ 289               	.LSM51:
+ 290 0016 20FF      		sbrs r18,0
+ 291 0018 00C0      		rjmp .L23
+ 292 001a 00C0      		rjmp .L27
+ 293               	.L21:
+ 294               	.LBB74:
+ 295               	.LBB75:
+ 296               	.LSM52:
+ 297 001c 2091 E800 		lds r18,232
+ 298               	.LBE75:
+ 299               	.LBE74:
+ 300               	.LSM53:
+ 301 0020 22FD      		sbrc r18,2
+ 302 0022 00C0      		rjmp .L27
+ 303               	.L23:
+ 304               	.LSM54:
+ 305 0024 2091 0000 		lds r18,USB_DeviceState
+ 306               	.LVL19:
+ 307               	.LSM55:
+ 308 0028 2223      		tst r18
+ 309 002a 01F0      		breq .L28
+ 310               	.LSM56:
+ 311 002c 2530      		cpi r18,lo8(5)
+ 312 002e 01F0      		breq .L29
+ 313               	.LBB76:
+ 314               	.LBB77:
+ 315               	.LSM57:
+ 316 0030 2091 EB00 		lds r18,235
+ 317               	.LVL20:
+ 318               	.LBE77:
+ 319               	.LBE76:
+ 320               	.LSM58:
+ 321 0034 25FD      		sbrc r18,5
+ 322 0036 00C0      		rjmp .L30
+ 323               	.LBB78:
+ 324               	.LBB79:
+ 325               	.LSM59:
+ 326 0038 2091 E400 		lds r18,228
+ 327 003c 3091 E500 		lds r19,228+1
+ 328               	.LBE79:
+ 329               	.LBE78:
+ 330               	.LSM60:
+ 331 0040 2817      		cp r18,r24
+ 332 0042 3907      		cpc r19,r25
+ 333 0044 01F0      		breq .L34
+ 334               	.LVL21:
+ 335               	.LSM61:
+ 336 0046 4423      		tst r20
+ 337 0048 01F0      		breq .L31
+ 338 004a 4150      		subi r20,lo8(-(-1))
+ 339               	.LVL22:
+ 340               	.LSM62:
+ 341 004c C901      		movw r24,r18
+ 342 004e 00C0      		rjmp .L34
+ 343               	.LVL23:
+ 344               	.L27:
+ 345               	.LSM63:
+ 346 0050 80E0      		ldi r24,lo8(0)
+ 347               	.LVL24:
+ 348 0052 0895      		ret
+ 349               	.LVL25:
+ 350               	.L28:
+ 351               	.LSM64:
+ 352 0054 82E0      		ldi r24,lo8(2)
+ 353               	.LVL26:
+ 354 0056 0895      		ret
+ 355               	.LVL27:
+ 356               	.L29:
+ 357               	.LSM65:
+ 358 0058 83E0      		ldi r24,lo8(3)
+ 359               	.LVL28:
+ 360 005a 0895      		ret
+ 361               	.LVL29:
+ 362               	.L30:
+ 363               	.LSM66:
+ 364 005c 81E0      		ldi r24,lo8(1)
+ 365               	.LVL30:
+ 366 005e 0895      		ret
+ 367               	.LVL31:
+ 368               	.L31:
+ 369               	.LSM67:
+ 370 0060 84E0      		ldi r24,lo8(4)
+ 371               	.LBE69:
+ 372               	.LSM68:
+ 373 0062 0895      		ret
+ 374               	.LFE84:
+ 424               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 Endpoint_AVR8.c
+C:\Users\Frank\AppData\Local\Temp\ccmwGc50.s:2      *ABS*:0000003f __SREG__
+C:\Users\Frank\AppData\Local\Temp\ccmwGc50.s:3      *ABS*:0000003e __SP_H__
+C:\Users\Frank\AppData\Local\Temp\ccmwGc50.s:4      *ABS*:0000003d __SP_L__
+C:\Users\Frank\AppData\Local\Temp\ccmwGc50.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\Frank\AppData\Local\Temp\ccmwGc50.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\Frank\AppData\Local\Temp\ccmwGc50.s:18     .text.Endpoint_ConfigureEndpoint_Prv:00000000 Endpoint_ConfigureEndpoint_Prv
+C:\Users\Frank\AppData\Local\Temp\ccmwGc50.s:139    .text.Endpoint_ClearEndpoints:00000000 Endpoint_ClearEndpoints
+C:\Users\Frank\AppData\Local\Temp\ccmwGc50.s:188    .text.Endpoint_ClearStatusStage:00000000 Endpoint_ClearStatusStage
+C:\Users\Frank\AppData\Local\Temp\ccmwGc50.s:254    .text.Endpoint_WaitUntilReady:00000000 Endpoint_WaitUntilReady
+
+UNDEFINED SYMBOLS
+USB_ControlRequest
+USB_DeviceState

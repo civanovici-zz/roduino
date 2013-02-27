@@ -1,0 +1,563 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">False</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Controllers/f:ImportController.cs" caret="278" fromTop="11" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:History/f:Index.xaml" caret="7875" fromTop="4" />
+      <File id="DFC87B1C-D036-4327-8C41-1E6DB50501ED/d:Unit/f:UserTests.cs" caret="0" fromTop="0" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/f:RoExplorer.xaml" caret="17845" fromTop="19" />
+      <File id="8A1E8F37-EB76-4AD4-9435-BD28A0A46CB2/d:Bll/f:User.cs" caret="0" fromTop="0" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Controllers/f:HistoryController.cs" caret="492" fromTop="15" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Components/d:RoApplicationMenu/f:ElementFlow.cs" caret="18365" fromTop="24" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Import/f:Index.xaml" caret="4430" fromTop="13" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:History/f:Index.xaml.cs" caret="941" fromTop="32" />
+      <File id="DFC87B1C-D036-4327-8C41-1E6DB50501ED/d:Unit/f:GenerateDefaultData.cs" caret="872" fromTop="19" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Components/f:RoAlertBox.xaml" caret="678" fromTop="7" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml" caret="7500" fromTop="6" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/f:View.cs" caret="2955" fromTop="23" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Controllers/d:Base/f:Controller.cs" caret="528" fromTop="22" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:Edit.xaml.cs" caret="1681" fromTop="23" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Controllers/d:Base/f:ActionInvoker.cs" caret="3012" fromTop="35" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Controllers/d:Base/f:ARSessionByRequestNavigator.cs" caret="1943" fromTop="24" />
+      <File id="8A1E8F37-EB76-4AD4-9435-BD28A0A46CB2/d:Attributes/f:ARSessionByRequestAttribute.cs" caret="634" fromTop="23" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Controllers/d:Base/f:Navigator.cs" caret="9484" fromTop="23" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml.cs" caret="7327" fromTop="15" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Import/f:Index.xaml.cs" caret="4162" fromTop="23" />
+      <File id="8A1E8F37-EB76-4AD4-9435-BD28A0A46CB2/d:Bll/f:Client.cs" caret="1319" fromTop="14" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Login/f:Login.xaml.cs" caret="1436" fromTop="9" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Components/d:RoApplicationMenu/f:LoginGrid.xaml" caret="5784" fromTop="11" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Properties/f:AssemblyInfo.cs" caret="2249" fromTop="37" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Helpers/f:SmsDriver.cs" caret="829" fromTop="5" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/f:app.config" caret="282" fromTop="7" />
+      <File id="8A1E8F37-EB76-4AD4-9435-BD28A0A46CB2/d:Bll/f:SmsHistory.cs" caret="725" fromTop="29" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Controllers/f:MainController.cs" caret="4115" fromTop="23" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:SendSms.xaml.cs" caret="3621" fromTop="23" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Import/f:Index.xaml.cs" caret="5391" fromTop="32" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Import/f:Index.xaml.cs" caret="5392" fromTop="38" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Import/f:Index.xaml" caret="4430" fromTop="13" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Import/f:Index.xaml.cs" caret="4668" fromTop="26" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Import/f:Index.xaml.cs" caret="2715" fromTop="9" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Import/f:Index.xaml.cs" caret="3057" fromTop="37" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Import/f:Index.xaml.cs" caret="4264" fromTop="27" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Import/f:Index.xaml.cs" caret="1078" fromTop="0" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Import/f:Index.xaml.cs" caret="5157" fromTop="43" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Components/f:RoAlertBox.xaml" caret="1228" fromTop="16" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml.cs" caret="2192" fromTop="44" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml" caret="7500" fromTop="6" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml.cs" caret="1719" fromTop="16" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml.cs" caret="2260" fromTop="30" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml.cs" caret="2276" fromTop="33" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml.cs" caret="7661" fromTop="31" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml.cs" caret="1032" fromTop="0" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml.cs" caret="7623" fromTop="21" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml.cs" caret="7314" fromTop="14" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:List.xaml.cs" caret="7141" fromTop="10" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Helpers/f:SmsDriver.cs" caret="1163" fromTop="12" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Helpers/f:SmsDriver.cs" caret="1707" fromTop="29" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Helpers/f:SmsDriver.cs" caret="2271" fromTop="41" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Properties/f:AssemblyInfo.cs" caret="2249" fromTop="37" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/f:app.config" caret="282" fromTop="7" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:SendSms.xaml.cs" caret="2373" fromTop="16" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:SendSms.xaml.cs" caret="2955" fromTop="28" />
+      <File id="8A1E8F37-EB76-4AD4-9435-BD28A0A46CB2/d:Bll/f:SmsHistory.cs" caret="725" fromTop="29" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Controllers/f:MainController.cs" caret="4123" fromTop="31" />
+      <File id="320BDA98-D614-4527-96CB-410421C6E4A8/d:Views/d:Main/f:SendSms.xaml.cs" caret="3628" fromTop="37" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="29" />
+      <Item value="string" priority="27" />
+      <Item value="ValidateIsUnique" priority="0" />
+      <Item value="Property" priority="5" />
+      <Item value="ValidateNonEmpty" priority="0" />
+      <Item value="Username" priority="1" />
+      <Item value="Password" priority="1" />
+      <Item value="void" priority="13" />
+      <Item value="select" priority="4" />
+      <Item value="us" priority="0" />
+      <Item value="Assert`0" priority="1" />
+      <Item value="users" priority="1" />
+      <Item value="User`0" priority="2" />
+      <Item value="new" priority="24" />
+      <Item value="User" priority="1" />
+      <Item value="CreateUser`0" priority="0" />
+      <Item value="u" priority="4" />
+      <Item value="Exception`0" priority="3" />
+      <Item value="return" priority="18" />
+      <Item value="false" priority="6" />
+      <Item value="RoAlertBox`0" priority="2" />
+      <Item value="using" priority="3" />
+      <Item value="RoDuino.SMS" priority="3" />
+      <Item value="Resources`0" priority="0" />
+      <Item value="RoDuino" priority="2" />
+      <Item value="SMS" priority="0" />
+      <Item value="Properties" priority="0" />
+      <Item value="from" priority="2" />
+      <Item value="where" priority="2" />
+      <Item value="username" priority="0" />
+      <Item value="password" priority="0" />
+      <Item value="this" priority="3" />
+      <Item value="Xceed" priority="0" />
+      <Item value="Wpf" priority="0" />
+      <Item value="DataGrid" priority="0" />
+      <Item value="Licenser`0" priority="0" />
+      <Item value="ActiveRecord" priority="0" />
+      <Item value="bool" priority="2" />
+      <Item value="Client`0" priority="21" />
+      <Item value="c" priority="11" />
+      <Item value="cls" priority="0" />
+      <Item value="PropertyBag" priority="14" />
+      <Item value="clients" priority="6" />
+      <Item value="for" priority="3" />
+      <Item value="int" priority="12" />
+      <Item value="i" priority="9" />
+      <Item value="Client" priority="5" />
+      <Item value="Name" priority="0" />
+      <Item value="Network" priority="0" />
+      <Item value="Phone" priority="0" />
+      <Item value="ModemSettings`0" priority="3" />
+      <Item value="modemSettings" priority="3" />
+      <Item value="ModemSettings" priority="0" />
+      <Item value="Port" priority="0" />
+      <Item value="BitPerSec" priority="0" />
+      <Item value="DataBits" priority="0" />
+      <Item value="Parity" priority="0" />
+      <Item value="StopBits" priority="0" />
+      <Item value="FlowControl" priority="0" />
+      <Item value="SmsHistory`0" priority="7" />
+      <Item value="BelongsTo" priority="0" />
+      <Item value="IList" priority="4" />
+      <Item value="List" priority="1" />
+      <Item value="HasMany" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="orderby" priority="1" />
+      <Item value="SmsHistory" priority="1" />
+      <Item value="DateTime`0" priority="1" />
+      <Item value="var" priority="0" />
+      <Item value="Date" priority="1" />
+      <Item value="date" priority="0" />
+      <Item value="Message" priority="1" />
+      <Item value="h" priority="2" />
+      <Item value="RenderView`0" priority="2" />
+      <Item value="Tab" priority="0" />
+      <Item value="View" priority="0" />
+      <Item value="Tabs`0" priority="2" />
+      <Item value="Visibility" priority="1" />
+      <Item value="foreach" priority="5" />
+      <Item value="msg" priority="3" />
+      <Item value="IsVisibleProperty" priority="0" />
+      <Item value="List&lt;int&gt;" priority="0" />
+      <Item value="grdClients" priority="5" />
+      <Item value="SendSMS`0" priority="0" />
+      <Item value="if" priority="34" />
+      <Item value="txtMessage" priority="2" />
+      <Item value="RoAlertBox" priority="1" />
+      <Item value="private" priority="5" />
+      <Item value="client" priority="16" />
+      <Item value="message" priority="6" />
+      <Item value="try" priority="3" />
+      <Item value="Status" priority="1" />
+      <Item value="ClientName" priority="1" />
+      <Item value="ClientPhone" priority="1" />
+      <Item value="history" priority="11" />
+      <Item value="static" priority="2" />
+      <Item value="SmsDriver`0" priority="1" />
+      <Item value="null" priority="7" />
+      <Item value="instance" priority="2" />
+      <Item value="SmsDriver" priority="0" />
+      <Item value="res" priority="3" />
+      <Item value="else" priority="4" />
+      <Item value="response" priority="2" />
+      <Item value="settings" priority="5" />
+      <Item value="myport" priority="5" />
+      <Item value="SerialPort" priority="0" />
+      <Item value="StopBits`0" priority="4" />
+      <Item value="object" priority="2" />
+      <Item value="value" priority="3" />
+      <Item value="Value" priority="9" />
+      <Item value="Parity`0" priority="4" />
+      <Item value="parity" priority="0" />
+      <Item value="tab" priority="0" />
+      <Item value="catch" priority="2" />
+      <Item value="Console`0" priority="2" />
+      <Item value="e" priority="1" />
+      <Item value="messageStatus" priority="1" />
+      <Item value="true" priority="7" />
+      <Item value="finally" priority="4" />
+      <Item value="InitModem`0" priority="0" />
+      <Item value="btnAddOption" priority="0" />
+      <Item value="btnAdd" priority="0" />
+      <Item value="btnEdit" priority="1" />
+      <Item value="btnDelete" priority="1" />
+      <Item value="Navigate`0" priority="0" />
+      <Item value="RoConfirmationBox`0" priority="0" />
+      <Item value="RoConfirmationBox" priority="0" />
+      <Item value="source" priority="3" />
+      <Item value="alertBox" priority="1" />
+      <Item value="ClickMode`0" priority="0" />
+      <Item value="txtName" priority="2" />
+      <Item value="txtNetwork" priority="2" />
+      <Item value="txtPhone" priority="2" />
+      <Item value="btnSave" priority="0" />
+      <Item value="errorMsg" priority="1" />
+      <Item value="prop" priority="2" />
+      <Item value="Redirect`0" priority="0" />
+      <Item value="list" priority="5" />
+      <Item value="List&lt;SmsHistory&gt;" priority="0" />
+      <Item value="List&lt;Client&gt;" priority="0" />
+      <Item value="btnStopQueue" priority="3" />
+      <Item value="isRunning" priority="1" />
+      <Item value="stopQueue" priority="1" />
+      <Item value="Dispatcher" priority="1" />
+      <Item value="DispatcherPriority`0" priority="1" />
+      <Item value="FilterDelegate`0" priority="1" />
+      <Item value="Dispatcher`0" priority="0" />
+      <Item value="FilterWorker`0" priority="0" />
+      <Item value="currentItem" priority="3" />
+      <Item value="Thread`0" priority="1" />
+      <Item value="continueSending" priority="2" />
+      <Item value="LineBreak`0" priority="0" />
+      <Item value="grdMain" priority="0" />
+      <Item value="descending" priority="0" />
+      <Item value="ApplicationMenu" priority="0" />
+      <Item value="ex" priority="0" />
+      <Item value="key" priority="0" />
+      <Item value="logger" priority="3" />
+      <Item value="RoLog`0" priority="1" />
+      <Item value="TracedAttribute`0" priority="1" />
+      <Item value="phoneNumber" priority="0" />
+      <Item value="Comparer" priority="0" />
+      <Item value="obj" priority="0" />
+      <Item value="ascending" priority="0" />
+      <Item value="txtFilter" priority="0" />
+      <Item value="Flash" priority="0" />
+      <Item value="flash" priority="0" />
+      <Item value="Environment`0" priority="5" />
+      <Item value="openFileDialog1" priority="3" />
+      <Item value="txtFileName" priority="0" />
+      <Item value="ShowVRAlertBox`0" priority="1" />
+      <Item value="strings" priority="7" />
+      <Item value="Length" priority="2" />
+      <Item value="Email" priority="0" />
+      <Item value="RaisePropertyChanged`0" priority="0" />
+      <Item value="btnFileBrowse" priority="0" />
+      <Item value="ImportClientsDelegate`0" priority="1" />
+      <Item value="ImportClients`0" priority="0" />
+      <Item value="fi" priority="0" />
+      <Item value="network" priority="3" />
+      <Item value="exception" priority="1" />
+      <Item value="s" priority="0" />
+      <Item value="List&lt;string&gt;" priority="1" />
+      <Item value="line" priority="0" />
+      <Item value="lines" priority="2" />
+      <Item value="SR" priority="1" />
+      <Item value="Close`0" priority="0" />
+      <Item value="currentLine" priority="3" />
+      <Item value="ImportClient`0" priority="0" />
+      <Item value="txtStatus" priority="0" />
+      <Item value="imported" priority="0" />
+      <Item value="btnSelectAll" priority="2" />
+      <Item value="btnRefresh" priority="0" />
+      <Item value="isAllSelected" priority="1" />
+      <Item value="Navigator`0" priority="0" />
+      <Item value="DataBind`0" priority="0" />
+      <Item value="Dictionary" priority="0" />
+      <Item value="Hashtable`0" priority="0" />
+      <Item value="sleepTimeS" priority="1" />
+      <Item value="sleepTime" priority="3" />
+      <Item value="smsErros" priority="2" />
+      <Item value="String`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Bll.User">
+      <Item value="Queryable" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="AreEqual`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="Count`1" priority="2" />
+      <Item value="First`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Bll.User">
+      <Item value="Password" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Bll.Bll.User">
+      <Item value="Queryable" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Bll.Bll.User">
+      <Item value="Username" priority="0" />
+      <Item value="Password" priority="0" />
+      <Item value="IsValid`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Xceed.Wpf.DataGrid.Licenser">
+      <Item value="LicenseKey" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Bll.Bll.Client">
+      <Item value="Queryable" priority="1" />
+      <Item value="FindAll`0" priority="0" />
+      <Item value="Find`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Bll.Bll.Client">
+      <Item value="IsDeleted" priority="1" />
+      <Item value="Save`0" priority="3" />
+      <Item value="Name" priority="7" />
+      <Item value="Phone" priority="7" />
+      <Item value="Id" priority="0" />
+      <Item value="Network" priority="2" />
+      <Item value="Email" priority="0" />
+      <Item value="Delete`0" priority="0" />
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Bll.Bll.ModemSettings">
+      <Item value="Name" priority="0" />
+      <Item value="Save`0" priority="0" />
+      <Item value="Port" priority="0" />
+      <Item value="DataBits" priority="0" />
+      <Item value="StopBits" priority="0" />
+      <Item value="Parity" priority="0" />
+      <Item value="BitPerSec" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="AddDays`0" priority="0" />
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Bll.Bll.SmsHistory">
+      <Item value="Save`0" priority="3" />
+      <Item value="Status" priority="5" />
+      <Item value="Date" priority="0" />
+      <Item value="ClientPhone" priority="0" />
+      <Item value="Message" priority="3" />
+      <Item value="GetHashCode`0" priority="0" />
+      <Item value="HasError" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Bll.Bll.ModemSettings">
+      <Item value="FindFirst`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Controllers.Base.Tabs">
+      <Item value="Instance" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Controllers.Base.Tabs">
+      <Item value="ItemTabs" priority="0" />
+      <Item value="NewTab`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ObjectModel.ObservableCollection`1">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Visibility">
+      <Item value="Collapsed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Components.Grid.EditListView">
+      <Item value="SelectedItems" priority="3" />
+      <Item value="UnselectAll`0" priority="1" />
+      <Item value="Items" priority="1" />
+      <Item value="SelectAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Components.RoAlertBox">
+      <Item value="ShowDialog`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Add`0" priority="0" />
+      <Item value="ToArray`1" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBox">
+      <Item value="Text" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Bll.Util.RoLog">
+      <Item value="Instance" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Bll.Util.RoLog">
+      <Item value="WriteToLog`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="ToString`0" priority="3" />
+      <Item value="Data" priority="0" />
+      <Item value="Message" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Helpers.SmsDriver">
+      <Item value="Instance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Ports.SerialPort">
+      <Item value="IsOpen" priority="0" />
+      <Item value="Close`0" priority="1" />
+      <Item value="PortName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Ports.Parity">
+      <Item value="None" priority="1" />
+      <Item value="Even" priority="1" />
+      <Item value="Odd" priority="0" />
+      <Item value="Mark" priority="0" />
+      <Item value="Space" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Ports.StopBits">
+      <Item value="One" priority="1" />
+      <Item value="OnePointFive" priority="0" />
+      <Item value="Two" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Ports.Parity">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Helpers.ListItem">
+      <Item value="Value" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Controllers.Base.Tab">
+      <Item value="Uri" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="Write`0" priority="1" />
+      <Item value="WriteLine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Threading.DispatcherUnhandledExceptionEventArgs">
+      <Item value="Exception" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Contains`0" priority="0" />
+      <Item value="ToLower`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Components.RoImageButton">
+      <Item value="Click" priority="3" />
+      <Item value="IsEnabled" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Controllers.Base.NavigatorFactory">
+      <Item value="Navigator" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Controllers.Base.INavigator">
+      <Item value="Navigate`0" priority="2" />
+      <Item value="Get`0" priority="1" />
+      <Item value="Redirect`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Components.RoConfirmationBox">
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="DialogResult" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Helpers.Collections.ClientsCollection">
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Data.CollectionViewSource">
+      <Item value="Source" priority="0" />
+      <Item value="View" priority="0" />
+      <Item value="DeferRefresh`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.ICollectionView">
+      <Item value="CurrentChanged" priority="0" />
+      <Item value="CurrentChanging" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.IList">
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Grid">
+      <Item value="ColumnDefinitions" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.Button">
+      <Item value="Click" priority="2" />
+      <Item value="Content" priority="1" />
+      <Item value="Dispatcher" priority="2" />
+      <Item value="IsEnabled" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Views.Main.Edit">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Bll.Bll.SmsHistory">
+      <Item value="Queryable" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IOrderedQueryable`1">
+      <Item value="ToList`1" priority="0" />
+      <Item value="Distinct`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="Sleep`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Threading.DispatcherPriority">
+      <Item value="Background" priority="0" />
+      <Item value="Normal" priority="0" />
+      <Item value="ApplicationIdle" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Threading.Dispatcher">
+      <Item value="BeginInvoke`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.ItemCollection">
+      <Item value="Refresh`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.StackPanel">
+      <Item value="Visibility" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Bll.Attributes.TracedAttribute">
+      <Item value="ERROR" priority="11" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Bll.Util.RoConfig">
+      <Item value="Instance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:RoDuino.SMS.Bll.Util.RoConfig">
+      <Item value="DebugLevel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:log4net.ILog">
+      <Item value="IsFatalEnabled" priority="0" />
+      <Item value="IsErrorEnabled" priority="0" />
+      <Item value="IsDebugEnabled" priority="0" />
+      <Item value="IsInfoEnabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment">
+      <Item value="NewLine" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Win32.OpenFileDialog">
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="FileName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@RoDuino.SMS.Properties.Resources">
+      <Item value="ResourceManager" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Resources.ResourceManager">
+      <Item value="GetStream`0" priority="0" />
+      <Item value="GetString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.ActiveRecord.ActiveRecordValidationException">
+      <Item value="ValidationErrorMessages" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="0" />
+      <Item value="Count" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamReader">
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBlock">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="0" />
+      <Item value="TryParse`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

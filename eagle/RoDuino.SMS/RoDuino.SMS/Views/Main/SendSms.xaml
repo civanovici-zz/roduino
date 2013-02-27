@@ -1,0 +1,135 @@
+﻿<Views:View x:Class="RoDuino.SMS.Views.Main.SendSms"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Views="clr-namespace:RoDuino.SMS.Views" xmlns:local="clr-namespace:RoDuino.SMS.Components.Grid" xmlns:Properties="clr-namespace:RoDuino.SMS.Properties" xmlns:Components="clr-namespace:RoDuino.SMS.Components" xmlns:Converters="clr-namespace:RoDuino.SMS.Converters" Title="SendSms" >
+    <Views:View.Resources>
+        <Converters:GridConverter x:Key="gridConverter"/>
+
+        <!-- first, empty column -->
+        <DataTemplate x:Key="EmptyColumnTemplate"/>
+
+        <DataTemplate x:Key="NamesColumnTemplate">
+            <TextBlock Text="{Binding Path=ClientName}"  FontSize="14"/>
+        </DataTemplate>
+        <DataTemplate x:Key="PhoneColumnTemplate">
+            <TextBlock Text="{Binding Path=ClientPhone}" FontSize="14" />
+        </DataTemplate>
+        <DataTemplate x:Key="StatusColumnTemplate">
+            <TextBlock Text="{Binding Path=Status}" FontSize="14"/>
+        </DataTemplate>
+
+        <Style x:Key="DataGridViewColumnHeader" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border x:Name="Bd" Style="{DynamicResource ColumnHeaderStyle}">
+                            <DockPanel>
+                                <TextBlock Text="{TemplateBinding ContentControl.Content}" Width="{Binding ElementName=grdClients,Path=ActualWidth, 
+                                    Converter={StaticResource gridConverter},ConverterParameter=3}"
+                  TextAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" Margin="5,0,0,0"
+                  Foreground="{DynamicResource DataGridHeaderFontColor}" />
+                                <Thumb x:Name="PART_HeaderGripper" Style="{StaticResource ColumnGrip}" />
+                            </DockPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="GridViewColumnHeader.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <TextBlock Margin="2,0,0,2" Text="{TemplateBinding GridViewColumnHeader.Content}" TextAlignment="Left" VerticalAlignment="Center" Foreground="{DynamicResource FontColor}" />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <ControlTemplate x:Key="EditListViewItemTemplate" TargetType='{x:Type ListViewItem}'>
+            <Grid SnapsToDevicePixels="True" Margin="0,3,0,0">
+                <Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="5,5,5,5"/>
+                <GridViewRowPresenter TextBlock.Foreground="{TemplateBinding Foreground}" TextBlock.FontSize="14" Content="{TemplateBinding Content}" Columns="{TemplateBinding GridView.ColumnCollection}"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <!-- Change IsSelected SelectedListBoxBrush to set the selection color for the items -->
+                <Trigger Property="IsSelected" Value="true">
+<!--                    <Setter Property="Background" Value="{DynamicResource EditListViewSelectedBrush}" TargetName="Border"/>-->
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="false">
+<!--                    <Setter Property="Background" Value="{DynamicResource EditListViewSelectedBrush}" TargetName="Border"/>-->
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        
+    </Views:View.Resources>
+    <DockPanel x:Name="dockPanel" LastChildFill="True" Background="{DynamicResource PanelGradientBrush}">
+        <!-- Menu Area - keep the space for menu -->
+        <Grid Style="{DynamicResource HeaderGridMenu}"></Grid>
+        <Grid Name="gridContainer" Style="{DynamicResource GridContainerStyle}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Background="{DynamicResource TopLeftBackgroundBrush}" Focusable="True">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,0,0,0" Height="30" Name="pnlLinks">
+                </StackPanel>
+            </Border>
+
+            <StackPanel Grid.Column="0" Grid.Row="1" x:Name="stackPanel1" Orientation="Horizontal" VerticalAlignment="Center" Margin="5" >
+
+                
+                <StackPanel Orientation="Horizontal" Margin="20,0,0,0" >
+                    <Button Name="btnStopQueue"  Margin="20,0,0,0" Content="{x:Static Properties:Resources.SendSms}"></Button>
+                </StackPanel>
+            </StackPanel>
+
+            <Grid Grid.Column="0" Grid.Row="2" Name="grdMain" >
+
+                <local:EditListView x:Name="grdClients" Background="{x:Null}" Margin="-2,0,0,0" BorderBrush="{x:Null}" 
+                    ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling" ScrollViewer.CanContentScroll="True"
+                    SelectionMode="Multiple"  Style="{DynamicResource EditListViewStyle}"
+                    ItemContainerStyle="{DynamicResource EditListViewItemStyle}" 
+                     >
+                    <local:EditListView.View>
+                        <GridView AllowsColumnReorder="True">
+
+                            <GridViewColumn Width="10"
+                            HeaderContainerStyle="{DynamicResource FirstColumnGridViewColumnHeader}"
+                            CellTemplate="{StaticResource EmptyColumnTemplate}" />
+
+                            <local:SortListViewColumn x:Name="Names" Header="{x:Static Properties:Resources.Name}"
+                                SortProperty="Name" SortStyle="DataGridViewColumnHeader"
+                                HeaderContainerStyle="{DynamicResource DataGridViewColumnHeader}"
+                                CellTemplate="{StaticResource NamesColumnTemplate}" />
+
+                            <local:SortListViewColumn x:Name="Phone" Header="{x:Static Properties:Resources.Phone}"
+                                SortProperty="Phone" SortStyle="DataGridViewColumnHeader"
+                                HeaderContainerStyle="{DynamicResource DataGridViewColumnHeader}"
+                                CellTemplate="{StaticResource PhoneColumnTemplate}" />
+
+                            <local:SortListViewColumn x:Name="Status" Header="{x:Static Properties:Resources.Status}"
+                                SortProperty="Network" SortStyle="DataGridViewColumnHeader"
+                                HeaderContainerStyle="{DynamicResource DataGridViewColumnHeader}"
+                                CellTemplate="{StaticResource StatusColumnTemplate}" />
+
+                            <GridViewColumn Width="10"
+                              HeaderContainerStyle="{DynamicResource LastColumnGridViewColumnHeader}"
+                              CellTemplate="{StaticResource EmptyColumnTemplate}" />
+
+
+                        </GridView>
+                    </local:EditListView.View>
+                </local:EditListView>
+
+            </Grid>
+        </Grid>
+
+    </DockPanel>
+</Views:View>

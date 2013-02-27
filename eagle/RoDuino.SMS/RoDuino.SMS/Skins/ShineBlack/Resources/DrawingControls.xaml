@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Style x:Key="AlertBoxBorderStyle" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="{DynamicResource PanelAlertBoxBrush}"></Setter>
+        <Setter Property="BorderThickness" Value="3"></Setter>
+        <Setter Property="BorderBrush" Value="{DynamicResource AlertBoxBrush}"></Setter>
+    </Style>
+
+    <Style x:Key="MessageBoxBorderStyle" TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="{DynamicResource PanelMessageBoxBrush}"></Setter>
+        <Setter Property="BorderThickness" Value="3" />
+        <Setter Property="BorderBrush" Value="{DynamicResource MessageBoxTransparentBrush}" />
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,1 @@
+http://www.tinkerforge.com/doc/Hardware/Master_Extensions/Chibi_Extension.html

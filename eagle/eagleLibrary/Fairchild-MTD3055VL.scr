@@ -1,0 +1,85 @@
+# Created by Ultra Librarian Gold 5.3.88 Copyright © 1999-2010
+# Tanvir Mohammed, Premier Farnell
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'TO229P990X239-3N.pac';
+Layer 1;
+Smd '1' 37 98 -0 R0 (-90 -252);
+Layer 1;
+Smd '2' 265 257 -0 R0 (0 6);
+Layer 1;
+Smd '3' 37 98 -0 R0 (90 -252);
+Layer 51;
+Wire 6 (-72 -122) (-107 -122);
+Wire 6 (-107 -122) (-107 -287);
+Wire 6 (-107 -287) (-72 -287);
+Wire 6 (-72 -287) (-72 -122);
+Wire 6 (107 -122) (72 -122);
+Wire 6 (72 -122) (72 -287);
+Wire 6 (72 -287) (107 -287);
+Wire 6 (107 -287) (107 -122);
+Wire 6 (-85 -122) (-85 -328);
+Wire 6 (-85 -328) (85 -328);
+Wire 6 (85 -328) (85 -122);
+Wire 6 (-132 -122) (132 -122);
+Wire 6 (132 -122) (132 122);
+Wire 6 (132 122) (-132 122);
+Wire 6 (-132 122) (-132 -122);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (-228 -277);
+Layer 21;
+Wire 6 (-107 -146) (-107 -189);
+Wire 6 (72 -146) (72 -189);
+Wire 6 (-72 -146) (-72 -189);
+Wire 6 (107 -146) (107 -189);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (-228 -277);
+Layer 25;
+Change Size 82;
+Change Ratio 10;
+Text '>NAME' SR0 (-191 174);
+Layer 27;
+Change Size 82;
+Change Ratio 10;
+Text '>VALUE' SR0 (-218 -411);
+
+Edit 'MTD3055VL.sym';
+Layer 94;
+Pin 'G' Pas None Middle R0 Both 0 (-700 -100);
+Pin 'S' Pas None Middle R180 Both 0 (700 -100);
+Pin 'D' Pas None Middle R180 Both 0 (700 -200);
+Wire 16 (-500 100) (-500 -400);
+Wire 16 (-500 -400) (500 -400);
+Wire 16 (500 -400) (500 100);
+Wire 16 (500 100) (-500 100);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 10;
+Text '>NAME' SR0 (-206 171);
+Layer 96;
+Change Size 82;
+Change Ratio 10;
+Text '>VALUE' SR0 (-231 -506);
+
+Edit 'MTD3055VL.dev';
+Prefix 'Q';
+
+Value Off;
+Add MTD3055VL 'A' Next  0 (0 0);
+Package 'TO229P990X239-3N';
+Technology '';
+Attribute Supplier 'Fairchild';
+Attribute MPN 'MTD3055VL';
+Attribute Package 'TO-252-3';
+Attribute OC_FARNELL '1471067';
+Description 'N CHANNEL TRANSISTOR';
+Attribute OC_NEWARK '63K5835';
+Connect 'A.G' '1';
+Connect 'A.S' '3';
+Connect 'A.D' '2';

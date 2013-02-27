@@ -1,0 +1,15 @@
+﻿<Window x:Class="RoDuino.SMS.Components.RoDuinoPopupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RoDuinoPopupWindow" WindowStyle="ToolWindow"  ShowInTaskbar="False" 
+		WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight">
+    <Border  x:Name="mainBorder" Background="{DynamicResource PanelGradientBrush}">
+        <Grid  ClipToBounds="False" Background="Transparent">
+            <Border  >
+                <ScrollViewer HorizontalAlignment="Center" VerticalScrollBarVisibility="Auto"  >
+                    <Frame x:Name="frameContent"  MaxHeight="700" MaxWidth="1000" Padding="15 10 10 15"  SourceUpdated="UpdateTitle"  ></Frame>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

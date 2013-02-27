@@ -1,0 +1,14 @@
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\Components\RoDuinoPopupWindow.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\MainWindow.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\Skins\ShineBlack\Resources\Brushes.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\Skins\ShineBlack\ShineBlackResources.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\App.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\Components\RoDuinoPopupWindow.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\MainWindow.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\App.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\RoDuino.SMS_MarkupCompile.cache
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\RoDuino.SMS.g.resources
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\RoDuino.SMS.Properties.Resources.resources
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Debug\GenerateResource.write.1.tlog

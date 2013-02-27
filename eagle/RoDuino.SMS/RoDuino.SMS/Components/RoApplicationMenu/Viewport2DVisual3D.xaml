@@ -1,0 +1,27 @@
+﻿<Viewport2DVisual3D xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+
+    <Viewport2DVisual3D.Transform>
+        <Transform3DGroup>
+            <RotateTransform3D>
+                <RotateTransform3D.Rotation>
+                    <AxisAngleRotation3D Axis="0,1,0" Angle="0" />
+                </RotateTransform3D.Rotation>
+            </RotateTransform3D>
+            <TranslateTransform3D OffsetX="0" OffsetY="0" OffsetZ="0" />
+        </Transform3DGroup>
+    </Viewport2DVisual3D.Transform>
+    <Viewport2DVisual3D.Geometry>
+        <MeshGeometry3D Positions="-0.625,0.5,0 0.625,0.5,0 0.625,-0.5,0 -0.625,-0.5,0."
+								Normals="0,0,1 0,0,1 0,0,1 0,0,1"
+								TriangleIndices="0,3,2 0,2,1"
+								TextureCoordinates="0,0 1,0 1,1 0,1" />
+
+    </Viewport2DVisual3D.Geometry>
+    <Viewport2DVisual3D.Material>
+        <DiffuseMaterial Viewport2DVisual3D.IsVisualHostMaterial="True" Brush="Yellow"/>
+    </Viewport2DVisual3D.Material>
+
+
+</Viewport2DVisual3D>

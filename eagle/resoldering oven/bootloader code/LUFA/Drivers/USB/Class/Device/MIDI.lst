@@ -1,0 +1,389 @@
+   1               		.file	"MIDI.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+  14               	.Ltext0:
+  15               		.section	.text.MIDI_Device_ConfigureEndpoints,"ax",@progbits
+  16               	.global	MIDI_Device_ConfigureEndpoints
+  18               	MIDI_Device_ConfigureEndpoints:
+  19               	.LFB94:
+  20               	.LSM0:
+  21               	.LVL0:
+  22 0000 1F93      		push r17
+  23 0002 CF93      		push r28
+  24 0004 DF93      		push r29
+  25               	/* prologue: function */
+  26               	/* frame size = 0 */
+  27               	/* stack size = 3 */
+  28               	.L__stack_usage = 3
+  29 0006 EC01      		movw r28,r24
+  30               	.LVL1:
+  31               	.LSM1:
+  32 0008 11E0      		ldi r17,lo8(1)
+  33               	.LVL2:
+  34               	.L9:
+  35               	.LBB30:
+  36               	.LBB31:
+  37               	.LSM2:
+  38 000a 8981      		ldd r24,Y+1
+  39 000c 1817      		cp r17,r24
+  40 000e 01F4      		brne .L2
+  41               	.LSM3:
+  42 0010 EA81      		ldd r30,Y+2
+  43 0012 FB81      		ldd r31,Y+3
+  44               	.LVL3:
+  45               	.LSM4:
+  46 0014 8C81      		ldd r24,Y+4
+  47               	.LVL4:
+  48               	.LSM5:
+  49 0016 61E0      		ldi r22,lo8(1)
+  50 0018 00C0      		rjmp .L3
+  51               	.LVL5:
+  52               	.L2:
+  53               	.LSM6:
+  54 001a 8D81      		ldd r24,Y+5
+  55 001c 1817      		cp r17,r24
+  56 001e 01F4      		brne .L4
+  57               	.LSM7:
+  58 0020 EE81      		ldd r30,Y+6
+  59 0022 FF81      		ldd r31,Y+7
+  60               	.LVL6:
+  61               	.LSM8:
+  62 0024 8885      		ldd r24,Y+8
+  63               	.LVL7:
+  64               	.LSM9:
+  65 0026 60E0      		ldi r22,lo8(0)
+  66               	.LVL8:
+  67               	.L3:
+  68               	.LSM10:
+  69 0028 8823      		tst r24
+  70 002a 01F0      		breq .L10
+  71 002c 44E0      		ldi r20,lo8(4)
+  72 002e 00C0      		rjmp .L5
+  73               	.L10:
+  74 0030 40E0      		ldi r20,lo8(0)
+  75               	.L5:
+  76               	.LVL9:
+  77               	.LBB32:
+  78               	.LBB33:
+  79               	.LSM11:
+  80 0032 6068      		ori r22,lo8(-128)
+  81               	.LVL10:
+  82               	.LSM12:
+  83 0034 28E0      		ldi r18,lo8(8)
+  84 0036 30E0      		ldi r19,hi8(8)
+  85               	.LSM13:
+  86 0038 80E0      		ldi r24,lo8(0)
+  87               	.LVL11:
+  88 003a 00C0      		rjmp .L6
+  89               	.LVL12:
+  90               	.L7:
+  91               	.LBB34:
+  92               	.LBB35:
+  93               	.LSM14:
+  94 003c 8F5F      		subi r24,lo8(-(1))
+  95               	.LVL13:
+  96               	.LSM15:
+  97 003e 220F      		lsl r18
+  98 0040 331F      		rol r19
+  99               	.LVL14:
+ 100               	.L6:
+ 101               	.LSM16:
+ 102 0042 2E17      		cp r18,r30
+ 103 0044 3F07      		cpc r19,r31
+ 104 0046 00F0      		brlo .L7
+ 105               	.LBE35:
+ 106               	.LBE34:
+ 107               	.LSM17:
+ 108 0048 4260      		ori r20,lo8(2)
+ 109               	.LVL15:
+ 110               	.LBB37:
+ 111               	.LBB36:
+ 112               	.LSM18:
+ 113 004a 8295      		swap r24
+ 114               	.LVL16:
+ 115 004c 807F      		andi r24,lo8(-16)
+ 116               	.LBE36:
+ 117               	.LBE37:
+ 118               	.LSM19:
+ 119 004e 482B      		or r20,r24
+ 120 0050 812F      		mov r24,r17
+ 121 0052 0E94 0000 		call Endpoint_ConfigureEndpoint_Prv
+ 122               	.LVL17:
+ 123               	.LBE33:
+ 124               	.LBE32:
+ 125               	.LSM20:
+ 126 0056 8823      		tst r24
+ 127 0058 01F0      		breq .L11
+ 128               	.LVL18:
+ 129               	.L4:
+ 130               	.LBE31:
+ 131               	.LSM21:
+ 132 005a 1F5F      		subi r17,lo8(-(1))
+ 133               	.LVL19:
+ 134 005c 1730      		cpi r17,lo8(7)
+ 135 005e 01F4      		brne .L9
+ 136               	.LSM22:
+ 137 0060 81E0      		ldi r24,lo8(1)
+ 138 0062 00C0      		rjmp .L8
+ 139               	.LVL20:
+ 140               	.L11:
+ 141               	.LBB38:
+ 142               	.LSM23:
+ 143 0064 80E0      		ldi r24,lo8(0)
+ 144               	.LVL21:
+ 145               	.L8:
+ 146               	/* epilogue start */
+ 147               	.LBE38:
+ 148               	.LBE30:
+ 149               	.LSM24:
+ 150 0066 DF91      		pop r29
+ 151 0068 CF91      		pop r28
+ 152               	.LVL22:
+ 153 006a 1F91      		pop r17
+ 154 006c 0895      		ret
+ 155               	.LFE94:
+ 157               		.section	.text.MIDI_Device_SendEventPacket,"ax",@progbits
+ 158               	.global	MIDI_Device_SendEventPacket
+ 160               	MIDI_Device_SendEventPacket:
+ 161               	.LFB96:
+ 162               	.LSM25:
+ 163               	.LVL23:
+ 164               	/* prologue: function */
+ 165               	/* frame size = 0 */
+ 166               	/* stack size = 0 */
+ 167               	.L__stack_usage = 0
+ 168 0000 FC01      		movw r30,r24
+ 169 0002 CB01      		movw r24,r22
+ 170               	.LVL24:
+ 171               	.LSM26:
+ 172 0004 2091 0000 		lds r18,USB_DeviceState
+ 173 0008 2430      		cpi r18,lo8(4)
+ 174 000a 01F4      		brne .L15
+ 175               	.LSM27:
+ 176 000c 2181      		ldd r18,Z+1
+ 177               	.LVL25:
+ 178               	.LBB39:
+ 179               	.LBB40:
+ 180               	.LSM28:
+ 181 000e 2093 E900 		sts 233,r18
+ 182               	.LBE40:
+ 183               	.LBE39:
+ 184               	.LSM29:
+ 185 0012 64E0      		ldi r22,lo8(4)
+ 186 0014 70E0      		ldi r23,hi8(4)
+ 187               	.LVL26:
+ 188 0016 40E0      		ldi r20,lo8(0)
+ 189 0018 50E0      		ldi r21,hi8(0)
+ 190 001a 0E94 0000 		call Endpoint_Write_Stream_LE
+ 191               	.LVL27:
+ 192 001e 8823      		tst r24
+ 193 0020 01F4      		brne .L14
+ 194               	.LBB41:
+ 195               	.LBB42:
+ 196               	.LSM30:
+ 197 0022 9091 E800 		lds r25,232
+ 198               	.LBE42:
+ 199               	.LBE41:
+ 200               	.LSM31:
+ 201 0026 95FD      		sbrc r25,5
+ 202 0028 00C0      		rjmp .L14
+ 203               	.LBB43:
+ 204               	.LBB44:
+ 205               	.LSM32:
+ 206 002a 9091 E800 		lds r25,232
+ 207 002e 9E77      		andi r25,lo8(126)
+ 208 0030 9093 E800 		sts 232,r25
+ 209 0034 0895      		ret
+ 210               	.LVL28:
+ 211               	.L15:
+ 212               	.LBE44:
+ 213               	.LBE43:
+ 214               	.LSM33:
+ 215 0036 82E0      		ldi r24,lo8(2)
+ 216               	.LVL29:
+ 217               	.L14:
+ 218               	.LSM34:
+ 219 0038 0895      		ret
+ 220               	.LFE96:
+ 222               		.section	.text.MIDI_Device_Flush,"ax",@progbits
+ 223               	.global	MIDI_Device_Flush
+ 225               	MIDI_Device_Flush:
+ 226               	.LFB97:
+ 227               	.LSM35:
+ 228               	.LVL30:
+ 229               	/* prologue: function */
+ 230               	/* frame size = 0 */
+ 231               	/* stack size = 0 */
+ 232               	.L__stack_usage = 0
+ 233               	.LSM36:
+ 234 0000 2091 0000 		lds r18,USB_DeviceState
+ 235 0004 2430      		cpi r18,lo8(4)
+ 236 0006 01F4      		brne .L18
+ 237               	.LSM37:
+ 238 0008 FC01      		movw r30,r24
+ 239 000a 8181      		ldd r24,Z+1
+ 240               	.LVL31:
+ 241               	.LBB45:
+ 242               	.LBB46:
+ 243               	.LSM38:
+ 244 000c 8093 E900 		sts 233,r24
+ 245               	.LBE46:
+ 246               	.LBE45:
+ 247               	.LBB47:
+ 248               	.LBB48:
+ 249               	.LSM39:
+ 250 0010 9091 F300 		lds r25,243
+ 251 0014 8091 F200 		lds r24,242
+ 252 0018 392F      		mov r19,r25
+ 253 001a 20E0      		ldi r18,lo8(0)
+ 254 001c 90E0      		ldi r25,lo8(0)
+ 255 001e 822B      		or r24,r18
+ 256 0020 932B      		or r25,r19
+ 257               	.LBE48:
+ 258               	.LBE47:
+ 259               	.LSM40:
+ 260 0022 0097      		sbiw r24,0
+ 261 0024 01F0      		breq .L19
+ 262               	.LBB49:
+ 263               	.LBB50:
+ 264               	.LSM41:
+ 265 0026 8091 E800 		lds r24,232
+ 266 002a 8E77      		andi r24,lo8(126)
+ 267 002c 8093 E800 		sts 232,r24
+ 268               	.LBE50:
+ 269               	.LBE49:
+ 270               	.LSM42:
+ 271 0030 0E94 0000 		call Endpoint_WaitUntilReady
+ 272               	.LVL32:
+ 273 0034 0895      		ret
+ 274               	.LVL33:
+ 275               	.L18:
+ 276               	.LSM43:
+ 277 0036 82E0      		ldi r24,lo8(2)
+ 278               	.LVL34:
+ 279 0038 0895      		ret
+ 280               	.LVL35:
+ 281               	.L19:
+ 282               	.LSM44:
+ 283 003a 80E0      		ldi r24,lo8(0)
+ 284               	.LSM45:
+ 285 003c 0895      		ret
+ 286               	.LFE97:
+ 288               		.section	.text.MIDI_Device_USBTask,"ax",@progbits
+ 289               	.global	MIDI_Device_USBTask
+ 291               	MIDI_Device_USBTask:
+ 292               	.LFB95:
+ 293               	.LSM46:
+ 294               	.LVL36:
+ 295               	/* prologue: function */
+ 296               	/* frame size = 0 */
+ 297               	/* stack size = 0 */
+ 298               	.L__stack_usage = 0
+ 299               	.LSM47:
+ 300 0000 2091 0000 		lds r18,USB_DeviceState
+ 301 0004 2430      		cpi r18,lo8(4)
+ 302 0006 01F4      		brne .L20
+ 303               	.LSM48:
+ 304 0008 0E94 0000 		call MIDI_Device_Flush
+ 305               	.LVL37:
+ 306               	.L20:
+ 307 000c 0895      		ret
+ 308               	.LFE95:
+ 310               		.section	.text.MIDI_Device_ReceiveEventPacket,"ax",@progbits
+ 311               	.global	MIDI_Device_ReceiveEventPacket
+ 313               	MIDI_Device_ReceiveEventPacket:
+ 314               	.LFB98:
+ 315               	.LSM49:
+ 316               	.LVL38:
+ 317               	/* prologue: function */
+ 318               	/* frame size = 0 */
+ 319               	/* stack size = 0 */
+ 320               	.L__stack_usage = 0
+ 321 0000 FC01      		movw r30,r24
+ 322 0002 CB01      		movw r24,r22
+ 323               	.LVL39:
+ 324               	.LSM50:
+ 325 0004 2091 0000 		lds r18,USB_DeviceState
+ 326 0008 2430      		cpi r18,lo8(4)
+ 327 000a 01F4      		brne .L25
+ 328               	.LSM51:
+ 329 000c 2581      		ldd r18,Z+5
+ 330               	.LVL40:
+ 331               	.LBB51:
+ 332               	.LBB52:
+ 333               	.LSM52:
+ 334 000e 2093 E900 		sts 233,r18
+ 335               	.LBE52:
+ 336               	.LBE51:
+ 337               	.LBB53:
+ 338               	.LBB54:
+ 339               	.LSM53:
+ 340 0012 2091 E800 		lds r18,232
+ 341               	.LBE54:
+ 342               	.LBE53:
+ 343               	.LSM54:
+ 344 0016 25FF      		sbrs r18,5
+ 345 0018 00C0      		rjmp .L25
+ 346               	.LSM55:
+ 347 001a 64E0      		ldi r22,lo8(4)
+ 348 001c 70E0      		ldi r23,hi8(4)
+ 349               	.LVL41:
+ 350 001e 40E0      		ldi r20,lo8(0)
+ 351 0020 50E0      		ldi r21,hi8(0)
+ 352 0022 0E94 0000 		call Endpoint_Read_Stream_LE
+ 353               	.LVL42:
+ 354               	.LBB55:
+ 355               	.LBB56:
+ 356               	.LSM56:
+ 357 0026 8091 E800 		lds r24,232
+ 358               	.LBE56:
+ 359               	.LBE55:
+ 360               	.LSM57:
+ 361 002a 85FD      		sbrc r24,5
+ 362 002c 00C0      		rjmp .L26
+ 363               	.LBB57:
+ 364               	.LBB58:
+ 365               	.LSM58:
+ 366 002e 8091 E800 		lds r24,232
+ 367 0032 8B77      		andi r24,lo8(123)
+ 368 0034 8093 E800 		sts 232,r24
+ 369               	.LSM59:
+ 370 0038 81E0      		ldi r24,lo8(1)
+ 371 003a 0895      		ret
+ 372               	.LVL43:
+ 373               	.L25:
+ 374               	.LBE58:
+ 375               	.LBE57:
+ 376               	.LSM60:
+ 377 003c 80E0      		ldi r24,lo8(0)
+ 378 003e 0895      		ret
+ 379               	.LVL44:
+ 380               	.L26:
+ 381               	.LSM61:
+ 382 0040 81E0      		ldi r24,lo8(1)
+ 383               	.LSM62:
+ 384 0042 0895      		ret
+ 385               	.LFE98:
+ 443               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 MIDI.c
+C:\Users\Frank\AppData\Local\Temp\cc9KLYSe.s:2      *ABS*:0000003f __SREG__
+C:\Users\Frank\AppData\Local\Temp\cc9KLYSe.s:3      *ABS*:0000003e __SP_H__
+C:\Users\Frank\AppData\Local\Temp\cc9KLYSe.s:4      *ABS*:0000003d __SP_L__
+C:\Users\Frank\AppData\Local\Temp\cc9KLYSe.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\Frank\AppData\Local\Temp\cc9KLYSe.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\Frank\AppData\Local\Temp\cc9KLYSe.s:18     .text.MIDI_Device_ConfigureEndpoints:00000000 MIDI_Device_ConfigureEndpoints
+C:\Users\Frank\AppData\Local\Temp\cc9KLYSe.s:160    .text.MIDI_Device_SendEventPacket:00000000 MIDI_Device_SendEventPacket
+C:\Users\Frank\AppData\Local\Temp\cc9KLYSe.s:225    .text.MIDI_Device_Flush:00000000 MIDI_Device_Flush
+C:\Users\Frank\AppData\Local\Temp\cc9KLYSe.s:291    .text.MIDI_Device_USBTask:00000000 MIDI_Device_USBTask
+C:\Users\Frank\AppData\Local\Temp\cc9KLYSe.s:313    .text.MIDI_Device_ReceiveEventPacket:00000000 MIDI_Device_ReceiveEventPacket
+
+UNDEFINED SYMBOLS
+Endpoint_ConfigureEndpoint_Prv
+USB_DeviceState
+Endpoint_Write_Stream_LE
+Endpoint_WaitUntilReady
+Endpoint_Read_Stream_LE

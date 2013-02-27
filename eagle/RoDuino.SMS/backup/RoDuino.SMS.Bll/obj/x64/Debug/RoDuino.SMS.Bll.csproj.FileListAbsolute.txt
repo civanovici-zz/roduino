@@ -1,0 +1,16 @@
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\Castle.ActiveRecord.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\Castle.ActiveRecord.Linq.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\Castle.Components.Validator.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\Iesi.Collections.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\log4net.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\NHibernate.ByteCode.Castle.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\NHibernate.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\NHibernate.Linq.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\NHibernate.Search.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\nunit.framework.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\PostSharp.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\PostSharp.Laos.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\bin\x64\Debug\System.Data.SQLite.DLL
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\obj\x64\Debug\RoDuino.SMS.Bll.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\obj\x64\Debug\RoDuino.SMS.Bll.pdb

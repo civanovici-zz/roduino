@@ -1,0 +1,113 @@
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\ResolveAssemblyReference.cache
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoApplicationMenu\Viewport2DVisual3D.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoApplicationMenu\ViewPort3D.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoDuinoPopupWindow.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoImage.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Skins\ShineBlack\Resources\Brushes.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Skins\ShineBlack\Resources\DrawingControls.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Skins\ShineBlack\Resources\MainWindow.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Skins\ShineBlack\Resources\RoControls.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Skins\ShineBlack\ShineBlackResources.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\App.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\FilterText.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoApplicationMenu\ApplicationGrid.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoApplicationMenu\LoginGrid.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoAlertBox.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoConfirmationBox.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoDuinoPopupWindow.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoImage.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoExplorer.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Config\Index.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\History\Index.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Import\Index.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Login\Login.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Main\Edit.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Main\List.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Main\SendSms.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Messages\Index.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\App.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoDuino.SMS_Content.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoDuino.SMS_MarkupCompile.cache
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoDuino.SMS_MarkupCompile.lref
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\close_hover.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\close_up.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\LeftArrow.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\logo.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\RightArrow.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\New Skin\background.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\New Skin\bottommenu_left.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\New Skin\bottommenu_right.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\New Skin\header.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\New Skin\header_left.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\New Skin\loginBackground.jpg
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\New Skin\logo.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\New Skin\rightbackground.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\New Skin\rightmenu.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\New Skin\topmenu_left.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\New Skin\topmenu_right.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\add.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\addDisable.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\clients.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\clientsDisble.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\history.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\delete.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\deleteDisable.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\edit.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\editDisable.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\historyDisable.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\export.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\exportDisable.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\exportOver.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\messages.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\messagesDisable.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\searchButton.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\settings.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Content\Icons\settingsDisable.png
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\RoDuino.SMS.exe.config
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\RoDuino.SMS.exe
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\RoDuino.SMS.pdb
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\ro\RoDuino.SMS.resources.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Castle.ActiveRecord.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Castle.ActiveRecord.Linq.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Castle.Components.Validator.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\LearnWPF.Effects.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\log4net.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\NHibernate.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\NHibernate.Linq.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\PostSharp.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\PostSharp.Laos.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\RoDuino.SMS.Bll.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\SQLite.NET.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Castle.Core.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\Iesi.Collections.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\NHibernate.ByteCode.Castle.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\NHibernate.Search.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\bin\Release\RoDuino.SMS.Bll.pdb
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\FilterText.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoApplicationMenu\ApplicationGrid.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoApplicationMenu\LoginGrid.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoAlertBox.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Components\RoConfirmationBox.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoExplorer.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Skins\ShineBlack\Resources\InteractionControls.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Skins\ShineBlack\Resources\LayoutControls.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Config\Index.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\History\Index.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Import\Index.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Login\Login.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Main\Edit.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Main\List.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Main\SendSms.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\Views\Messages\Index.baml
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoDuino.SMS.g.resources
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoDuino.SMS.Properties.Resources.resources
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoDuino.SMS.Properties.Resources.ro.resources
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\ResGen.read.1.tlog
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\ResGen.write.1.tlog
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\ro\RoDuino.SMS.resources.dll
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoDuino.SMS.exe
+E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoDuino.SMS.pdb
+D:\_roduino\translation station\root\RoDuino.SMS\RoDuino.SMS\bin\Release\RoDuino.SMS.exe.config
+D:\_roduino\translation station\root\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoDuino.SMS.exe
+D:\_roduino\translation station\root\RoDuino.SMS\RoDuino.SMS\obj\x86\Release\RoDuino.SMS.pdb

@@ -1,0 +1,110 @@
+--------------------------------------------------------------------------------
+                                   Parts List
+
+                     CADSTAR Design Editor Version 8.0.0.5
+
+Design:     G:\02_Interne_prosjekter\02500_interne_tekniske_prosjekter\02562_CC2430_ZigBee_DK\02562_3_Des\CC2430DB\scm\CC2430DB_1_4.scm
+
+Design Title:
+CC2430DB 1.4
+
+Date:      5. juni 2007
+Time:      11:20
+
+--------------------------------------------------------------------------------
+Part Name/Number       Description                      Qty.   Comps.
+----------------       -----------                      ----   ------
+
+1xAA_1_5V              Mounting clips for 1 AA 1.5 V battery   2      B1-2
+24AA32A/SN             4 KB I2C EEPROM                  1      U500
+AD8544AR               Quad rail-to-rail opamp          1      U401
+ADXL321                18 g peak X,Y accelerometer      1      U501
+BAT254                 Diode, Si                        2      D100-101
+BC846B                 BJT, Si, NPN, small signal       1      Q300
+C8051F320              SiLabs USB microcontroller       1      U300
+CC2430                 Single chip transceiver          1      U1
+C_100N_0402_X5R_K_10   Capacitor 0402                   7      C207
+                                                               C281
+                                                               C300
+                                                               C400
+                                                               C471
+                                                               C500
+                                                               C503
+C_100P_0402_NP0_J_50   Capacitor 0402                   1      C401
+C_10N_0402_X7R_K_25    Capacitor 0402                   4      C101
+                                                               C351
+                                                               C501-502
+C_10U_0805_X5R_L_25    Capacitor 0805                   1      C102
+C_15P_0402_NP0_J_50    Capacitor, 0402                  2      C431
+                                                               C441
+C_1U_0402_X5R_L_6P3    Capacitor 0402                   1      C421
+C_220N_0402_X5R_K_10   Capacitor 0402                   2      C231
+                                                               C411
+C_220N_0603_X7R_K_50   Capacitor, 0603                  1      C241
+GRM155R60G225ME15J     Capacitor 0402                   1      C71
+C_2U2_0603_X5R_K_10    Capacitor 0603                   1      C103
+C_33N_0402_X7R_K_25    Capacitor 0402                   1      C104
+C_33P_0402_NP0_J_50    Capacitor 0402                   2      C191
+                                                               C211
+C_4U7_0805_X5R_K_6     Capacitor 0805                   1      C100
+C_5P6_0402_NP0_J_50    Capacitor 0402                   1      C341
+C_68P_0402_NP0_J_50    Capacitor 0402                   3      C251
+                                                               C271
+                                                               C381
+DC_JACK_2.5            DC jack, 2.5mm center pin        1      P2
+EM6353_1_8V            brown out detector 1.8V          1      U101
+FIDUCIAL_MARK          Fiducial mark                    4      FM1-4
+LED_CL150GCD           LED, green, SMD                  1      D1
+LED_CL150URCD          LED, red, SMD                    1      D2
+LP2985-3.3V            3.3V low noise regulator         1      U100
+L_1N8_0402_S           Inductor 0402                    1      L341
+L_22N_0402_J           Inductor, 0402                   1      L331
+L_6N8_0402_J           Inductor 0402                    1      L321
+NSL-19M51              Silonix CdS photoconductive cell  5 kOhm (light) to 20 M Ohm (dark)   1      RP1
+PINROW_2X10            Pinrow, 2x10                     1      P6
+PINROW_2X3             Pinrow, 2x3                      3      P3
+                                                               P5
+                                                               P7
+PINROW_2X5             Pinrow, 2x5                      2      P4
+                                                               P8
+ALPS-SKHUAF            Push button, SMD                 2      S1-2
+72PTR10K               Trimming pot, 10K, knob          1      RT1
+R_0603                 Resistor 0603, general           4      R303-304
+                                                               R311-312
+R_0_0603               Resistor 0603                    12     R100
+                                                               R305-308
+                                                               R416
+                                                               R430
+                                                               R504-508
+R_100K_0402_F          Resistor 0402                    4      R405
+                                                               R410-412
+R_10K_0402_F           Resistor 0402                    3      R413-415
+R_1K0_0402_J           Resistor 0402                    3      R300-302
+R_200K_0402_F          Resistor 0402                    4      R403-404
+                                                               R407
+                                                               R501
+R_220K_0402_F          Resistor 0402                    1      R409
+R_270_0402_F           Resistor 0402                    3      R400
+                                                               R440-441
+R_2K2_0402_G           Resistor 0402                    2      R502-503
+R_2_0402_F             Resistor 0402                    1      R241
+R_330K_0402_F          Resistor 0402                    1      R406
+R_43K_0402_F           Resistor, 0402                   5      R101
+                                                               R261
+                                                               R310
+                                                               R401
+                                                               R420
+R_470K_0402_F          Resistor 0402                    1      R402
+R_4K7_0402_G           Resistor 0402                    3      R102
+                                                               R309
+                                                               R509
+R_56K_0402_F           Resistor 0402                    1      R221
+SI9424DY               MOSFET, P ch.                    1      Q100
+Switch_6pin            Double switch, ALPS SSSS222700   1      S3
+USB_B                  USB B-style connector            1      P1
+X_32.000/10/15/30/16   Crystal, ceramic SMD 3.2x2.5mm   1      X1
+X_32.768/20/50/40/12   Crystal, MC-306 SMD              1      X2
+skrhab_e010            4-directional switch with a centre push   1      U400
+--------------------------------------------------------------------------------
+                                 End of report
+--------------------------------------------------------------------------------

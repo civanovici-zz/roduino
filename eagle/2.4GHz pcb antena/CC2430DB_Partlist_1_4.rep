@@ -1,0 +1,120 @@
+                    PART LIST                     
+            ==========================            
+
+Ref.        Description                   Value
+
+B1          Mounting clips for 1 AA 1.5 V 1XAA_1_5V                     
+B2          Mounting clips for 1 AA 1.5 V 1XAA_1_5V                     
+C71         Capacitor 0402                C_2U2_0402_X5R_M_4VDC         
+C100        Capacitor 0805                C_4U7_0805_X5R_K_6            
+C101        Capacitor 0402                C_10N_0402_X7R_K_25           
+C102        Capacitor 0805                C_10U_0805_X5R_L_25           
+C103        Capacitor 0603                C_2U2_0603_X5R_K_10           
+C104        Capacitor 0402                C_33N_0402_X7R_K_25           
+C191        Capacitor 0402                C_33P_0402_NP0_J_50           
+C207        Capacitor 0402                C_100N_0402_X5R_K_10          
+C211        Capacitor 0402                C_33P_0402_NP0_J_50           
+C231        Capacitor 0402                C_220N_0402_X5R_K_10          
+C241        Capacitor, 0603               C_220N_0603_X7R_K_50          
+C251        Capacitor 0402                C_68P_0402_NP0_J_50           
+C271        Capacitor 0402                C_68P_0402_NP0_J_50           
+C281        Capacitor 0402                C_100N_0402_X5R_K_10          
+C300        Capacitor 0402                C_100N_0402_X5R_K_10          
+C341        Capacitor 0402                C_5P6_0402_NP0_J_50           
+C351        Capacitor 0402                C_10N_0402_X7R_K_25           
+C381        Capacitor 0402                C_68P_0402_NP0_J_50           
+C400        Capacitor 0402                C_100N_0402_X5R_K_10          
+C401        Capacitor 0402                C_100P_0402_NP0_J_50          
+C411        Capacitor 0402                C_220N_0402_X5R_K_10          
+C421        Capacitor 0402                C_1U_0402_X5R_L_6P3           
+C431        Capacitor, 0402               C_15P_0402_NP0_J_50           
+C441        Capacitor, 0402               C_15P_0402_NP0_J_50           
+C471        Capacitor 0402                C_100N_0402_X5R_K_10          
+C500        Capacitor 0402                C_100N_0402_X5R_K_10          
+C501        Capacitor 0402                C_10N_0402_X7R_K_25           
+C502        Capacitor 0402                C_10N_0402_X7R_K_25           
+C503        Capacitor 0402                C_100N_0402_X5R_K_10          
+D1          LED, green, SMD               LED_CL150GCD                  
+D2          LED, red, SMD                 LED_CL150URCD                 
+D100        Diode, Si                     BAT254                        
+D101        Diode, Si                     BAT254                        
+FM1         Fiducial mark                 FIDUCIAL_MARK                 
+FM2         Fiducial mark                 FIDUCIAL_MARK                 
+FM3         Fiducial mark                 FIDUCIAL_MARK                 
+FM4         Fiducial mark                 FIDUCIAL_MARK                 
+L321        Inductor 0402                 L_6N8_0402_J                  
+L331        Inductor, 0402                L_22N_0402_J                  
+L341        Inductor 0402                 L_1N8_0402_S                  
+P1          USB B-style connector         USB_B                         
+P2          DC jack, 2.5mm center pin     DC_JACK_2.5                   
+P3          Pinrow, 2x3                   PINROW_2X3                    
+P4          Pinrow, 2x5                   PINROW_2X5                    
+P5          Pinrow, 2x3                   PINROW_2X3                    
+P6          Pinrow, 2x10                  PINROW_2X10                   
+P7          Pinrow, 2x3                   PINROW_2X3                    
+P8          Pinrow, 2x5                   PINROW_2X5                    
+Q100        MOSFET, P ch.                 SI9424DY                      
+Q300        BJT, Si, NPN, small signal    BC846                         
+R100        Resistor 0603                 R_0_0603                      
+R101        Resistor, 0402                R_43K_0402_F                  
+R102        Resistor 0402                 R_4K7_0402_G                  
+R221        Resistor 0402                 R_56K_0402_F                  
+R241        Resistor 0402                 R_2_0402_F                    
+R261        Resistor, 0402                R_43K_0402_F                  
+R300        Resistor 0402                 R_1K0_0402_J                  
+R301        Resistor 0402                 R_1K0_0402_J                  
+R302        Resistor 0402                 R_1K0_0402_J                  
+R303        Resistor 0603, general        R_0603                        
+R304        Resistor 0603, general        R_0603                        
+R305        Resistor 0603                 R_0_0603                      
+R306        Resistor 0603                 R_0_0603                      
+R307        Resistor 0603                 R_0_0603                      
+R308        Resistor 0603                 R_0_0603                      
+R309        Resistor 0402                 R_4K7_0402_G                  
+R310        Resistor, 0402                R_43K_0402_F                  
+R311        Resistor 0603, general        R_0603                        
+R312        Resistor 0603, general        R_0603                        
+R400        Resistor 0402                 R_270_0402_F                  
+R401        Resistor, 0402                R_43K_0402_F                  
+R402        Resistor 0402                 R_470K_0402_F                 
+R403        Resistor 0402                 R_200K_0402_F                 
+R404        Resistor 0402                 R_200K_0402_F                 
+R405        Resistor 0402                 R_100K_0402_F                 
+R406        Resistor 0402                 R_330K_0402_F                 
+R407        Resistor 0402                 R_200K_0402_F                 
+R409        Resistor 0402                 R_220K_0402_F                 
+R410        Resistor 0402                 R_100K_0402_F                 
+R411        Resistor 0402                 R_100K_0402_F                 
+R412        Resistor 0402                 R_100K_0402_F                 
+R413        Resistor 0402                 R_10K_0402_F                  
+R414        Resistor 0402                 R_10K_0402_F                  
+R415        Resistor 0402                 R_10K_0402_F                  
+R416        Resistor 0603                 R_0_0603                      
+R420        Resistor, 0402                R_43K_0402_F                  
+R430        Resistor 0603                 R_0_0603                      
+R440        Resistor 0402                 R_270_0402_F                  
+R441        Resistor 0402                 R_270_0402_F                  
+R501        Resistor 0402                 R_200K_0402_F                 
+R502        Resistor 0402                 R_2K2_0402_G                  
+R503        Resistor 0402                 R_2K2_0402_G                  
+R504        Resistor 0603                 R_0_0603                      
+R505        Resistor 0603                 R_0_0603                      
+R506        Resistor 0603                 R_0_0603                      
+R507        Resistor 0603                 R_0_0603                      
+R508        Resistor 0603                 R_0_0603                      
+R509        Resistor 0402                 R_4K7_0402_G                  
+RP1         Silonix CdS photoconductive ceNSL_19M51                     
+RT1         Trimming pot, 10K, knob       R_0-10K_TRIM                  
+S1          Push button, SMD              PUSH_BUTTON                   
+S2          Push button, SMD              PUSH_BUTTON                   
+S3          Double switch, ALPS SSSS222700SWITCH_6PIN                   
+U1          Single chip transceiver       CC2430                        
+U100        3.3V low noise regulator      LP2985-3.3V                   
+U101        brown out detector 1.8V       EM6353_1_8V                   
+U300        SiLabs USB microcontroller    C8051F320                     
+U400        4-directional switch with a ceskrhab_e010                   
+U401        Quad rail-to-rail opamp       AD8544                        
+U500        4 KB I2C EEPROM               24AA32A/SN                    
+U501        18 g peak X,Y accelerometer   ADXL321                       
+X1          Crystal, ceramic SMD 3.2x2.5mmX_32.000/10/15/30/16          
+X2          Crystal, MC-306 SMD           X_32.768/20/50/40/12          

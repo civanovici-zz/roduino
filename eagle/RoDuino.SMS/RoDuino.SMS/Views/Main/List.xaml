@@ -1,0 +1,169 @@
+﻿<Views:View x:Class="RoDuino.SMS.Views.Main.List"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:Views="clr-namespace:RoDuino.SMS.Views" 
+        xmlns:Components="clr-namespace:RoDuino.SMS.Components" 
+        xmlns:Properties="clr-namespace:RoDuino.SMS.Properties"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        mc:Ignorable="d"            
+        xmlns:local="clr-namespace:RoDuino.SMS.Components.Grid" xmlns:Converters="clr-namespace:RoDuino.SMS.Converters" Title="List" >
+    <Views:View.Resources>
+
+        <Converters:GridConverter x:Key="gridConverter"/>
+
+        <!-- first, empty column -->
+        <DataTemplate x:Key="EmptyColumnTemplate"/>
+
+        <DataTemplate x:Key="NamesColumnTemplate">
+            <TextBlock Text="{Binding Path=Name}"  FontSize="14"/>
+        </DataTemplate>
+        <DataTemplate x:Key="PhoneColumnTemplate">
+            <TextBlock Text="{Binding Path=Phone}" FontSize="14" />
+        </DataTemplate>
+        <DataTemplate x:Key="NetworkColumnTemplate">
+            <TextBlock Text="{Binding Path=Network}" FontSize="14"/>
+        </DataTemplate>
+
+        <Style x:Key="DataGridViewColumnHeader" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border x:Name="Bd" Style="{DynamicResource ColumnHeaderStyle}">
+                            <DockPanel>
+                                <TextBlock Text="{TemplateBinding ContentControl.Content}" Width="{Binding ElementName=grdClients,Path=ActualWidth, 
+                                    Converter={StaticResource gridConverter},ConverterParameter=3}"
+                  TextAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" Margin="5,0,0,0"
+                  Foreground="{DynamicResource DataGridHeaderFontColor}" />
+                                <Thumb x:Name="PART_HeaderGripper" Style="{StaticResource ColumnGrip}" />
+                            </DockPanel>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="GridViewColumnHeader.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <TextBlock Margin="2,0,0,2" Text="{TemplateBinding GridViewColumnHeader.Content}" TextAlignment="Left" VerticalAlignment="Center" Foreground="{DynamicResource FontColor}" />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+    </Views:View.Resources>
+    <DockPanel x:Name="dockPanel" LastChildFill="True" Background="{DynamicResource PanelGradientBrush}">
+        <!-- Menu Area - keep the space for menu -->
+        <Grid Style="{DynamicResource HeaderGridMenu}"></Grid>
+        <Grid Name="gridContainer" Style="{DynamicResource GridContainerStyle}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Background="{DynamicResource TopLeftBackgroundBrush}" Focusable="True">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,0,0,0" Height="30" Name="pnlLinks">
+                    <Border Name="borderAdd">
+                        <Components:RoImageButton 
+                            UpPath="Content\Icons\add.png" 
+                            HoverPath="Content\Icons\addOver.png" 
+                            DownPath="Content\Icons\addDisable.png" 
+                            InactivePath="Content\Icons\add.png" 
+                            Width="30" Height="30" Margin="0,0,6,0"
+                            x:Name="btnAdd" ToolTip="{x:Static Properties:Resources.Add}"/>
+                    </Border>
+                    <Border Name="borderEdit">
+                        <Components:RoImageButton 
+                            UpPath="Content\Icons\edit.png" 
+                            HoverPath="Content\Icons\editOver.png" 
+                            DownPath="Content\Icons\edit.png" 
+                            InactivePath="Content\Icons\editDisable.png" 
+                            Width="30" Height="30" Margin="0,0,6,0"
+                            x:Name="btnEdit" ToolTip="{x:Static Properties:Resources.Edit}"/>
+                    </Border>
+                    <Border Name="borderDelete">
+                        <Components:RoImageButton 
+                            UpPath="Content\Icons\delete.png" 
+                            HoverPath="Content\Icons\deleteOver.png" 
+                            DownPath="Content\Icons\delete.png" 
+                            InactivePath="Content\Icons\deleteDisable.png" 
+                            Width="30" Height="30" Margin="0,0,6,0"
+                            x:Name="btnDelete" ToolTip="{x:Static Properties:Resources.Delete}"/>
+                    </Border>
+
+
+                </StackPanel>
+            </Border>
+
+            <StackPanel Grid.Column="0" Grid.Row="1" x:Name="stackPanel1" Orientation="Horizontal" VerticalAlignment="Center" Margin="5" >
+
+                <TextBlock VerticalAlignment="Center" Text="{x:Static Properties:Resources.Search}" Margin="5"/>
+                <Components:FilterText x:Name="txtFilter" TextBoxBase.TextChanged="FilterTextBox_TextChanged" ResetFilter="FilterTextBox_ResetFilter" Width="250" VerticalAlignment="Center" />
+<!--                <TextBox Name="txtSearch" Width="200"/>-->
+<!--                <Components:RoImageButton UpPath="Content\Icons\searchButton.png" -->
+<!--                                          HoverPath="Content\Icons\searchButton.png" -->
+<!--                                          DownPath="Content\Icons\searchButton.png" -->
+<!--                                          InactivePath="Content\Icons\searchButton.png" -->
+<!--                                          Width="20" Height="20" Margin="2,2,2,2"-->
+<!--                                          x:Name="btnSearch" ToolTip="{x:Static Properties:Resources.Search}"/>-->
+                <StackPanel Orientation="Horizontal" Margin="20,0,0,0" >
+                    <TextBlock Text="{x:Static Properties:Resources.Message}" VerticalAlignment="Center"></TextBlock>
+                    <TextBox Name="txtMessage" Width="200" TextWrapping="Wrap" MinLines="2" Height="80" VerticalScrollBarVisibility="Visible"></TextBox>
+                    <Button Name="btnSendSms"  Margin="20,0,0,0" Content="{x:Static Properties:Resources.SendSms}"></Button>
+                    <Button Name="btnSelectAll"  Margin="20,0,0,0" Content="{x:Static Properties:Resources.SelectAll}"></Button>
+                    <Button Name="btnRefresh"  Margin="20,0,0,0" Content="{x:Static Properties:Resources.Refresh}"></Button>
+                </StackPanel>
+            </StackPanel>
+
+            <Grid Grid.Column="0" Grid.Row="2" Name="grdMain" >
+
+                <local:EditListView x:Name="grdClients" Background="{x:Null}" Margin="-2,0,0,0" BorderBrush="{x:Null}" 
+                    ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Recycling" ScrollViewer.CanContentScroll="True"
+                    SelectionMode="Multiple"  Style="{DynamicResource EditListViewStyle}"
+                    ItemContainerStyle="{DynamicResource EditListViewItemStyle}" 
+                     d:IsHidden="True">
+                    <local:EditListView.View>
+                        <GridView AllowsColumnReorder="True">
+
+                            <GridViewColumn Width="10"
+                            HeaderContainerStyle="{DynamicResource FirstColumnGridViewColumnHeader}"
+                            CellTemplate="{StaticResource EmptyColumnTemplate}" />
+
+                            <local:SortListViewColumn x:Name="Names" Header="{x:Static Properties:Resources.Name}"
+                                SortProperty="Name" SortStyle="DataGridViewColumnHeader"
+                                HeaderContainerStyle="{DynamicResource DataGridViewColumnHeader}"
+                                CellTemplate="{StaticResource NamesColumnTemplate}" />
+
+                            <local:SortListViewColumn x:Name="Phone" Header="{x:Static Properties:Resources.Phone}"
+                                SortProperty="Phone" SortStyle="DataGridViewColumnHeader"
+                                HeaderContainerStyle="{DynamicResource DataGridViewColumnHeader}"
+                                CellTemplate="{StaticResource PhoneColumnTemplate}" />
+
+                            <local:SortListViewColumn x:Name="Network" Header="{x:Static Properties:Resources.Network}"
+                                SortProperty="Network" SortStyle="DataGridViewColumnHeader"
+                                HeaderContainerStyle="{DynamicResource DataGridViewColumnHeader}"
+                                CellTemplate="{StaticResource NetworkColumnTemplate}" />
+
+                            <GridViewColumn Width="10"
+                              HeaderContainerStyle="{DynamicResource LastColumnGridViewColumnHeader}"
+                              CellTemplate="{StaticResource EmptyColumnTemplate}" />
+
+
+                        </GridView>
+                    </local:EditListView.View>
+                </local:EditListView>
+
+            </Grid>
+        </Grid>
+
+    </DockPanel>
+</Views:View>

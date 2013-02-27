@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoDuino.SMS", "RoDuino.SMS\RoDuino.SMS.csproj", "{7588967F-158F-4778-A15C-4248EA3E1E91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoDuino.SMS.Bll", "RoDuino.SMS.Bll\RoDuino.SMS.Bll.csproj", "{CF7B4BDC-F72C-454C-842C-F97C79085690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoDuino.SMS.Tests", "RoDuino.SMS.Tests\RoDuino.SMS.Tests.csproj", "{3B397D8D-6D43-43C1-83E4-64EA82B9B97B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Debug|x64.ActiveCfg = Debug|x64
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Debug|x64.Build.0 = Debug|x64
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Debug|x86.ActiveCfg = Debug|x86
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Debug|x86.Build.0 = Debug|x86
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Release|Any CPU.ActiveCfg = Release|x86
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Release|Any CPU.Build.0 = Release|x86
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Release|x64.ActiveCfg = Release|x64
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Release|x64.Build.0 = Release|x64
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Release|x86.ActiveCfg = Release|x86
+		{7588967F-158F-4778-A15C-4248EA3E1E91}.Release|x86.Build.0 = Release|x86
+		{CF7B4BDC-F72C-454C-842C-F97C79085690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7B4BDC-F72C-454C-842C-F97C79085690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7B4BDC-F72C-454C-842C-F97C79085690}.Debug|x64.ActiveCfg = Debug|x64
+		{CF7B4BDC-F72C-454C-842C-F97C79085690}.Debug|x64.Build.0 = Debug|x64
+		{CF7B4BDC-F72C-454C-842C-F97C79085690}.Debug|x86.ActiveCfg = Debug|x86
+		{CF7B4BDC-F72C-454C-842C-F97C79085690}.Debug|x86.Build.0 = Debug|x86
+		{CF7B4BDC-F72C-454C-842C-F97C79085690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7B4BDC-F72C-454C-842C-F97C79085690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF7B4BDC-F72C-454C-842C-F97C79085690}.Release|x64.ActiveCfg = Release|x64
+		{CF7B4BDC-F72C-454C-842C-F97C79085690}.Release|x64.Build.0 = Release|x64
+		{CF7B4BDC-F72C-454C-842C-F97C79085690}.Release|x86.ActiveCfg = Release|Any CPU
+		{3B397D8D-6D43-43C1-83E4-64EA82B9B97B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B397D8D-6D43-43C1-83E4-64EA82B9B97B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B397D8D-6D43-43C1-83E4-64EA82B9B97B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3B397D8D-6D43-43C1-83E4-64EA82B9B97B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3B397D8D-6D43-43C1-83E4-64EA82B9B97B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B397D8D-6D43-43C1-83E4-64EA82B9B97B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B397D8D-6D43-43C1-83E4-64EA82B9B97B}.Release|x64.ActiveCfg = Release|Any CPU
+		{3B397D8D-6D43-43C1-83E4-64EA82B9B97B}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

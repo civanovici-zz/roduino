@@ -1,0 +1,1350 @@
+   1               		.file	"BootloaderCDC.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+  14               	.Ltext0:
+  15               		.section	.text.FetchNextCommandByte,"ax",@progbits
+  17               	FetchNextCommandByte:
+  18               	.LFB105:
+  19               	.LSM0:
+  20               	/* prologue: function */
+  21               	/* frame size = 0 */
+  22               	/* stack size = 0 */
+  23               	.L__stack_usage = 0
+  24               	.LVL0:
+  25               	.LBB77:
+  26               	.LBB78:
+  27               	.LSM1:
+  28 0000 84E0      		ldi r24,lo8(4)
+  29 0002 8093 E900 		sts 233,r24
+  30 0006 00C0      		rjmp .L2
+  31               	.L6:
+  32               	.LBE78:
+  33               	.LBE77:
+  34               	.LBB79:
+  35               	.LBB80:
+  36               	.LSM2:
+  37 0008 8091 E800 		lds r24,232
+  38 000c 8B77      		andi r24,lo8(123)
+  39 000e 8093 E800 		sts 232,r24
+  40               	.LBE80:
+  41               	.LBE79:
+  42               	.LSM3:
+  43 0012 00C0      		rjmp .L3
+  44               	.L5:
+  45               	.LSM4:
+  46 0014 8EB3      		in r24,62-0x20
+  47 0016 8823      		tst r24
+  48 0018 01F0      		breq .L7
+  49               	.L3:
+  50               	.LBB81:
+  51               	.LBB82:
+  52               	.LSM5:
+  53 001a 8091 E800 		lds r24,232
+  54               	.LBE82:
+  55               	.LBE81:
+  56               	.LSM6:
+  57 001e 82FF      		sbrs r24,2
+  58 0020 00C0      		rjmp .L5
+  59               	.L2:
+  60               	.LBB83:
+  61               	.LBB84:
+  62               	.LSM7:
+  63 0022 8091 E800 		lds r24,232
+  64               	.LBE84:
+  65               	.LBE83:
+  66               	.LSM8:
+  67 0026 85FF      		sbrs r24,5
+  68 0028 00C0      		rjmp .L6
+  69               	.LBB85:
+  70               	.LBB86:
+  71               	.LSM9:
+  72 002a 8091 F100 		lds r24,241
+  73               	.LBE86:
+  74               	.LBE85:
+  75               	.LSM10:
+  76 002e 0895      		ret
+  77               	.L7:
+  78               	.LSM11:
+  79 0030 80E0      		ldi r24,lo8(0)
+  80               	.LSM12:
+  81 0032 0895      		ret
+  82               	.LFE105:
+  84               		.section	.text.WriteNextResponseByte,"ax",@progbits
+  86               	WriteNextResponseByte:
+  87               	.LFB106:
+  88               	.LSM13:
+  89               	.LVL1:
+  90               	/* prologue: function */
+  91               	/* frame size = 0 */
+  92               	/* stack size = 0 */
+  93               	.L__stack_usage = 0
+  94               	.LBB87:
+  95               	.LBB88:
+  96               	.LSM14:
+  97 0000 93E0      		ldi r25,lo8(3)
+  98 0002 9093 E900 		sts 233,r25
+  99               	.LBE88:
+ 100               	.LBE87:
+ 101               	.LBB89:
+ 102               	.LBB90:
+ 103               	.LSM15:
+ 104 0006 9091 E800 		lds r25,232
+ 105               	.LBE90:
+ 106               	.LBE89:
+ 107               	.LSM16:
+ 108 000a 95FD      		sbrc r25,5
+ 109 000c 00C0      		rjmp .L9
+ 110               	.LBB91:
+ 111               	.LBB92:
+ 112               	.LSM17:
+ 113 000e 9091 E800 		lds r25,232
+ 114 0012 9E77      		andi r25,lo8(126)
+ 115 0014 9093 E800 		sts 232,r25
+ 116               	.LBE92:
+ 117               	.LBE91:
+ 118               	.LSM18:
+ 119 0018 00C0      		rjmp .L10
+ 120               	.L12:
+ 121               	.LSM19:
+ 122 001a 9EB3      		in r25,62-0x20
+ 123 001c 9923      		tst r25
+ 124 001e 01F0      		breq .L8
+ 125               	.L10:
+ 126               	.LBB93:
+ 127               	.LBB94:
+ 128               	.LSM20:
+ 129 0020 9091 E800 		lds r25,232
+ 130               	.LBE94:
+ 131               	.LBE93:
+ 132               	.LSM21:
+ 133 0024 90FF      		sbrs r25,0
+ 134 0026 00C0      		rjmp .L12
+ 135               	.L9:
+ 136               	.LVL2:
+ 137               	.LBB95:
+ 138               	.LBB96:
+ 139               	.LSM22:
+ 140 0028 8093 F100 		sts 241,r24
+ 141               	.LVL3:
+ 142               	.L8:
+ 143 002c 0895      		ret
+ 144               	.LBE96:
+ 145               	.LBE95:
+ 146               	.LFE106:
+ 148               		.section	.text.exit_bootloader,"ax",@progbits
+ 149               	.global	exit_bootloader
+ 151               	exit_bootloader:
+ 152               	.LFB99:
+ 153               	.LSM23:
+ 154               	/* prologue: function */
+ 155               	/* frame size = 0 */
+ 156               	/* stack size = 0 */
+ 157               	.L__stack_usage = 0
+ 158               	.LSM24:
+ 159 0000 1EB8      		out 46-0x20,__zero_reg__
+ 160               	.LSM25:
+ 161 0002 E091 0000 		lds r30,app_start
+ 162 0006 F091 0000 		lds r31,app_start+1
+ 163 000a 0995      		icall
+ 164               	/* epilogue start */
+ 165               	.LSM26:
+ 166 000c 0895      		ret
+ 167               	.LFE99:
+ 169               		.section	.text.SetupHardware,"ax",@progbits
+ 170               	.global	SetupHardware
+ 172               	SetupHardware:
+ 173               	.LFB101:
+ 174               	.LSM27:
+ 175               	/* prologue: function */
+ 176               	/* frame size = 0 */
+ 177               	/* stack size = 0 */
+ 178               	.L__stack_usage = 0
+ 179               	.LSM28:
+ 180 0000 84B7      		in r24,84-0x20
+ 181 0002 877F      		andi r24,lo8(-9)
+ 182 0004 84BF      		out 84-0x20,r24
+ 183               	.LSM29:
+ 184 0006 88E1      		ldi r24,lo8(24)
+ 185               	/* #APP */
+ 186               	 ;  109 "BootloaderCDC.c" 1
+ 187 0008 0FB6      		in __tmp_reg__, __SREG__
+ 188 000a F894      		cli
+ 189 000c 8093 6000 		sts 96, r24
+ 190 0010 1092 6000 		sts 96, __zero_reg__
+ 191 0014 0FBE      		out __SREG__,__tmp_reg__
+ 192               		
+ 193               	 ;  0 "" 2
+ 194               	.LVL4:
+ 195               	/* #NOAPP */
+ 196               	.LBB97:
+ 197               	.LBB98:
+ 198               	.LSM30:
+ 199 0016 81E0      		ldi r24,lo8(1)
+ 200 0018 90E8      		ldi r25,lo8(-128)
+ 201               	/* #APP */
+ 202               	 ;  1433 "c:\no_install_programs\mhvavrtools\bin\../lib/gcc/avr/4.5.1/../../../../avr/include/avr/p
+ 203 001a 0FB6      		in __tmp_reg__,__SREG__
+ 204 001c F894      		cli
+ 205 001e 9093 6100 		sts 97, r25
+ 206 0022 8093 6100 		sts 97, r24
+ 207 0026 0FBE      		out __SREG__, __tmp_reg__
+ 208               	 ;  0 "" 2
+ 209               	/* #NOAPP */
+ 210               	.LBE98:
+ 211               	.LBE97:
+ 212               	.LSM31:
+ 213 0028 85BF      		out 85-0x20,r24
+ 214               	.LSM32:
+ 215 002a 82E0      		ldi r24,lo8(2)
+ 216 002c 85BF      		out 85-0x20,r24
+ 217               	.LSM33:
+ 218 002e 0E94 0000 		call USB_Init
+ 219               	/* epilogue start */
+ 220               	.LSM34:
+ 221 0032 0895      		ret
+ 222               	.LFE101:
+ 224               		.section	.text.EVENT_USB_Device_ConfigurationChanged,"ax",@progbits
+ 225               	.global	EVENT_USB_Device_ConfigurationChanged
+ 227               	EVENT_USB_Device_ConfigurationChanged:
+ 228               	.LFB102:
+ 229               	.LSM35:
+ 230               	/* prologue: function */
+ 231               	/* frame size = 0 */
+ 232               	/* stack size = 0 */
+ 233               	.L__stack_usage = 0
+ 234               	.LVL5:
+ 235               	.LBB99:
+ 236               	.LBB100:
+ 237               	.LSM36:
+ 238 0000 82E0      		ldi r24,lo8(2)
+ 239 0002 61EC      		ldi r22,lo8(-63)
+ 240 0004 42E0      		ldi r20,lo8(2)
+ 241 0006 0E94 0000 		call Endpoint_ConfigureEndpoint_Prv
+ 242               	.LVL6:
+ 243               	.LBE100:
+ 244               	.LBE99:
+ 245               	.LBB101:
+ 246               	.LBB102:
+ 247 000a 83E0      		ldi r24,lo8(3)
+ 248 000c 61E8      		ldi r22,lo8(-127)
+ 249 000e 42E1      		ldi r20,lo8(18)
+ 250 0010 0E94 0000 		call Endpoint_ConfigureEndpoint_Prv
+ 251               	.LVL7:
+ 252               	.LBE102:
+ 253               	.LBE101:
+ 254               	.LBB103:
+ 255               	.LBB104:
+ 256 0014 84E0      		ldi r24,lo8(4)
+ 257 0016 60E8      		ldi r22,lo8(-128)
+ 258 0018 42E1      		ldi r20,lo8(18)
+ 259 001a 0E94 0000 		call Endpoint_ConfigureEndpoint_Prv
+ 260               	/* epilogue start */
+ 261               	.LBE104:
+ 262               	.LBE103:
+ 263               	.LSM37:
+ 264 001e 0895      		ret
+ 265               	.LFE102:
+ 267               		.section	.text.EVENT_USB_Device_ControlRequest,"ax",@progbits
+ 268               	.global	EVENT_USB_Device_ControlRequest
+ 270               	EVENT_USB_Device_ControlRequest:
+ 271               	.LFB103:
+ 272               	.LSM38:
+ 273               	/* prologue: function */
+ 274               	/* frame size = 0 */
+ 275               	/* stack size = 0 */
+ 276               	.L__stack_usage = 0
+ 277               	.LSM39:
+ 278 0000 8091 0000 		lds r24,USB_ControlRequest
+ 279 0004 982F      		mov r25,r24
+ 280 0006 9F77      		andi r25,lo8(127)
+ 281 0008 9132      		cpi r25,lo8(33)
+ 282 000a 01F4      		brne .L16
+ 283               	.LSM40:
+ 284 000c 9091 0000 		lds r25,USB_ControlRequest+1
+ 285 0010 9032      		cpi r25,lo8(32)
+ 286 0012 01F0      		breq .L18
+ 287 0014 9132      		cpi r25,lo8(33)
+ 288 0016 01F4      		brne .L16
+ 289               	.LSM41:
+ 290 0018 813A      		cpi r24,lo8(-95)
+ 291 001a 01F4      		brne .L16
+ 292               	.LBB105:
+ 293               	.LBB106:
+ 294               	.LSM42:
+ 295 001c 8091 E800 		lds r24,232
+ 296 0020 877F      		andi r24,lo8(-9)
+ 297 0022 8093 E800 		sts 232,r24
+ 298               	.LBE106:
+ 299               	.LBE105:
+ 300               	.LSM43:
+ 301 0026 80E0      		ldi r24,lo8(LineEncoding)
+ 302 0028 90E0      		ldi r25,hi8(LineEncoding)
+ 303 002a 67E0      		ldi r22,lo8(7)
+ 304 002c 70E0      		ldi r23,hi8(7)
+ 305 002e 0E94 0000 		call Endpoint_Write_Control_Stream_LE
+ 306               	.LBB107:
+ 307               	.LBB108:
+ 308               	.LSM44:
+ 309 0032 8091 E800 		lds r24,232
+ 310 0036 8B77      		andi r24,lo8(123)
+ 311 0038 8093 E800 		sts 232,r24
+ 312 003c 0895      		ret
+ 313               	.L18:
+ 314               	.LBE108:
+ 315               	.LBE107:
+ 316               	.LSM45:
+ 317 003e 8132      		cpi r24,lo8(33)
+ 318 0040 01F4      		brne .L16
+ 319               	.LBB109:
+ 320               	.LBB110:
+ 321               	.LSM46:
+ 322 0042 8091 E800 		lds r24,232
+ 323 0046 877F      		andi r24,lo8(-9)
+ 324 0048 8093 E800 		sts 232,r24
+ 325               	.LBE110:
+ 326               	.LBE109:
+ 327               	.LSM47:
+ 328 004c 80E0      		ldi r24,lo8(LineEncoding)
+ 329 004e 90E0      		ldi r25,hi8(LineEncoding)
+ 330 0050 67E0      		ldi r22,lo8(7)
+ 331 0052 70E0      		ldi r23,hi8(7)
+ 332 0054 0E94 0000 		call Endpoint_Read_Control_Stream_LE
+ 333               	.LBB111:
+ 334               	.LBB112:
+ 335               	.LSM48:
+ 336 0058 8091 E800 		lds r24,232
+ 337 005c 8E77      		andi r24,lo8(126)
+ 338 005e 8093 E800 		sts 232,r24
+ 339               	.L16:
+ 340 0062 0895      		ret
+ 341               	.LBE112:
+ 342               	.LBE111:
+ 343               	.LFE103:
+ 345               		.data
+ 346               	.LC0:
+ 347 0000 4C55 4641 		.string	"LUFACDC"
+ 347      4344 4300 
+ 348               		.section	.text.CDC_Task,"ax",@progbits
+ 349               	.global	CDC_Task
+ 351               	CDC_Task:
+ 352               	.LFB107:
+ 353               	.LSM49:
+ 354 0000 4F92      		push r4
+ 355 0002 5F92      		push r5
+ 356 0004 6F92      		push r6
+ 357 0006 7F92      		push r7
+ 358 0008 8F92      		push r8
+ 359 000a 9F92      		push r9
+ 360 000c AF92      		push r10
+ 361 000e BF92      		push r11
+ 362 0010 CF92      		push r12
+ 363 0012 DF92      		push r13
+ 364 0014 EF92      		push r14
+ 365 0016 FF92      		push r15
+ 366 0018 0F93      		push r16
+ 367 001a 1F93      		push r17
+ 368 001c CF93      		push r28
+ 369 001e DF93      		push r29
+ 370               	/* prologue: function */
+ 371               	/* frame size = 0 */
+ 372               	/* stack size = 16 */
+ 373               	.L__stack_usage = 16
+ 374               	.LVL8:
+ 375               	.LBB146:
+ 376               	.LBB147:
+ 377               	.LSM50:
+ 378 0020 84E0      		ldi r24,lo8(4)
+ 379 0022 8093 E900 		sts 233,r24
+ 380               	.LBE147:
+ 381               	.LBE146:
+ 382               	.LBB148:
+ 383               	.LBB149:
+ 384               	.LSM51:
+ 385 0026 8091 E800 		lds r24,232
+ 386               	.LBE149:
+ 387               	.LBE148:
+ 388               	.LSM52:
+ 389 002a 82FF      		sbrs r24,2
+ 390 002c 00C0      		rjmp .L20
+ 391               	.LSM53:
+ 392 002e 0E94 0000 		call FetchNextCommandByte
+ 393 0032 182F      		mov r17,r24
+ 394               	.LVL9:
+ 395               	.LSM54:
+ 396 0034 8534      		cpi r24,lo8(69)
+ 397 0036 01F4      		brne .L22
+ 398               	.LSM55:
+ 399 0038 1092 0000 		sts RunBootloader,__zero_reg__
+ 400 003c 00C0      		rjmp .L88
+ 401               	.L22:
+ 402               	.LSM56:
+ 403 003e 8435      		cpi r24,lo8(84)
+ 404 0040 01F4      		brne .L24
+ 405               	.LSM57:
+ 406 0042 0E94 0000 		call FetchNextCommandByte
+ 407               	.LVL10:
+ 408               	.L88:
+ 409               	.LSM58:
+ 410 0046 8DE0      		ldi r24,lo8(13)
+ 411 0048 00C0      		rjmp .L87
+ 412               	.LVL11:
+ 413               	.L24:
+ 414               	.LSM59:
+ 415 004a 8C34      		cpi r24,lo8(76)
+ 416 004c 01F0      		breq .L88
+ 417               	.LSM60:
+ 418 004e 8035      		cpi r24,lo8(80)
+ 419 0050 01F0      		breq .L88
+ 420               	.L26:
+ 421               	.LSM61:
+ 422 0052 8437      		cpi r24,lo8(116)
+ 423 0054 01F4      		brne .L27
+ 424               	.LSM62:
+ 425 0056 84E4      		ldi r24,lo8(68)
+ 426 0058 0E94 0000 		call WriteNextResponseByte
+ 427               	.LSM63:
+ 428 005c 80E0      		ldi r24,lo8(0)
+ 429 005e 00C0      		rjmp .L87
+ 430               	.L27:
+ 431               	.LSM64:
+ 432 0060 8136      		cpi r24,lo8(97)
+ 433 0062 01F4      		brne .L28
+ 434               	.LSM65:
+ 435 0064 89E5      		ldi r24,lo8(89)
+ 436 0066 00C0      		rjmp .L87
+ 437               	.L28:
+ 438               	.LSM66:
+ 439 0068 8134      		cpi r24,lo8(65)
+ 440 006a 01F4      		brne .L29
+ 441               	.LSM67:
+ 442 006c 0E94 0000 		call FetchNextCommandByte
+ 443 0070 182F      		mov r17,r24
+ 444               	.LVL12:
+ 445               	.LSM68:
+ 446 0072 0E94 0000 		call FetchNextCommandByte
+ 447 0076 282F      		mov r18,r24
+ 448 0078 30E0      		ldi r19,lo8(0)
+ 449 007a 220F      		lsl r18
+ 450 007c 331F      		rol r19
+ 451 007e 4427      		clr r20
+ 452 0080 37FD      		sbrc r19,7
+ 453 0082 4095      		com r20
+ 454 0084 542F      		mov r21,r20
+ 455               	.LSM69:
+ 456 0086 712F      		mov r23,r17
+ 457 0088 770F      		lsl r23
+ 458 008a 60E0      		ldi r22,lo8(0)
+ 459 008c CB01      		movw r24,r22
+ 460 008e AA27      		clr r26
+ 461 0090 97FD      		sbrc r25,7
+ 462 0092 A095      		com r26
+ 463 0094 BA2F      		mov r27,r26
+ 464               	.LSM70:
+ 465 0096 282B      		or r18,r24
+ 466 0098 392B      		or r19,r25
+ 467 009a 4A2B      		or r20,r26
+ 468 009c 5B2B      		or r21,r27
+ 469 009e 2093 0000 		sts CurrAddress,r18
+ 470 00a2 3093 0000 		sts CurrAddress+1,r19
+ 471 00a6 4093 0000 		sts CurrAddress+2,r20
+ 472 00aa 5093 0000 		sts CurrAddress+3,r21
+ 473 00ae 00C0      		rjmp .L88
+ 474               	.LVL13:
+ 475               	.L29:
+ 476               	.LSM71:
+ 477 00b0 8037      		cpi r24,lo8(112)
+ 478 00b2 01F4      		brne .L30
+ 479               	.LSM72:
+ 480 00b4 83E5      		ldi r24,lo8(83)
+ 481 00b6 00C0      		rjmp .L87
+ 482               	.L30:
+ 483               	.LSM73:
+ 484 00b8 8335      		cpi r24,lo8(83)
+ 485 00ba 01F4      		brne .L31
+ 486 00bc C0E0      		ldi r28,lo8(.LC0)
+ 487 00be D0E0      		ldi r29,hi8(.LC0)
+ 488               	.L32:
+ 489               	.LBB150:
+ 490               	.LSM74:
+ 491 00c0 8991      		ld r24,Y+
+ 492 00c2 0E94 0000 		call WriteNextResponseByte
+ 493               	.LSM75:
+ 494 00c6 20E0      		ldi r18,hi8(.LC0+7)
+ 495 00c8 C030      		cpi r28,lo8(.LC0+7)
+ 496 00ca D207      		cpc r29,r18
+ 497 00cc 01F4      		brne .L32
+ 498 00ce 00C0      		rjmp .L23
+ 499               	.LVL14:
+ 500               	.L31:
+ 501               	.LBE150:
+ 502               	.LSM76:
+ 503 00d0 8635      		cpi r24,lo8(86)
+ 504 00d2 01F4      		brne .L33
+ 505               	.LSM77:
+ 506 00d4 81E3      		ldi r24,lo8(49)
+ 507 00d6 0E94 0000 		call WriteNextResponseByte
+ 508               	.LSM78:
+ 509 00da 80E3      		ldi r24,lo8(48)
+ 510 00dc 00C0      		rjmp .L87
+ 511               	.L33:
+ 512               	.LSM79:
+ 513 00de 8337      		cpi r24,lo8(115)
+ 514 00e0 01F4      		brne .L34
+ 515               	.LSM80:
+ 516 00e2 87E8      		ldi r24,lo8(-121)
+ 517 00e4 0E94 0000 		call WriteNextResponseByte
+ 518               	.LSM81:
+ 519 00e8 85E9      		ldi r24,lo8(-107)
+ 520 00ea 0E94 0000 		call WriteNextResponseByte
+ 521               	.LSM82:
+ 522 00ee 8EE1      		ldi r24,lo8(30)
+ 523 00f0 00C0      		rjmp .L87
+ 524               	.L34:
+ 525               	.LSM83:
+ 526 00f2 8536      		cpi r24,lo8(101)
+ 527 00f4 01F4      		brne .L35
+ 528 00f6 80E0      		ldi r24,lo8(0)
+ 529 00f8 90E0      		ldi r25,hi8(0)
+ 530 00fa A0E0      		ldi r26,hlo8(0)
+ 531 00fc B0E0      		ldi r27,hhi8(0)
+ 532               	.LBB151:
+ 533               	.LSM84:
+ 534 00fe 33E0      		ldi r19,lo8(3)
+ 535               	.LSM85:
+ 536 0100 25E0      		ldi r18,lo8(5)
+ 537               	.L38:
+ 538               	.LBE151:
+ 539               	.LSM86:
+ 540 0102 FC01      		movw r30,r24
+ 541               	.LBB152:
+ 542               	.LSM87:
+ 543               	/* #APP */
+ 544               	 ;  439 "BootloaderCDC.c" 1
+ 545 0104 3093 5700 		sts 87, r19
+ 546 0108 E895      		spm
+ 547               		
+ 548               	 ;  0 "" 2
+ 549               	/* #NOAPP */
+ 550               	.L36:
+ 551               	.LSM88:
+ 552 010a 07B6      		in __tmp_reg__,87-0x20
+ 553 010c 00FC      		sbrc __tmp_reg__,0
+ 554 010e 00C0      		rjmp .L36
+ 555               	.LSM89:
+ 556               	/* #APP */
+ 557               	 ;  441 "BootloaderCDC.c" 1
+ 558 0110 2093 5700 		sts 87, r18
+ 559 0114 E895      		spm
+ 560               		
+ 561               	 ;  0 "" 2
+ 562               	/* #NOAPP */
+ 563               	.L37:
+ 564               	.LSM90:
+ 565 0116 07B6      		in __tmp_reg__,87-0x20
+ 566 0118 00FC      		sbrc __tmp_reg__,0
+ 567 011a 00C0      		rjmp .L37
+ 568               	.LSM91:
+ 569 011c 8058      		subi r24,lo8(-(128))
+ 570 011e 9F4F      		sbci r25,hi8(-(128))
+ 571 0120 AF4F      		sbci r26,hlo8(-(128))
+ 572 0122 BF4F      		sbci r27,hhi8(-(128))
+ 573               	.LVL15:
+ 574 0124 8030      		cpi r24,lo8(28672)
+ 575 0126 40E7      		ldi r20,hi8(28672)
+ 576 0128 9407      		cpc r25,r20
+ 577 012a 40E0      		ldi r20,hlo8(28672)
+ 578 012c A407      		cpc r26,r20
+ 579 012e 40E0      		ldi r20,hhi8(28672)
+ 580 0130 B407      		cpc r27,r20
+ 581 0132 01F4      		brne .L38
+ 582 0134 00C0      		rjmp .L88
+ 583               	.LVL16:
+ 584               	.L35:
+ 585               	.LBE152:
+ 586               	.LSM92:
+ 587 0136 8C36      		cpi r24,lo8(108)
+ 588 0138 01F4      		brne .L39
+ 589               	.LBB153:
+ 590               	.LSM93:
+ 591 013a 0E94 0000 		call FetchNextCommandByte
+ 592               	.LVL17:
+ 593 013e 8095      		com r24
+ 594               	.LVL18:
+ 595 0140 99E0      		ldi r25,lo8(9)
+ 596               	/* #APP */
+ 597               	 ;  452 "BootloaderCDC.c" 1
+ 598 0142 E1E0      		ldi r30, 1
+ 599 0144 F0E0      		ldi r31, 0
+ 600 0146 082E      		mov r0, r24
+ 601 0148 9093 5700 		sts 87, r25
+ 602 014c E895      		spm
+ 603               		
+ 604               	 ;  0 "" 2
+ 605               	/* #NOAPP */
+ 606 014e 00C0      		rjmp .L88
+ 607               	.LVL19:
+ 608               	.L39:
+ 609               	.LBE153:
+ 610               	.LSM94:
+ 611 0150 8237      		cpi r24,lo8(114)
+ 612 0152 01F4      		brne .L40
+ 613               	.LBB154:
+ 614               	.LSM95:
+ 615 0154 E1E0      		ldi r30,lo8(1)
+ 616 0156 F0E0      		ldi r31,hi8(1)
+ 617 0158 89E0      		ldi r24,lo8(9)
+ 618               	/* #APP */
+ 619               	 ;  460 "BootloaderCDC.c" 1
+ 620 015a 8093 5700 		sts 87, r24
+ 621 015e 8491      		lpm r24, Z
+ 622               		
+ 623               	 ;  0 "" 2
+ 624               	.LVL20:
+ 625               	/* #NOAPP */
+ 626 0160 00C0      		rjmp .L87
+ 627               	.LVL21:
+ 628               	.L40:
+ 629               	.LBE154:
+ 630               	.LSM96:
+ 631 0162 8634      		cpi r24,lo8(70)
+ 632 0164 01F4      		brne .L41
+ 633               	.LBB155:
+ 634               	.LSM97:
+ 635 0166 E0E0      		ldi r30,lo8(0)
+ 636 0168 F0E0      		ldi r31,hi8(0)
+ 637 016a 89E0      		ldi r24,lo8(9)
+ 638               	/* #APP */
+ 639               	 ;  464 "BootloaderCDC.c" 1
+ 640 016c 8093 5700 		sts 87, r24
+ 641 0170 8491      		lpm r24, Z
+ 642               		
+ 643               	 ;  0 "" 2
+ 644               	.LVL22:
+ 645               	/* #NOAPP */
+ 646 0172 00C0      		rjmp .L87
+ 647               	.LVL23:
+ 648               	.L41:
+ 649               	.LBE155:
+ 650               	.LSM98:
+ 651 0174 8E34      		cpi r24,lo8(78)
+ 652 0176 01F4      		brne .L42
+ 653               	.LBB156:
+ 654               	.LSM99:
+ 655 0178 E3E0      		ldi r30,lo8(3)
+ 656 017a F0E0      		ldi r31,hi8(3)
+ 657 017c 89E0      		ldi r24,lo8(9)
+ 658               	/* #APP */
+ 659               	 ;  468 "BootloaderCDC.c" 1
+ 660 017e 8093 5700 		sts 87, r24
+ 661 0182 8491      		lpm r24, Z
+ 662               		
+ 663               	 ;  0 "" 2
+ 664               	.LVL24:
+ 665               	/* #NOAPP */
+ 666 0184 00C0      		rjmp .L87
+ 667               	.LVL25:
+ 668               	.L42:
+ 669               	.LBE156:
+ 670               	.LSM100:
+ 671 0186 8135      		cpi r24,lo8(81)
+ 672 0188 01F4      		brne .L43
+ 673               	.LBB157:
+ 674               	.LSM101:
+ 675 018a E2E0      		ldi r30,lo8(2)
+ 676 018c F0E0      		ldi r31,hi8(2)
+ 677 018e 89E0      		ldi r24,lo8(9)
+ 678               	/* #APP */
+ 679               	 ;  472 "BootloaderCDC.c" 1
+ 680 0190 8093 5700 		sts 87, r24
+ 681 0194 8491      		lpm r24, Z
+ 682               		
+ 683               	 ;  0 "" 2
+ 684               	.LVL26:
+ 685               	/* #NOAPP */
+ 686 0196 00C0      		rjmp .L87
+ 687               	.LVL27:
+ 688               	.L43:
+ 689               	.LBE157:
+ 690               	.LSM102:
+ 691 0198 8236      		cpi r24,lo8(98)
+ 692 019a 01F4      		brne .L44
+ 693               	.LSM103:
+ 694 019c 89E5      		ldi r24,lo8(89)
+ 695 019e 0E94 0000 		call WriteNextResponseByte
+ 696               	.LSM104:
+ 697 01a2 80E0      		ldi r24,lo8(0)
+ 698 01a4 0E94 0000 		call WriteNextResponseByte
+ 699               	.LSM105:
+ 700 01a8 80E8      		ldi r24,lo8(-128)
+ 701 01aa 00C0      		rjmp .L87
+ 702               	.L44:
+ 703               	.LSM106:
+ 704 01ac 8234      		cpi r24,lo8(66)
+ 705 01ae 01F0      		breq .L45
+ 706               	.LSM107:
+ 707 01b0 8736      		cpi r24,lo8(103)
+ 708 01b2 01F0      		breq .+2
+ 709 01b4 00C0      		rjmp .L46
+ 710               	.L45:
+ 711               	.LVL28:
+ 712               	.LBB158:
+ 713               	.LBB159:
+ 714               	.LSM108:
+ 715 01b6 0E94 0000 		call FetchNextCommandByte
+ 716 01ba C82E      		mov r12,r24
+ 717               	.LVL29:
+ 718               	.LSM109:
+ 719 01bc 0E94 0000 		call FetchNextCommandByte
+ 720               	.LVL30:
+ 721 01c0 E82E      		mov r14,r24
+ 722               	.LVL31:
+ 723               	.LSM110:
+ 724 01c2 0E94 0000 		call FetchNextCommandByte
+ 725               	.LVL32:
+ 726 01c6 D82E      		mov r13,r24
+ 727               	.LVL33:
+ 728               	.LSM111:
+ 729 01c8 8554      		subi r24,lo8(-(-69))
+ 730               	.LVL34:
+ 731 01ca 8230      		cpi r24,lo8(2)
+ 732 01cc 00F0      		brlo .+2
+ 733 01ce 00C0      		rjmp .L86
+ 734               	.L47:
+ 735               	.LSM112:
+ 736 01d0 3C2D      		mov r19,r12
+ 737 01d2 20E0      		ldi r18,lo8(0)
+ 738               	.LSM113:
+ 739 01d4 CE2D      		mov r28,r14
+ 740 01d6 D0E0      		ldi r29,lo8(0)
+ 741 01d8 C22B      		or r28,r18
+ 742 01da D32B      		or r29,r19
+ 743               	.LSM114:
+ 744 01dc 1736      		cpi r17,lo8(103)
+ 745 01de 01F0      		breq .+2
+ 746 01e0 00C0      		rjmp .L48
+ 747               	.LSM115:
+ 748 01e2 81E1      		ldi r24,lo8(17)
+ 749               	/* #APP */
+ 750               	 ;  221 "BootloaderCDC.c" 1
+ 751 01e4 8093 5700 		sts 87, r24
+ 752 01e8 E895      		spm
+ 753               		
+ 754               	 ;  0 "" 2
+ 755               	.LSM116:
+ 756               	/* #NOAPP */
+ 757 01ea CC24      		clr r12
+ 758               	.LVL35:
+ 759               	.LSM117:
+ 760 01ec BB24      		clr r11
+ 761 01ee B394      		inc r11
+ 762 01f0 00C0      		rjmp .L49
+ 763               	.LVL36:
+ 764               	.L53:
+ 765 01f2 E090 0000 		lds r14,CurrAddress
+ 766 01f6 F090 0000 		lds r15,CurrAddress+1
+ 767 01fa 0091 0000 		lds r16,CurrAddress+2
+ 768 01fe 1091 0000 		lds r17,CurrAddress+3
+ 769               	.LSM118:
+ 770 0202 8D2D      		mov r24,r13
+ 771 0204 8634      		cpi r24,lo8(70)
+ 772 0206 01F4      		brne .L50
+ 773               	.LVL37:
+ 774               	.LBB160:
+ 775               	.LSM119:
+ 776 0208 EC2D      		mov r30,r12
+ 777 020a F0E0      		ldi r31,lo8(0)
+ 778 020c EE29      		or r30,r14
+ 779 020e FF29      		or r31,r15
+ 780               	/* #APP */
+ 781               	 ;  231 "BootloaderCDC.c" 1
+ 782 0210 8491      		lpm r24, Z
+ 783               		
+ 784               	 ;  0 "" 2
+ 785               	.LVL38:
+ 786               	/* #NOAPP */
+ 787               	.LBE160:
+ 788 0212 0E94 0000 		call WriteNextResponseByte
+ 789               	.LVL39:
+ 790               	.LSM120:
+ 791 0216 CC20      		tst r12
+ 792 0218 01F0      		breq .L51
+ 793               	.LSM121:
+ 794 021a D801      		movw r26,r16
+ 795 021c C701      		movw r24,r14
+ 796 021e 0296      		adiw r24,2
+ 797 0220 A11D      		adc r26,__zero_reg__
+ 798 0222 B11D      		adc r27,__zero_reg__
+ 799 0224 8093 0000 		sts CurrAddress,r24
+ 800 0228 9093 0000 		sts CurrAddress+1,r25
+ 801 022c A093 0000 		sts CurrAddress+2,r26
+ 802 0230 B093 0000 		sts CurrAddress+3,r27
+ 803               	.L51:
+ 804               	.LSM122:
+ 805 0234 CB24      		eor r12,r11
+ 806               	.LVL40:
+ 807 0236 00C0      		rjmp .L52
+ 808               	.L50:
+ 809               	.LSM123:
+ 810 0238 D801      		movw r26,r16
+ 811 023a C701      		movw r24,r14
+ 812 023c B695      		lsr r27
+ 813 023e A795      		ror r26
+ 814 0240 9795      		ror r25
+ 815 0242 8795      		ror r24
+ 816 0244 0E94 0000 		call __eerd_byte_m32u4
+ 817 0248 0E94 0000 		call WriteNextResponseByte
+ 818               	.LSM124:
+ 819 024c D801      		movw r26,r16
+ 820 024e C701      		movw r24,r14
+ 821 0250 0296      		adiw r24,2
+ 822 0252 A11D      		adc r26,__zero_reg__
+ 823 0254 B11D      		adc r27,__zero_reg__
+ 824 0256 8093 0000 		sts CurrAddress,r24
+ 825 025a 9093 0000 		sts CurrAddress+1,r25
+ 826 025e A093 0000 		sts CurrAddress+2,r26
+ 827 0262 B093 0000 		sts CurrAddress+3,r27
+ 828               	.L52:
+ 829 0266 2197      		sbiw r28,1
+ 830               	.LVL41:
+ 831               	.L49:
+ 832               	.LSM125:
+ 833 0268 2097      		sbiw r28,0
+ 834 026a 01F0      		breq .+2
+ 835 026c 00C0      		rjmp .L53
+ 836 026e 00C0      		rjmp .L23
+ 837               	.LVL42:
+ 838               	.L48:
+ 839               	.LBB161:
+ 840               	.LSM126:
+ 841 0270 4090 0000 		lds r4,CurrAddress
+ 842 0274 5090 0000 		lds r5,CurrAddress+1
+ 843 0278 6090 0000 		lds r6,CurrAddress+2
+ 844 027c 7090 0000 		lds r7,CurrAddress+3
+ 845               	.LSM127:
+ 846 0280 ED2D      		mov r30,r13
+ 847 0282 E634      		cpi r30,lo8(70)
+ 848 0284 01F0      		breq .+2
+ 849 0286 00C0      		rjmp .L75
+ 850               	.LSM128:
+ 851 0288 83E0      		ldi r24,lo8(3)
+ 852 028a F201      		movw r30,r4
+ 853               	/* #APP */
+ 854               	 ;  256 "BootloaderCDC.c" 1
+ 855 028c 8093 5700 		sts 87, r24
+ 856 0290 E895      		spm
+ 857               		
+ 858               	 ;  0 "" 2
+ 859               	/* #NOAPP */
+ 860               	.L55:
+ 861               	.LSM129:
+ 862 0292 07B6      		in __tmp_reg__,87-0x20
+ 863 0294 00FC      		sbrc __tmp_reg__,0
+ 864 0296 00C0      		rjmp .L55
+ 865 0298 00C0      		rjmp .L75
+ 866               	.LVL43:
+ 867               	.L60:
+ 868               	.LSM130:
+ 869 029a FD2D      		mov r31,r13
+ 870 029c F634      		cpi r31,lo8(70)
+ 871 029e 01F4      		brne .L56
+ 872               	.LSM131:
+ 873 02a0 CC20      		tst r12
+ 874 02a2 01F0      		breq .L57
+ 875               	.LSM132:
+ 876 02a4 E090 0000 		lds r14,CurrAddress
+ 877 02a8 F090 0000 		lds r15,CurrAddress+1
+ 878 02ac 0091 0000 		lds r16,CurrAddress+2
+ 879 02b0 1091 0000 		lds r17,CurrAddress+3
+ 880 02b4 0E94 0000 		call FetchNextCommandByte
+ 881 02b8 982E      		mov r9,r24
+ 882 02ba 8824      		clr r8
+ 883 02bc 8B2D      		mov r24,r11
+ 884 02be 90E0      		ldi r25,lo8(0)
+ 885 02c0 8829      		or r24,r8
+ 886 02c2 9929      		or r25,r9
+ 887 02c4 F701      		movw r30,r14
+ 888               	/* #APP */
+ 889               	 ;  268 "BootloaderCDC.c" 1
+ 890 02c6 0C01      		movw  r0, r24
+ 891 02c8 A092 5700 		sts 87, r10
+ 892 02cc E895      		spm
+ 893 02ce 1124      		clr  r1
+ 894               		
+ 895               	 ;  0 "" 2
+ 896               	.LSM133:
+ 897               	/* #NOAPP */
+ 898 02d0 D801      		movw r26,r16
+ 899 02d2 C701      		movw r24,r14
+ 900 02d4 0296      		adiw r24,2
+ 901 02d6 A11D      		adc r26,__zero_reg__
+ 902 02d8 B11D      		adc r27,__zero_reg__
+ 903 02da 8093 0000 		sts CurrAddress,r24
+ 904 02de 9093 0000 		sts CurrAddress+1,r25
+ 905 02e2 A093 0000 		sts CurrAddress+2,r26
+ 906 02e6 B093 0000 		sts CurrAddress+3,r27
+ 907 02ea 00C0      		rjmp .L58
+ 908               	.L57:
+ 909               	.LSM134:
+ 910 02ec 0E94 0000 		call FetchNextCommandByte
+ 911 02f0 B82E      		mov r11,r24
+ 912               	.LVL44:
+ 913               	.L58:
+ 914               	.LSM135:
+ 915 02f2 CA24      		eor r12,r10
+ 916 02f4 00C0      		rjmp .L59
+ 917               	.L56:
+ 918               	.LSM136:
+ 919 02f6 E090 0000 		lds r14,CurrAddress
+ 920 02fa F090 0000 		lds r15,CurrAddress+1
+ 921 02fe 0091 0000 		lds r16,CurrAddress+2
+ 922 0302 1091 0000 		lds r17,CurrAddress+3
+ 923 0306 1695      		lsr r17
+ 924 0308 0795      		ror r16
+ 925 030a F794      		ror r15
+ 926 030c E794      		ror r14
+ 927 030e 0E94 0000 		call FetchNextCommandByte
+ 928 0312 682F      		mov r22,r24
+ 929 0314 C701      		movw r24,r14
+ 930 0316 0E94 0000 		call __eewr_byte_m32u4
+ 931               	.LSM137:
+ 932 031a 8091 0000 		lds r24,CurrAddress
+ 933 031e 9091 0000 		lds r25,CurrAddress+1
+ 934 0322 A091 0000 		lds r26,CurrAddress+2
+ 935 0326 B091 0000 		lds r27,CurrAddress+3
+ 936 032a 0296      		adiw r24,2
+ 937 032c A11D      		adc r26,__zero_reg__
+ 938 032e B11D      		adc r27,__zero_reg__
+ 939 0330 8093 0000 		sts CurrAddress,r24
+ 940 0334 9093 0000 		sts CurrAddress+1,r25
+ 941 0338 A093 0000 		sts CurrAddress+2,r26
+ 942 033c B093 0000 		sts CurrAddress+3,r27
+ 943               	.L59:
+ 944 0340 2197      		sbiw r28,1
+ 945 0342 00C0      		rjmp .L84
+ 946               	.LVL45:
+ 947               	.L75:
+ 948               	.LSM138:
+ 949 0344 BB24      		clr r11
+ 950 0346 CC24      		clr r12
+ 951               	.LVL46:
+ 952               	.LSM139:
+ 953 0348 AA24      		clr r10
+ 954 034a A394      		inc r10
+ 955               	.LVL47:
+ 956               	.L84:
+ 957               	.LSM140:
+ 958 034c 2097      		sbiw r28,0
+ 959 034e 01F0      		breq .+2
+ 960 0350 00C0      		rjmp .L60
+ 961               	.LSM141:
+ 962 0352 FD2D      		mov r31,r13
+ 963 0354 F634      		cpi r31,lo8(70)
+ 964 0356 01F0      		breq .+2
+ 965 0358 00C0      		rjmp .L88
+ 966               	.LSM142:
+ 967 035a 85E0      		ldi r24,lo8(5)
+ 968 035c F201      		movw r30,r4
+ 969               	/* #APP */
+ 970               	 ;  294 "BootloaderCDC.c" 1
+ 971 035e 8093 5700 		sts 87, r24
+ 972 0362 E895      		spm
+ 973               		
+ 974               	 ;  0 "" 2
+ 975               	/* #NOAPP */
+ 976               	.L62:
+ 977               	.LSM143:
+ 978 0364 07B6      		in __tmp_reg__,87-0x20
+ 979 0366 00FC      		sbrc __tmp_reg__,0
+ 980 0368 00C0      		rjmp .L62
+ 981 036a 00C0      		rjmp .L88
+ 982               	.LVL48:
+ 983               	.L46:
+ 984               	.LBE161:
+ 985               	.LBE159:
+ 986               	.LBE158:
+ 987               	.LSM144:
+ 988 036c 8334      		cpi r24,lo8(67)
+ 989 036e 01F4      		brne .L63
+ 990               	.LSM145:
+ 991 0370 C091 0000 		lds r28,CurrAddress
+ 992 0374 D091 0000 		lds r29,CurrAddress+1
+ 993 0378 0E94 0000 		call FetchNextCommandByte
+ 994 037c 90E0      		ldi r25,lo8(0)
+ 995 037e 21E0      		ldi r18,lo8(1)
+ 996 0380 FE01      		movw r30,r28
+ 997               	/* #APP */
+ 998               	 ;  493 "BootloaderCDC.c" 1
+ 999 0382 0C01      		movw  r0, r24
+ 1000 0384 2093 5700 		sts 87, r18
+ 1001 0388 E895      		spm
+ 1002 038a 1124      		clr  r1
+ 1003               		
+ 1004               	 ;  0 "" 2
+ 1005               	/* #NOAPP */
+ 1006 038c 00C0      		rjmp .L88
+ 1007               	.L63:
+ 1008               	.LSM146:
+ 1009 038e 8336      		cpi r24,lo8(99)
+ 1010 0390 01F4      		brne .L64
+ 1011               	.LSM147:
+ 1012 0392 E090 0000 		lds r14,CurrAddress
+ 1013 0396 F090 0000 		lds r15,CurrAddress+1
+ 1014 039a 0091 0000 		lds r16,CurrAddress+2
+ 1015 039e 1091 0000 		lds r17,CurrAddress+3
+ 1016 03a2 0E94 0000 		call FetchNextCommandByte
+ 1017 03a6 F701      		movw r30,r14
+ 1018 03a8 E160      		ori r30,lo8(1)
+ 1019 03aa 90E0      		ldi r25,lo8(0)
+ 1020 03ac 21E0      		ldi r18,lo8(1)
+ 1021               	/* #APP */
+ 1022               	 ;  501 "BootloaderCDC.c" 1
+ 1023 03ae 0C01      		movw  r0, r24
+ 1024 03b0 2093 5700 		sts 87, r18
+ 1025 03b4 E895      		spm
+ 1026 03b6 1124      		clr  r1
+ 1027               		
+ 1028               	 ;  0 "" 2
+ 1029               	.LSM148:
+ 1030               	/* #NOAPP */
+ 1031 03b8 D801      		movw r26,r16
+ 1032 03ba C701      		movw r24,r14
+ 1033 03bc 00C0      		rjmp .L89
+ 1034               	.L64:
+ 1035               	.LSM149:
+ 1036 03be 8D36      		cpi r24,lo8(109)
+ 1037 03c0 01F4      		brne .L65
+ 1038               	.LSM150:
+ 1039 03c2 E091 0000 		lds r30,CurrAddress
+ 1040 03c6 F091 0000 		lds r31,CurrAddress+1
+ 1041 03ca 85E0      		ldi r24,lo8(5)
+ 1042               	/* #APP */
+ 1043               	 ;  512 "BootloaderCDC.c" 1
+ 1044 03cc 8093 5700 		sts 87, r24
+ 1045 03d0 E895      		spm
+ 1046               		
+ 1047               	 ;  0 "" 2
+ 1048               	/* #NOAPP */
+ 1049               	.L66:
+ 1050               	.LSM151:
+ 1051 03d2 07B6      		in __tmp_reg__,87-0x20
+ 1052 03d4 00FC      		sbrc __tmp_reg__,0
+ 1053 03d6 00C0      		rjmp .L66
+ 1054 03d8 00C0      		rjmp .L88
+ 1055               	.L65:
+ 1056               	.LSM152:
+ 1057 03da 8235      		cpi r24,lo8(82)
+ 1058 03dc 01F4      		brne .L67
+ 1059               	.LBB162:
+ 1060               	.LBB163:
+ 1061               	.LSM153:
+ 1062 03de E091 0000 		lds r30,CurrAddress
+ 1063 03e2 F091 0000 		lds r31,CurrAddress+1
+ 1064               	.LVL49:
+ 1065               	/* #APP */
+ 1066               	 ;  525 "BootloaderCDC.c" 1
+ 1067 03e6 C591      		lpm r28, Z+
+ 1068 03e8 D491      		lpm r29, Z
+ 1069               		
+ 1070               	 ;  0 "" 2
+ 1071               	.LVL50:
+ 1072               	/* #NOAPP */
+ 1073               	.LBE163:
+ 1074               	.LSM154:
+ 1075 03ea 7E01      		movw r14,r28
+ 1076 03ec 8F2D      		mov r24,r15
+ 1077 03ee 0E94 0000 		call WriteNextResponseByte
+ 1078               	.LSM155:
+ 1079 03f2 8C2F      		mov r24,r28
+ 1080 03f4 00C0      		rjmp .L87
+ 1081               	.L67:
+ 1082               	.LBE162:
+ 1083               	.LSM156:
+ 1084 03f6 8434      		cpi r24,lo8(68)
+ 1085 03f8 01F4      		brne .L68
+ 1086               	.LSM157:
+ 1087 03fa E090 0000 		lds r14,CurrAddress
+ 1088 03fe F090 0000 		lds r15,CurrAddress+1
+ 1089 0402 0091 0000 		lds r16,CurrAddress+2
+ 1090 0406 1091 0000 		lds r17,CurrAddress+3
+ 1091 040a 1695      		lsr r17
+ 1092 040c 0795      		ror r16
+ 1093 040e F794      		ror r15
+ 1094 0410 E794      		ror r14
+ 1095 0412 0E94 0000 		call FetchNextCommandByte
+ 1096 0416 682F      		mov r22,r24
+ 1097 0418 C701      		movw r24,r14
+ 1098 041a 0E94 0000 		call __eewr_byte_m32u4
+ 1099               	.LSM158:
+ 1100 041e 8091 0000 		lds r24,CurrAddress
+ 1101 0422 9091 0000 		lds r25,CurrAddress+1
+ 1102 0426 A091 0000 		lds r26,CurrAddress+2
+ 1103 042a B091 0000 		lds r27,CurrAddress+3
+ 1104               	.L89:
+ 1105 042e 0296      		adiw r24,2
+ 1106 0430 A11D      		adc r26,__zero_reg__
+ 1107 0432 B11D      		adc r27,__zero_reg__
+ 1108 0434 8093 0000 		sts CurrAddress,r24
+ 1109 0438 9093 0000 		sts CurrAddress+1,r25
+ 1110 043c A093 0000 		sts CurrAddress+2,r26
+ 1111 0440 B093 0000 		sts CurrAddress+3,r27
+ 1112 0444 00C0      		rjmp .L88
+ 1113               	.L68:
+ 1114               	.LSM159:
+ 1115 0446 8436      		cpi r24,lo8(100)
+ 1116 0448 01F4      		brne .L69
+ 1117               	.LSM160:
+ 1118 044a E090 0000 		lds r14,CurrAddress
+ 1119 044e F090 0000 		lds r15,CurrAddress+1
+ 1120 0452 0091 0000 		lds r16,CurrAddress+2
+ 1121 0456 1091 0000 		lds r17,CurrAddress+3
+ 1122 045a D801      		movw r26,r16
+ 1123 045c C701      		movw r24,r14
+ 1124 045e B695      		lsr r27
+ 1125 0460 A795      		ror r26
+ 1126 0462 9795      		ror r25
+ 1127 0464 8795      		ror r24
+ 1128 0466 0E94 0000 		call __eerd_byte_m32u4
+ 1129 046a 0E94 0000 		call WriteNextResponseByte
+ 1130               	.LSM161:
+ 1131 046e D801      		movw r26,r16
+ 1132 0470 C701      		movw r24,r14
+ 1133 0472 0296      		adiw r24,2
+ 1134 0474 A11D      		adc r26,__zero_reg__
+ 1135 0476 B11D      		adc r27,__zero_reg__
+ 1136 0478 8093 0000 		sts CurrAddress,r24
+ 1137 047c 9093 0000 		sts CurrAddress+1,r25
+ 1138 0480 A093 0000 		sts CurrAddress+2,r26
+ 1139 0484 B093 0000 		sts CurrAddress+3,r27
+ 1140 0488 00C0      		rjmp .L23
+ 1141               	.L69:
+ 1142               	.LSM162:
+ 1143 048a 8B31      		cpi r24,lo8(27)
+ 1144 048c 01F0      		breq .L23
+ 1145               	.L86:
+ 1146               	.LSM163:
+ 1147 048e 8FE3      		ldi r24,lo8(63)
+ 1148               	.LVL51:
+ 1149               	.L87:
+ 1150 0490 0E94 0000 		call WriteNextResponseByte
+ 1151               	.L23:
+ 1152               	.LVL52:
+ 1153               	.LBB164:
+ 1154               	.LBB165:
+ 1155               	.LSM164:
+ 1156 0494 83E0      		ldi r24,lo8(3)
+ 1157 0496 8093 E900 		sts 233,r24
+ 1158               	.LBE165:
+ 1159               	.LBE164:
+ 1160               	.LBB166:
+ 1161               	.LBB167:
+ 1162               	.LSM165:
+ 1163 049a 9091 E800 		lds r25,232
+ 1164               	.LVL53:
+ 1165               	.LBE167:
+ 1166               	.LBE166:
+ 1167               	.LBB168:
+ 1168               	.LBB169:
+ 1169               	.LSM166:
+ 1170 049e 8091 E800 		lds r24,232
+ 1171 04a2 8E77      		andi r24,lo8(126)
+ 1172 04a4 8093 E800 		sts 232,r24
+ 1173               	.LBE169:
+ 1174               	.LBE168:
+ 1175               	.LSM167:
+ 1176 04a8 95FF      		sbrs r25,5
+ 1177 04aa 00C0      		rjmp .L83
+ 1178 04ac 00C0      		rjmp .L85
+ 1179               	.L72:
+ 1180               	.LSM168:
+ 1181 04ae 8EB3      		in r24,62-0x20
+ 1182 04b0 8823      		tst r24
+ 1183 04b2 01F0      		breq .L20
+ 1184               	.L83:
+ 1185               	.LBB170:
+ 1186               	.LBB171:
+ 1187               	.LSM169:
+ 1188 04b4 8091 E800 		lds r24,232
+ 1189               	.LBE171:
+ 1190               	.LBE170:
+ 1191               	.LSM170:
+ 1192 04b8 80FF      		sbrs r24,0
+ 1193 04ba 00C0      		rjmp .L72
+ 1194               	.LBB172:
+ 1195               	.LBB173:
+ 1196               	.LSM171:
+ 1197 04bc 8091 E800 		lds r24,232
+ 1198 04c0 8E77      		andi r24,lo8(126)
+ 1199 04c2 8093 E800 		sts 232,r24
+ 1200 04c6 00C0      		rjmp .L85
+ 1201               	.L74:
+ 1202               	.LBE173:
+ 1203               	.LBE172:
+ 1204               	.LSM172:
+ 1205 04c8 8EB3      		in r24,62-0x20
+ 1206 04ca 8823      		tst r24
+ 1207 04cc 01F0      		breq .L20
+ 1208               	.L85:
+ 1209               	.LBB174:
+ 1210               	.LBB175:
+ 1211               	.LSM173:
+ 1212 04ce 8091 E800 		lds r24,232
+ 1213               	.LBE175:
+ 1214               	.LBE174:
+ 1215               	.LSM174:
+ 1216 04d2 80FF      		sbrs r24,0
+ 1217 04d4 00C0      		rjmp .L74
+ 1218               	.LVL54:
+ 1219               	.LBB176:
+ 1220               	.LBB177:
+ 1221               	.LSM175:
+ 1222 04d6 84E0      		ldi r24,lo8(4)
+ 1223 04d8 8093 E900 		sts 233,r24
+ 1224               	.LBE177:
+ 1225               	.LBE176:
+ 1226               	.LBB178:
+ 1227               	.LBB179:
+ 1228               	.LSM176:
+ 1229 04dc 8091 E800 		lds r24,232
+ 1230 04e0 8B77      		andi r24,lo8(123)
+ 1231 04e2 8093 E800 		sts 232,r24
+ 1232               	.LVL55:
+ 1233               	.L20:
+ 1234               	/* epilogue start */
+ 1235               	.LBE179:
+ 1236               	.LBE178:
+ 1237               	.LSM177:
+ 1238 04e6 DF91      		pop r29
+ 1239 04e8 CF91      		pop r28
+ 1240 04ea 1F91      		pop r17
+ 1241 04ec 0F91      		pop r16
+ 1242 04ee FF90      		pop r15
+ 1243 04f0 EF90      		pop r14
+ 1244 04f2 DF90      		pop r13
+ 1245 04f4 CF90      		pop r12
+ 1246 04f6 BF90      		pop r11
+ 1247 04f8 AF90      		pop r10
+ 1248 04fa 9F90      		pop r9
+ 1249 04fc 8F90      		pop r8
+ 1250 04fe 7F90      		pop r7
+ 1251 0500 6F90      		pop r6
+ 1252 0502 5F90      		pop r5
+ 1253 0504 4F90      		pop r4
+ 1254 0506 0895      		ret
+ 1255               	.LFE107:
+ 1257               		.section	.text.main,"ax",@progbits
+ 1258               	.global	main
+ 1260               	main:
+ 1261               	.LFB100:
+ 1262               	.LSM178:
+ 1263               	/* prologue: function */
+ 1264               	/* frame size = 0 */
+ 1265               	/* stack size = 0 */
+ 1266               	.L__stack_usage = 0
+ 1267               	.LSM179:
+ 1268 0000 729A      		sbi 46-0x20,2
+ 1269               	.LSM180:
+ 1270 0002 629B      		sbis 44-0x20,2
+ 1271 0004 00C0      		rjmp .L91
+ 1272               	.LSM181:
+ 1273 0006 0E94 0000 		call exit_bootloader
+ 1274               	.L92:
+ 1275 000a 00C0      		rjmp .L92
+ 1276               	.L91:
+ 1277               	.LSM182:
+ 1278 000c 0E94 0000 		call SetupHardware
+ 1279               	.LSM183:
+ 1280               	/* #APP */
+ 1281               	 ;  87 "BootloaderCDC.c" 1
+ 1282 0010 7894      		sei
+ 1283               	 ;  0 "" 2
+ 1284               	.LSM184:
+ 1285               	/* #NOAPP */
+ 1286 0012 00C0      		rjmp .L93
+ 1287               	.L94:
+ 1288               	.LSM185:
+ 1289 0014 0E94 0000 		call CDC_Task
+ 1290               	.LSM186:
+ 1291 0018 0E94 0000 		call USB_USBTask
+ 1292               	.L93:
+ 1293               	.LSM187:
+ 1294 001c 8091 0000 		lds r24,RunBootloader
+ 1295 0020 8823      		tst r24
+ 1296 0022 01F4      		brne .L94
+ 1297               	.LBB180:
+ 1298               	.LBB181:
+ 1299               	.LSM188:
+ 1300 0024 8091 E000 		lds r24,224
+ 1301 0028 8160      		ori r24,lo8(1)
+ 1302 002a 8093 E000 		sts 224,r24
+ 1303               	.LBE181:
+ 1304               	.LBE180:
+ 1305               	.LSM189:
+ 1306 002e 2CE0      		ldi r18,lo8(12)
+ 1307 0030 88E1      		ldi r24,lo8(24)
+ 1308 0032 90E0      		ldi r25,hi8(24)
+ 1309               	/* #APP */
+ 1310               	 ;  99 "BootloaderCDC.c" 1
+ 1311 0034 0FB6      		in __tmp_reg__,__SREG__
+ 1312 0036 F894      		cli
+ 1313 0038 A895      		wdr
+ 1314 003a 8093 6000 		sts 96,r24
+ 1315 003e 0FBE      		out __SREG__,__tmp_reg__
+ 1316 0040 2093 6000 		sts 96,r18
+ 1317               		
+ 1318               	 ;  0 "" 2
+ 1319               	/* #NOAPP */
+ 1320               	.L95:
+ 1321 0044 00C0      		rjmp .L95
+ 1322               	.LFE100:
+ 1324               	.global	app_start
+ 1325               	.global	app_start
+ 1326               		.section .bss
+ 1329               	app_start:
+ 1330 0000 0000      		.skip 2,0
+ 1331               		.data
+ 1334               	RunBootloader:
+ 1335 0008 01        		.byte	1
+ 1336               		.lcomm CurrAddress,4
+ 1339               	LineEncoding:
+ 1340 0009 00        		.byte	0
+ 1341 000a 00        		.byte	0
+ 1342 000b 00        		.byte	0
+ 1343 000c 00        		.byte	0
+ 1344 000d 00        		.byte	0
+ 1345 000e 00        		.byte	0
+ 1346 000f 08        		.byte	8
+ 1427               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 BootloaderCDC.c
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:2      *ABS*:0000003f __SREG__
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:3      *ABS*:0000003e __SP_H__
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:4      *ABS*:0000003d __SP_L__
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:5      *ABS*:00000000 __tmp_reg__
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:6      *ABS*:00000001 __zero_reg__
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:17     .text.FetchNextCommandByte:00000000 FetchNextCommandByte
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:86     .text.WriteNextResponseByte:00000000 WriteNextResponseByte
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:151    .text.exit_bootloader:00000000 exit_bootloader
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:1329   .bss:00000000 app_start
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:172    .text.SetupHardware:00000000 SetupHardware
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:227    .text.EVENT_USB_Device_ConfigurationChanged:00000000 EVENT_USB_Device_ConfigurationChanged
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:270    .text.EVENT_USB_Device_ControlRequest:00000000 EVENT_USB_Device_ControlRequest
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:1339   .data:00000009 LineEncoding
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:351    .text.CDC_Task:00000000 CDC_Task
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:1334   .data:00000008 RunBootloader
+                             .bss:00000002 CurrAddress
+C:\Users\Frank\AppData\Local\Temp\ccQqcr9v.s:1260   .text.main:00000000 main
+
+UNDEFINED SYMBOLS
+USB_Init
+Endpoint_ConfigureEndpoint_Prv
+USB_ControlRequest
+Endpoint_Write_Control_Stream_LE
+Endpoint_Read_Control_Stream_LE
+__eerd_byte_m32u4
+__eewr_byte_m32u4
+USB_USBTask
+__do_copy_data
+__do_clear_bss

@@ -1,0 +1,484 @@
+2011-11-10 21:43:17,879 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:43:17,918 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0410023>
+2011-11-10 21:43:18,030 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:43:18,066 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0360021>
+2011-11-10 21:43:18,106 DEBUG RoLogging  - Collect controllers from: RoDuino.SMS
+2011-11-10 21:43:18,165 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-11-10 21:43:18,425 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:43:18,457 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0320018>
+2011-11-10 21:43:18,553 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:43:18,584 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0310018>
+2011-11-10 21:43:19,925 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-11-10 21:43:21,674 DEBUG RoLogging  - 
+2011-11-10 21:43:21,675 DEBUG RoLogging  - nh.sessionscope 58730784 opened
+2011-11-10 21:43:21,728 DEBUG RoLogging  - nh.sessionscope 58730784 closing, took 0 seconds.
+2011-11-10 21:43:21,728 DEBUG RoLogging  - 
+2011-11-10 21:43:32,582 DEBUG RoLogging  - 
+2011-11-10 21:43:32,582 DEBUG RoLogging  - nh.sessionscope 36028735 opened
+2011-11-10 21:43:32,587 DEBUG RoLogging  - nh.sessionscope 36028735 closing, took 0 seconds.
+2011-11-10 21:43:32,587 DEBUG RoLogging  - 
+2011-11-10 21:45:31,009 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:45:31,053 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0470027>
+2011-11-10 21:45:31,174 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:45:31,212 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0380022>
+2011-11-10 21:45:31,250 DEBUG RoLogging  - Collect controllers from: RoDuino.SMS
+2011-11-10 21:45:31,296 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-11-10 21:45:31,654 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:45:31,692 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0380022>
+2011-11-10 21:45:31,791 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:45:31,822 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0310018>
+2011-11-10 21:45:33,212 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-11-10 21:45:35,231 DEBUG RoLogging  - 
+2011-11-10 21:45:35,233 DEBUG RoLogging  - nh.sessionscope 51103196 opened
+2011-11-10 21:45:35,299 DEBUG RoLogging  - nh.sessionscope 51103196 closing, took 0 seconds.
+2011-11-10 21:45:35,299 DEBUG RoLogging  - 
+2011-11-10 21:45:37,643 DEBUG RoLogging  - 
+2011-11-10 21:45:37,643 DEBUG RoLogging  - nh.sessionscope 48010275 opened
+2011-11-10 21:45:37,648 DEBUG RoLogging  - nh.sessionscope 48010275 closing, took 0 seconds.
+2011-11-10 21:45:37,648 DEBUG RoLogging  - 
+2011-11-10 21:55:50,091 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:55:50,132 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0440025>
+2011-11-10 21:55:50,250 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:55:50,283 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0330019>
+2011-11-10 21:55:50,321 DEBUG RoLogging  - Collect controllers from: RoDuino.SMS
+2011-11-10 21:55:50,422 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-11-10 21:55:50,701 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:55:50,734 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0330019>
+2011-11-10 21:55:50,835 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-11-10 21:55:50,869 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0340019>
+2011-11-10 21:55:52,831 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-11-10 21:55:54,933 DEBUG RoLogging  - 
+2011-11-10 21:55:54,934 DEBUG RoLogging  - nh.sessionscope 53238407 opened
+2011-11-10 21:55:55,002 DEBUG RoLogging  - nh.sessionscope 53238407 closing, took 0 seconds.
+2011-11-10 21:55:55,002 DEBUG RoLogging  - 
+2011-12-15 06:27:39,791 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 06:27:39,845 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0660038>
+2011-12-15 06:27:39,947 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 06:27:39,980 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0330019>
+2011-12-15 06:27:40,073 DEBUG RoLogging  - Collect controllers from: RoDuino.SMS
+2011-12-15 06:27:40,550 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 06:27:41,422 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 06:27:41,454 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0330019>
+2011-12-15 06:27:41,552 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 06:27:41,584 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0320018>
+2011-12-15 06:27:43,672 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 06:27:47,352 DEBUG RoLogging  - 
+2011-12-15 06:27:47,370 DEBUG RoLogging  - nh.sessionscope 58730784 opened
+2011-12-15 06:27:47,480 DEBUG RoLogging  - nh.sessionscope 58730784 closing, took 0 seconds.
+2011-12-15 06:27:47,480 DEBUG RoLogging  - 
+2011-12-15 06:27:55,213 DEBUG RoLogging  - 
+2011-12-15 06:27:55,213 DEBUG RoLogging  - nh.sessionscope 42855027 opened
+2011-12-15 06:27:55,238 DEBUG RoLogging  - nh.sessionscope 42855027 closing, took 0 seconds.
+2011-12-15 06:27:55,238 DEBUG RoLogging  - 
+2011-12-15 06:28:07,109 DEBUG RoLogging  - 
+2011-12-15 06:28:07,109 DEBUG RoLogging  - nh.sessionscope 13488949 opened
+2011-12-15 06:28:07,114 DEBUG RoLogging  - nh.sessionscope 13488949 closing, took 0 seconds.
+2011-12-15 06:28:07,114 DEBUG RoLogging  - 
+2011-12-15 06:28:23,193 DEBUG RoLogging  - 
+2011-12-15 06:28:23,193 DEBUG RoLogging  - nh.sessionscope 16885084 opened
+2011-12-15 06:28:23,252 DEBUG RoLogging  - nh.sessionscope 16885084 closing, took 0 seconds.
+2011-12-15 06:28:23,252 DEBUG RoLogging  - 
+2011-12-15 06:28:40,271 DEBUG RoLogging  - 
+2011-12-15 06:28:40,271 DEBUG RoLogging  - nh.sessionscope 16922622 opened
+2011-12-15 06:28:40,300 DEBUG RoLogging  - nh.sessionscope 16922622 closing, took 0 seconds.
+2011-12-15 06:28:40,300 DEBUG RoLogging  - 
+2011-12-15 06:28:45,268 DEBUG RoLogging  - 
+2011-12-15 06:28:45,268 DEBUG RoLogging  - nh.sessionscope 40230248 opened
+2011-12-15 06:28:45,308 DEBUG RoLogging  - nh.sessionscope 40230248 closing, took 0 seconds.
+2011-12-15 06:28:45,308 DEBUG RoLogging  - 
+2011-12-15 06:29:13,658 DEBUG RoLogging  - 
+2011-12-15 06:29:13,658 DEBUG RoLogging  - nh.sessionscope 63431044 opened
+2011-12-15 06:29:13,661 DEBUG RoLogging  - nh.sessionscope 63431044 closing, took 0 seconds.
+2011-12-15 06:29:13,661 DEBUG RoLogging  - 
+2011-12-15 06:29:31,154 DEBUG RoLogging  - 
+2011-12-15 06:29:31,154 DEBUG RoLogging  - nh.sessionscope 28725069 opened
+2011-12-15 06:29:31,166 DEBUG RoLogging  - nh.sessionscope 28725069 closing, took 0 seconds.
+2011-12-15 06:29:31,166 DEBUG RoLogging  - 
+2011-12-15 06:31:19,024 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 06:31:19,064 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0420024>
+2011-12-15 06:31:19,174 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 06:31:19,213 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0390022>
+2011-12-15 06:31:19,247 DEBUG RoLogging  - Collect controllers from: RoDuino.SMS
+2011-12-15 06:31:19,342 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 06:31:19,597 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 06:31:19,629 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0320018>
+2011-12-15 06:31:19,725 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 06:31:19,756 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0310018>
+2011-12-15 06:31:21,039 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 06:31:22,846 DEBUG RoLogging  - 
+2011-12-15 06:31:22,847 DEBUG RoLogging  - nh.sessionscope 58730784 opened
+2011-12-15 06:31:22,904 DEBUG RoLogging  - nh.sessionscope 58730784 closing, took 0 seconds.
+2011-12-15 06:31:22,904 DEBUG RoLogging  - 
+2011-12-15 06:31:26,954 DEBUG RoLogging  - 
+2011-12-15 06:31:26,954 DEBUG RoLogging  - nh.sessionscope 7176449 opened
+2011-12-15 06:31:26,958 DEBUG RoLogging  - nh.sessionscope 7176449 closing, took 0 seconds.
+2011-12-15 06:31:26,958 DEBUG RoLogging  - 
+2011-12-15 06:31:41,972 DEBUG RoLogging  - 
+2011-12-15 06:31:41,972 DEBUG RoLogging  - nh.sessionscope 32108575 opened
+2011-12-15 06:31:42,064 DEBUG RoLogging  - nh.sessionscope 32108575 closing, took 0 seconds.
+2011-12-15 06:31:42,065 DEBUG RoLogging  - 
+2011-12-15 06:31:53,575 DEBUG RoLogging  - 
+2011-12-15 06:31:53,575 DEBUG RoLogging  - nh.sessionscope 27827298 opened
+2011-12-15 06:31:53,614 DEBUG RoLogging  - nh.sessionscope 27827298 closing, took 0 seconds.
+2011-12-15 06:31:53,614 DEBUG RoLogging  - 
+2011-12-15 06:35:31,146 DEBUG RoLogging  - 
+2011-12-15 06:35:31,146 DEBUG RoLogging  - nh.sessionscope 19859797 opened
+2011-12-15 06:35:31,177 DEBUG RoLogging  - nh.sessionscope 19859797 closing, took 0 seconds.
+2011-12-15 06:35:31,177 DEBUG RoLogging  - 
+2011-12-15 07:04:31,627 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:04:31,666 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0410023>
+2011-12-15 07:04:31,793 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:04:31,831 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0380021>
+2011-12-15 07:04:31,868 DEBUG RoLogging  - Collect controllers from: RoDuino.SMS
+2011-12-15 07:04:31,973 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 07:04:32,300 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:04:32,331 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0310017>
+2011-12-15 07:04:32,446 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:04:32,480 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0340020>
+2011-12-15 07:04:34,861 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 07:04:36,605 DEBUG RoLogging  - 
+2011-12-15 07:04:36,606 DEBUG RoLogging  - nh.sessionscope 51103196 opened
+2011-12-15 07:04:36,665 DEBUG RoLogging  - nh.sessionscope 51103196 closing, took 0 seconds.
+2011-12-15 07:04:36,666 DEBUG RoLogging  - 
+2011-12-15 07:08:34,357 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:08:34,400 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0440025>
+2011-12-15 07:08:34,518 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:08:34,550 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0320019>
+2011-12-15 07:08:34,582 DEBUG RoLogging  - Collect controllers from: RoDuino.SMS
+2011-12-15 07:08:34,620 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 07:08:34,903 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:08:34,935 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0320018>
+2011-12-15 07:08:35,057 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:08:35,093 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0360020>
+2011-12-15 07:08:56,057 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 07:08:57,786 DEBUG RoLogging  - 
+2011-12-15 07:08:57,787 DEBUG RoLogging  - nh.sessionscope 58730784 opened
+2011-12-15 07:08:57,845 DEBUG RoLogging  - nh.sessionscope 58730784 closing, took 0 seconds.
+2011-12-15 07:08:57,845 DEBUG RoLogging  - 
+2011-12-15 07:09:00,871 DEBUG RoLogging  - 
+2011-12-15 07:09:00,871 DEBUG RoLogging  - nh.sessionscope 46875688 opened
+2011-12-15 07:09:00,872 DEBUG RoLogging  - nh.sessionscope 46875688 closing, took 0 seconds.
+2011-12-15 07:09:00,872 DEBUG RoLogging  - 
+2011-12-15 07:09:10,602 ERROR RoLogging  - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RoDuino.SMS.Views.Main.List.DataBind() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\Views\Main\List.xaml.cs:line 86
+   at RoDuino.SMS.Views.Main.List.btnRefresh_Click(Object sender, RoutedEventArgs e) in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\Views\Main\List.xaml.cs:line 224
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   at System.Windows.Controls.Button.OnClick()
+   at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.CrackMouseButtonEventAndReRaiseEvent(DependencyObject sender, MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+2011-12-15 07:09:40,152 DEBUG RoLogging  - 
+2011-12-15 07:09:40,153 DEBUG RoLogging  - nh.sessionscope 53300124 opened
+2011-12-15 07:10:40,094 DEBUG RoLogging  - nh.sessionscope 53300124 closing, took 59 seconds.
+2011-12-15 07:10:40,094 DEBUG RoLogging  - 
+2011-12-15 07:11:16,227 ERROR RoLogging  - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RoDuino.SMS.Views.Main.List.DataBind() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\Views\Main\List.xaml.cs:line 86
+   at RoDuino.SMS.Views.Main.List.btnRefresh_Click(Object sender, RoutedEventArgs e) in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\Views\Main\List.xaml.cs:line 224
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   at System.Windows.Controls.Button.OnClick()
+   at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.CrackMouseButtonEventAndReRaiseEvent(DependencyObject sender, MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+2011-12-15 07:11:26,381 DEBUG RoLogging  - 
+2011-12-15 07:11:26,381 DEBUG RoLogging  - nh.sessionscope 37821471 opened
+2011-12-15 07:14:45,830 DEBUG RoLogging  - nh.sessionscope 37821471 closing, took 19 seconds.
+2011-12-15 07:14:45,830 DEBUG RoLogging  - 
+2011-12-15 07:17:07,587 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:17:07,629 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0430025>
+2011-12-15 07:17:07,753 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:17:07,787 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0340019>
+2011-12-15 07:17:07,821 DEBUG RoLogging  - Collect controllers from: RoDuino.SMS
+2011-12-15 07:17:07,861 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 07:17:08,185 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:17:08,216 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0310018>
+2011-12-15 07:17:08,315 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:17:08,345 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0300017>
+2011-12-15 07:17:12,278 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 07:17:13,996 DEBUG RoLogging  - 
+2011-12-15 07:17:13,997 DEBUG RoLogging  - nh.sessionscope 58730784 opened
+2011-12-15 07:17:17,206 DEBUG RoLogging  - nh.sessionscope 58730784 closing, took 3 seconds.
+2011-12-15 07:17:17,206 DEBUG RoLogging  - 
+2011-12-15 07:17:20,158 DEBUG RoLogging  - 
+2011-12-15 07:17:20,158 DEBUG RoLogging  - nh.sessionscope 62673458 opened
+2011-12-15 07:22:55,313 DEBUG RoLogging  - nh.sessionscope 62673458 closing, took 35 seconds.
+2011-12-15 07:22:55,313 DEBUG RoLogging  - 
+2011-12-15 07:23:25,561 ERROR RoLogging  - System.InvalidCastException: Unable to cast object of type 'System.Collections.Hashtable' to type 'System.Linq.IQueryable`1[RoDuino.SMS.Bll.Bll.Client]'.
+   at RoDuino.SMS.Views.Main.List.DataBind() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\Views\Main\List.xaml.cs:line 85
+   at RoDuino.SMS.Views.Main.List.btnRefresh_Click(Object sender, RoutedEventArgs e) in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\Views\Main\List.xaml.cs:line 224
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   at System.Windows.Controls.Button.OnClick()
+   at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.CrackMouseButtonEventAndReRaiseEvent(DependencyObject sender, MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+2011-12-15 07:23:37,487 DEBUG RoLogging  - 
+2011-12-15 07:23:37,487 DEBUG RoLogging  - nh.sessionscope 66982093 opened
+2011-12-15 07:23:43,737 DEBUG RoLogging  - nh.sessionscope 66982093 closing, took 6 seconds.
+2011-12-15 07:23:43,737 DEBUG RoLogging  - 
+2011-12-15 07:23:48,977 DEBUG RoLogging  - 
+2011-12-15 07:23:48,977 DEBUG RoLogging  - nh.sessionscope 60157233 opened
+2011-12-15 07:31:48,119 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:31:48,160 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0430025>
+2011-12-15 07:31:48,259 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:31:48,293 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0340020>
+2011-12-15 07:31:48,343 DEBUG RoLogging  - Collect controllers from: RoDuino.SMS
+2011-12-15 07:31:48,396 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 07:31:53,092 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:31:53,130 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0380022>
+2011-12-15 07:31:53,225 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:31:53,255 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0300017>
+2011-12-15 07:31:55,282 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 07:31:57,096 DEBUG RoLogging  - 
+2011-12-15 07:31:57,097 DEBUG RoLogging  - nh.sessionscope 58730784 opened
+2011-12-15 07:31:59,655 DEBUG RoLogging  - nh.sessionscope 58730784 closing, took 2 seconds.
+2011-12-15 07:31:59,655 DEBUG RoLogging  - 
+2011-12-15 07:32:03,069 DEBUG RoLogging  - 
+2011-12-15 07:32:03,069 DEBUG RoLogging  - nh.sessionscope 35274942 opened
+2011-12-15 07:32:33,242 DEBUG RoLogging  - nh.sessionscope 35274942 closing, took 30 seconds.
+2011-12-15 07:32:33,242 DEBUG RoLogging  - 
+2011-12-15 07:33:13,154 ERROR RoLogging  - System.NullReferenceException: Object reference not set to an instance of an object.
+   at RoDuino.SMS.Views.Main.List.DataBind() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\Views\Main\List.xaml.cs:line 86
+   at RoDuino.SMS.Views.Main.List.btnRefresh_Click(Object sender, RoutedEventArgs e) in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS\Views\Main\List.xaml.cs:line 224
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   at System.Windows.Controls.Button.OnClick()
+   at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.CrackMouseButtonEventAndReRaiseEvent(DependencyObject sender, MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+2011-12-15 07:34:18,840 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:34:18,881 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0440025>
+2011-12-15 07:34:18,983 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:34:19,021 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0380022>
+2011-12-15 07:34:19,061 DEBUG RoLogging  - Collect controllers from: RoDuino.SMS
+2011-12-15 07:34:19,182 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 07:34:24,225 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:34:24,263 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0380022>
+2011-12-15 07:34:24,358 DEBUG RoLogging  - ----<Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]|80|98|910|0|>
+2011-12-15 07:34:24,389 DEBUG RoLogging  - ----</Static/Byte[] CropImageFile(Byte[], Int32, Int32, Int32, Int32)/System.Byte[]/00:00:00.0310018>
+2011-12-15 07:34:26,740 DEBUG RoLogging  - Problems initializing the session:A scope tried to registered itself within the framework, but the Active Record was not initialized/r/nCastle.ActiveRecord.Framework.ActiveRecordException: A scope tried to registered itself within the framework, but the Active Record was not initialized
+   at Castle.ActiveRecord.Framework.Scopes.ThreadScopeAccessor.RegisterScope(ISessionScope scope)
+   at Castle.ActiveRecord.Framework.Scopes.AbstractScope..ctor(FlushAction flushAction, SessionScopeType type)
+   at Castle.ActiveRecord.SessionScope..ctor(FlushAction flushAction)
+   at RoDuino.SMS.Bll.Attributes.ARSessionByRequestAttribute.BeginARSession() in E:\cristi\Csharp\RoDuino.SMS\RoDuino.SMS.Bll\Attributes\ARSessionByRequestAttribute.cs:line 51
+2011-12-15 07:34:28,449 DEBUG RoLogging  - 
+2011-12-15 07:34:28,450 DEBUG RoLogging  - nh.sessionscope 42560756 opened
+2011-12-15 07:34:31,176 DEBUG RoLogging  - nh.sessionscope 42560756 closing, took 2 seconds.
+2011-12-15 07:34:31,176 DEBUG RoLogging  - 
+2011-12-15 07:34:33,893 DEBUG RoLogging  - 
+2011-12-15 07:34:33,893 DEBUG RoLogging  - nh.sessionscope 8223052 opened
+2011-12-15 07:34:33,894 DEBUG RoLogging  - nh.sessionscope 8223052 closing, took 0 seconds.
+2011-12-15 07:34:33,894 DEBUG RoLogging  - 
+2011-12-15 07:35:13,130 DEBUG RoLogging  - 
+2011-12-15 07:35:13,130 DEBUG RoLogging  - nh.sessionscope 21720596 opened
+2011-12-15 07:35:13,134 DEBUG RoLogging  - nh.sessionscope 21720596 closing, took 0 seconds.
+2011-12-15 07:35:13,134 DEBUG RoLogging  - 
+2011-12-15 07:35:24,615 DEBUG RoLogging  - 
+2011-12-15 07:35:24,615 DEBUG RoLogging  - nh.sessionscope 62599984 opened
+2011-12-15 07:35:24,685 DEBUG RoLogging  - nh.sessionscope 62599984 closing, took 0 seconds.
+2011-12-15 07:35:24,685 DEBUG RoLogging  - 
+2011-12-15 07:35:26,950 DEBUG RoLogging  - 
+2011-12-15 07:35:26,950 DEBUG RoLogging  - nh.sessionscope 45582897 opened
+2011-12-15 07:35:26,951 DEBUG RoLogging  - nh.sessionscope 45582897 closing, took 0 seconds.
+2011-12-15 07:35:26,951 DEBUG RoLogging  - 
+2011-12-15 07:35:40,552 DEBUG RoLogging  - 
+2011-12-15 07:35:40,552 DEBUG RoLogging  - nh.sessionscope 17221593 opened
+2011-12-15 07:35:40,553 DEBUG RoLogging  - nh.sessionscope 17221593 closing, took 0 seconds.
+2011-12-15 07:35:40,553 DEBUG RoLogging  - 
+2011-12-15 07:35:50,441 DEBUG RoLogging  - 
+2011-12-15 07:35:50,441 DEBUG RoLogging  - nh.sessionscope 27093678 opened
+2011-12-15 07:35:50,442 DEBUG RoLogging  - nh.sessionscope 27093678 closing, took 0 seconds.
+2011-12-15 07:35:50,442 DEBUG RoLogging  - 
+2011-12-15 07:35:52,099 DEBUG RoLogging  - 
+2011-12-15 07:35:52,099 DEBUG RoLogging  - nh.sessionscope 55956913 opened
+2011-12-15 07:35:52,099 DEBUG RoLogging  - nh.sessionscope 55956913 closing, took 0 seconds.
+2011-12-15 07:35:52,099 DEBUG RoLogging  - 
+2011-12-15 07:35:56,770 DEBUG RoLogging  - 
+2011-12-15 07:35:56,770 DEBUG RoLogging  - nh.sessionscope 13471364 opened
+2011-12-15 07:35:56,771 DEBUG RoLogging  - nh.sessionscope 13471364 closing, took 0 seconds.
+2011-12-15 07:35:56,771 DEBUG RoLogging  - 
+2011-12-15 07:36:11,617 DEBUG RoLogging  - 
+2011-12-15 07:36:11,617 DEBUG RoLogging  - nh.sessionscope 36067624 opened
+2011-12-15 07:36:11,653 DEBUG RoLogging  - nh.sessionscope 36067624 closing, took 0 seconds.
+2011-12-15 07:36:11,653 DEBUG RoLogging  - 
+2011-12-15 07:36:15,081 DEBUG RoLogging  - 
+2011-12-15 07:36:15,081 DEBUG RoLogging  - nh.sessionscope 26239109 opened
+2011-12-15 07:36:15,125 DEBUG RoLogging  - nh.sessionscope 26239109 closing, took 0 seconds.
+2011-12-15 07:36:15,126 DEBUG RoLogging  - 

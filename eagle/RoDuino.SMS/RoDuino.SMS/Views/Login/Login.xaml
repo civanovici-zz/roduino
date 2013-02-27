@@ -1,0 +1,126 @@
+﻿<Views:View x:Class="RoDuino.SMS.Views.Login.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Properties="clr-namespace:RoDuino.SMS.Properties;assembly="
+    xmlns:Views="clr-namespace:RoDuino.SMS.Views;assembly="
+    xmlns:VRApplicationMenu="clr-namespace:RoDuino.SMS.Components.RoApplicationMenu"
+    xmlns:Components="clr-namespace:RoDuino.SMS.Components"
+    Title="Login"
+	Background="{StaticResource ViewGradientBrush}"
+			x:Name="LoginView" Loaded="OnLoad" 
+    >
+    <Views:View.Resources>
+        <DataTemplate x:Key="TestDataTemplate" >
+            <Grid Background="Red" Height="2000" Width="1500">
+                <TextBlock>ala bala</TextBlock>
+            </Grid>
+            <!--            <Components:TabButton  x:Name="btnTab" Focusable="False" -->
+            <!--                        Margin="20 0 20 0"  HorizontalAlignment="Center" AllowDrop="True" >-->
+            <!--                <Rectangle  Width="300" Height="300" Fill="{Binding Path=VisualBrush}" Stretch="Fill">-->
+            <!--                </Rectangle>-->
+            <!--            </Components:TabButton>-->
+        </DataTemplate>
+    </Views:View.Resources>
+
+    <Grid Background="Black">
+        <Border Background="{StaticResource LoginBackgroundBrush}" Opacity="0.7"></Border>
+
+        <!--        <Rectangle Fill="{StaticResource LoginBackgroundBrush}" Width="1280" Height="743" HorizontalAlignment="Center" VerticalAlignment="Center"></Rectangle>-->
+        <!-- carusel menu-->
+        <ListBox x:Name="vrLoginList"  Padding="3" BorderBrush="Red" BorderThickness="2"
+				 ItemTemplate="{StaticResource TestDataTemplate}" 
+				 SelectedIndex="1">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <!--                        <VRApplicationMenu:LoginElemtFlow x:Name="ElementFlow" Focusable="True" -->
+                    <!--                                TiltAngle="{Binding Value, ElementName=_tiltAngleSlider}"-->
+                    <!--									  ItemGap="{Binding Value, ElementName=_itemGapSlider}"-->
+                    <!--									  FrontItemGap="{Binding Value, ElementName=_frontItemGapSlider}"-->
+                    <!--									  PopoutDistance="{Binding Value, ElementName=_popoutDistanceSlider}"	-->
+                    <!--                                      XOffset="{Binding Value, ElementName=_xOffsetSlider}"-->
+                    <!--                                      YOffset="{Binding Value, ElementName=_yOffsetSlider}"-->
+                    <!--                                      ZOffset="{Binding Value, ElementName=_zOffsetSlider}"-->
+                    <!--                                      MeshHeight="{Binding Value, ElementName=_MeshHeightSlider}"-->
+                    <!--                                      MeshWidth="{Binding Value, ElementName=_MeshWidthSlider}"-->
+                    <!--                        ElementWidth="450" ElementHeight="450" HasReflection="False" >-->
+
+                    <VRApplicationMenu:LoginElemtFlow x:Name="ElementFlow" Focusable="False" TiltAngle="-27.93"
+										  ItemGap="1.27" FrontItemGap="0.253" PopoutDistance="3.227"
+                                          XOffset="0" YOffset="-0.7" ZOffset="-2"
+										  ElementWidth="260" ElementHeight="560" HasReflection="False" 
+                                                   Background="{x:Null}">
+
+                        <VRApplicationMenu:ElementFlow.Camera>
+                            <PerspectiveCamera FieldOfView="60" Position="0,0,6" LookDirection="0,0,-6" UpDirection="0,1,0" />
+                        </VRApplicationMenu:ElementFlow.Camera>
+                    </VRApplicationMenu:LoginElemtFlow>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.Template>
+                <ControlTemplate TargetType="ListBox">
+                    <Grid>
+                        <ItemsPresenter/>
+                    </Grid>
+                </ControlTemplate>
+            </ListBox.Template>
+        </ListBox>
+
+        <!--        <VRApplicationMenu:LoginGrid VerticalAlignment="Bottom" HorizontalAlignment="Right"></VRApplicationMenu:LoginGrid>-->
+
+        <!-- change carusel settings -->
+        <Grid Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Hidden">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Margin="5">
+                <Label>TiltAngle</Label>
+                <Slider x:Name="_tiltAngleSlider" Minimum="-90" Maximum="90" Value="-17" />
+                <TextBox Text="{Binding Value, ElementName=_tiltAngleSlider}"></TextBox>
+
+                <Label>ItemGap</Label>
+                <Slider x:Name="_itemGapSlider" Minimum="-10" Maximum="10" Value="1.27" />
+                <TextBox Text="{Binding Value, ElementName=_itemGapSlider}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="5">
+                <Label>FrontItemGap</Label>
+                <Slider x:Name="_frontItemGapSlider" Minimum="-5" Maximum="5" Value="0.253" />
+                <TextBox Text="{Binding Value, ElementName=_frontItemGapSlider}"></TextBox>
+
+                <Label>PopoutDistance</Label>
+                <Slider x:Name="_popoutDistanceSlider" Minimum="-4.0" Maximum="4.0" Value="3.227" />
+                <TextBox Text="{Binding Value, ElementName=_popoutDistanceSlider}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="0">
+                <Label>X Offset</Label>
+                <Slider x:Name="_xOffsetSlider" Minimum="-5" Maximum="5" Value="0" />
+                <TextBox Text="{Binding Value, ElementName=_xOffsetSlider}"></TextBox>
+                <Label>Y Offset</Label>
+                <Slider x:Name="_yOffsetSlider" Minimum="-5" Maximum="5" Value="-0.7" />
+                <TextBox Text="{Binding Value, ElementName=_yOffsetSlider}"></TextBox>
+                <Label>Z Offset</Label>
+                <Slider x:Name="_zOffsetSlider" Minimum="-5" Maximum="5" Value="-2.0" />
+                <TextBox Text="{Binding Value, ElementName=_zOffsetSlider}"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1">
+                <Label>Mesh Height</Label>
+                <Slider x:Name="_MeshHeightSlider" Minimum="-5" Maximum="5" Value="1.2" />
+                <TextBox Text="{Binding Value, ElementName=_MeshHeightSlider}"></TextBox>
+
+                <Label>Mesh width</Label>
+                <Slider x:Name="_MeshWidthSlider" Minimum="-5" Maximum="5" Value="0.9" />
+                <TextBox Text="{Binding Value, ElementName=_MeshWidthSlider}"></TextBox>
+            </StackPanel>
+
+        </Grid>
+
+
+<!--        <Rectangle Name="imgBackground" Stretch="Fill" Fill="{StaticResource LogoBrush}" Height="32" Width="32" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 40"></Rectangle>-->
+<!--        <TextBlock Name="txtVersion" FontSize="12" Foreground="#FF474747" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 20"></TextBlock>-->
+    </Grid>
+
+</Views:View>

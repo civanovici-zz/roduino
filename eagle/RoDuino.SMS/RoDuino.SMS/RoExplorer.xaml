@@ -1,0 +1,294 @@
+﻿<Window x:Class="RoDuino.SMS.RoExplorer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        Icon="favicon.ico"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Components="clr-namespace:RoDuino.SMS.Components" 
+        xmlns:VRApplicationMenu="clr-namespace:RoDuino.SMS.Components.RoApplicationMenu" xmlns:Properties="clr-namespace:RoDuino.SMS.Properties" 
+        Title="RoExplorer" Loaded="Window_Loaded"
+        WindowState="Maximized"  SizeChanged="Window_SizeChanged">
+    <Window.Resources>
+        <!--progress bar-->
+        <LinearGradientBrush x:Key="PBPressedBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="Yellow" Offset="0.0"/>
+                    <GradientStop Color="Orange" Offset="0.1"/>
+                    <GradientStop Color="OrangeRed" Offset="0.9"/>
+                    <GradientStop Color="DarkGray" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <SolidColorBrush x:Key="PBSolidBorderBrush" Color="#888" />
+
+        <LinearGradientBrush x:Key="PBDarkBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#FFF" Offset="0.0"/>
+                    <GradientStop Color="#AAA" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="PBNormalBorderBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="DarkOrange" Offset="0.0"/>
+                    <GradientStop Color="Orange" Offset="1.0"/>
+                </GradientStopCollection>
+            </GradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <Style x:Key="{x:Type ProgressBar}"
+            TargetType="{x:Type ProgressBar}">
+            <Setter Property="Opacity" Value="0.5"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ProgressBar}">
+                        <Grid MinHeight="14" MinWidth="200">
+                            <Border 
+            Name="PART_Track" 
+            CornerRadius="4" 
+            Background="{StaticResource PBPressedBrush}"
+            BorderBrush="{StaticResource PBSolidBorderBrush}"
+            BorderThickness="1" />
+                            <Border 
+            Name="PART_Indicator" 
+            CornerRadius="4" 
+            Background="{StaticResource PBDarkBrush}" 
+            BorderBrush="{StaticResource PBNormalBorderBrush}" 
+            BorderThickness="1" 
+            HorizontalAlignment="Left" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- end progress bar style-->
+        <Storyboard x:Key="showNotification">
+            <DoubleAnimation From="1" To="0" Duration="0:0:3" AccelerationRatio=".3" DecelerationRatio=".3" Storyboard.TargetProperty="Opacity" />
+        </Storyboard>
+
+        <DataTemplate x:Key="TestDataTemplate" >
+            <Components:TabButton  x:Name="btnTab" Focusable="False" 
+                          HorizontalAlignment="Center" AllowDrop="True" >
+                <Rectangle  Width="400" Height="300" Fill="{Binding Path=VisualBrush}" Stretch="Fill">
+                </Rectangle>
+
+            </Components:TabButton>
+        </DataTemplate>
+
+    </Window.Resources>
+    <Grid x:Name="mainGrid" Background="{x:Null}" HorizontalAlignment="Stretch"  >
+        <Grid x:Name="tabsGrid" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" ></Grid>
+
+        <Grid  Grid.Row="0" Name="grdAppList" HorizontalAlignment="Right" VerticalAlignment="Top" Height="{StaticResource MenuHeight}" Margin="0 -1 0 0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="260"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="260"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <ListBox x:Name="vrAppList" Height="{StaticResource MenuHeight}" Width="750" Grid.ColumnSpan="3" Padding="3" ItemTemplate="{StaticResource TestDataTemplate}" SelectedIndex="1">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <!--                        <VRApplicationMenu:TabsElementFlow x:Name="ElementFlow" Focusable="False" -->
+                        <!--                                    TiltAngle="{Binding Value, ElementName=_tiltAngleSlider}"-->
+                        <!--										  ItemGap="{Binding Value, ElementName=_itemGapSlider}"-->
+                        <!--										  FrontItemGap="{Binding Value, ElementName=_frontItemGapSlider}"-->
+                        <!--										  PopoutDistance="{Binding Value, ElementName=_popoutDistanceSlider}"										  -->
+                        <!--                                        ElementWidth="400" ElementHeight="300" HasReflection="False" Background="{x:Null}">-->
+                        <VRApplicationMenu:TabsElementFlow x:Name="ElementFlow" Focusable="False" TiltAngle="0"
+										  ItemGap="1.395" FrontItemGap="-0.96" PopoutDistance="1.229"
+										  ElementWidth="400" ElementHeight="300" HasReflection="True" Background="{x:Null}">
+
+                            <VRApplicationMenu:TabsElementFlow.Camera>
+                                <PerspectiveCamera FieldOfView="90" Position="0,0,19" LookDirection="0,0,-6" UpDirection="0,1,0" />
+                            </VRApplicationMenu:TabsElementFlow.Camera>
+                            <!--                            <VRApplicationMenu:TabsElementFlow.OpacityMask>-->
+                            <!--                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">-->
+                            <!--                                    <GradientStop Offset="0" Color="Transparent"/>-->
+                            <!--                                    <GradientStop Offset="0.1" Color="#88888888"/>-->
+                            <!--                                    <GradientStop Offset="0.5" Color="Black"/>-->
+                            <!--                                    <GradientStop Offset="0.9" Color="#88888888"/>-->
+                            <!--                                    <GradientStop Offset="1" Color="Transparent"/>-->
+                            <!--                                </LinearGradientBrush>-->
+                            <!--                            </VRApplicationMenu:TabsElementFlow.OpacityMask>-->
+
+                        </VRApplicationMenu:TabsElementFlow>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.Template>
+                    <ControlTemplate TargetType="ListBox">
+                        <Grid>
+                            <ItemsPresenter/>
+                        </Grid>
+                    </ControlTemplate>
+                </ListBox.Template>
+
+            </ListBox>
+            <Button Name="btnMoveLeft"  HorizontalAlignment="Left" Height="{StaticResource MenuHeight}" Loaded="btnMoveLeft_Loaded" Click="MovePrevApp" Grid.Column="0" Visibility="Collapsed">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Grid >
+                            <Rectangle x:Name="rectLeft" Fill="{TemplateBinding Background}">
+                                <Rectangle.OpacityMask>
+                                    <LinearGradientBrush EndPoint="0,1" StartPoint="1,1">
+                                        <GradientStop Color="#FF000000" Offset="0.429"/>
+                                        <GradientStop Color="#FF000000" Offset="0.571"/>
+                                        <GradientStop Color="#FFFFFFFF" Offset="1"/>
+                                        <GradientStop Color="#00201212" Offset="0"/>
+                                    </LinearGradientBrush>
+                                </Rectangle.OpacityMask>
+                            </Rectangle>
+                            <Path x:Name="pathLeft" Margin="15 0 0 0" Stroke="White" Data="M 3 0 L 0 3 L 3 6 M 6 0 L 3 3 L 6 6" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Path.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                    </TransformGroup>
+                                </Path.RenderTransform>
+                                <Path.Style>
+                                    <Style>
+                                        <Style.Triggers>
+                                            <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                                                <EventTrigger.Actions>
+                                                    <BeginStoryboard>
+                                                        <Storyboard >
+                                                            <ColorAnimation Storyboard.TargetProperty="(Path.Stroke).(SolidColorBrush.Color)" To="#FFB9DA46" Duration="0:0:0.2" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger.Actions>
+                                            </EventTrigger>
+                                            <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                                                <EventTrigger.Actions>
+                                                    <BeginStoryboard>
+                                                        <Storyboard >
+                                                            <ColorAnimation Storyboard.TargetProperty="(Path.Stroke).(SolidColorBrush.Color)" To="White" Duration="0:0:0.2" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger.Actions>
+                                            </EventTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Path.Style>
+                            </Path>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Name="btnMoveRight" HorizontalAlignment="Right" Height="{StaticResource MenuHeight}" Loaded="btnMoveRight_Loaded"  Click="MoveNextApp" Grid.Column="2" Visibility="Collapsed">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Grid >
+                            <Rectangle Fill="{TemplateBinding Background}">
+                                <Rectangle.OpacityMask>
+                                    <LinearGradientBrush EndPoint="0,1" StartPoint="1,1">
+                                        <GradientStop Color="#FF000000" Offset="0.429"/>
+                                        <GradientStop Color="#FF000000" Offset="0.571"/>
+                                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                                        <GradientStop Color="#FF201212" Offset="0"/>
+                                    </LinearGradientBrush>
+                                </Rectangle.OpacityMask>
+                            </Rectangle>
+                            <Path  Margin="0 0 15 0" Stroke="White" Data="M 0 0 L 3 3 L 0 6 M 3 0 L 6 3 L 3 6" HorizontalAlignment="Right" VerticalAlignment="Center">
+                                <Path.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                    </TransformGroup>
+                                </Path.RenderTransform>
+                                <Path.Style>
+                                    <Style>
+                                        <Style.Triggers>
+                                            <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                                                <EventTrigger.Actions>
+                                                    <BeginStoryboard>
+                                                        <Storyboard >
+                                                            <ColorAnimation Storyboard.TargetProperty="(Path.Stroke).(SolidColorBrush.Color)" To="#FFB9DA46" Duration="0:0:0.2" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger.Actions>
+                                            </EventTrigger>
+                                            <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                                                <EventTrigger.Actions>
+                                                    <BeginStoryboard>
+                                                        <Storyboard >
+                                                            <ColorAnimation Storyboard.TargetProperty="(Path.Stroke).(SolidColorBrush.Color)" To="White" Duration="0:0:0.2" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger.Actions>
+                                            </EventTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Path.Style>
+                            </Path>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Components:RoImageButton Grid.Column="1" x:Name="btnCloseApp"  Width="10" Height="10" ToolTip="Close"
+                    Margin="0 7 0 5"
+                    VerticalAlignment="Top" HorizontalAlignment="Right" Focusable="False"
+                    Up="{StaticResource closeUp}" Hover="{StaticResource closeHover}" Visibility="Hidden"
+                                           Click="CloseTab"  />
+        </Grid>
+
+        <Canvas ClipToBounds="False" VerticalAlignment="Top"  Margin="0 0 10 5" >
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,0,0,0" Height="30" Name="pnlLinks">
+                
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Name="ApplicationMenu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,0,0,0" Visibility="Collapsed">
+                <Border >
+                    <Components:RoImageButton 
+                            UpPath="Content\Icons\clients.png" 
+                            HoverPath="Content\Icons\clientsOver.png" 
+                            DownPath="Content\Icons\clients.png" 
+                            InactivePath="Content\Icons\clientsDisble.png" 
+                             Width="80" Height="80" Margin="0,0,6,0"
+                            x:Name="btnContacts" Click="btnContacts_Clicked" ToolTip="{x:Static Properties:Resources.Contacts}"/>
+                </Border>
+                <Border>
+                    <Components:RoImageButton 
+                            UpPath="Content\Icons\settings.png" 
+                            HoverPath="Content\Icons\settingsOver.png" 
+                            DownPath="Content\Icons\settings.png" 
+                            InactivePath="Content\Icons\settings.png" 
+                            Width="80" Height="80" Margin="0,0,6,0"
+                            x:Name="btnConfig" Click="btnConfig_Clicked" ToolTip="{x:Static Properties:Resources.Configurations}"/>
+                </Border>
+                <Border>
+                    <Components:RoImageButton 
+                            UpPath="Content\Icons\history.png" 
+                            HoverPath="Content\Icons\historyDisable.png" 
+                            DownPath="Content\Icons\history.png" 
+                            InactivePath="Content\Icons\history.png" 
+                            Width="80" Height="80" Margin="0,0,6,0"
+                            x:Name="btnHistory" Click="btnHistory_Clicked" ToolTip="{x:Static Properties:Resources.History}"/>
+                </Border>
+                <Border>
+                    <Components:RoImageButton 
+                            UpPath="Content\Icons\messages.png" 
+                            HoverPath="Content\Icons\messagesOver.png" 
+                            DownPath="Content\Icons\messages.png" 
+                            InactivePath="Content\Icons\messages.png" 
+                            Width="80" Height="80" Margin="0,0,6,0"
+                            x:Name="btnMessages" Click="btnMessages_Clicked" ToolTip="{x:Static Properties:Resources.Messages}"/>
+                </Border>
+                <Border>
+                    <Components:RoImageButton 
+                            UpPath="Content\Icons\export.png" 
+                            HoverPath="Content\Icons\exportOver.png" 
+                            DownPath="Content\Icons\export.png" 
+                            InactivePath="Content\Icons\exportDisable.png" 
+                            Width="80" Height="80" Margin="0,0,6,0"
+                            x:Name="btnImport" Click="btnImport_Clicked" ToolTip="{x:Static Properties:Resources.Import}"/>
+                </Border>
+            </StackPanel>
+        </Canvas>
+        <!--the progress bar/message displayer-->
+        <Grid x:Name="grdProgressBar" Visibility="Collapsed"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  Margin="50 0 0 50"  Height="25">
+            <ProgressBar x:Name="progressBar"  Value="0"  Height="20" Width="400"/>
+            <TextBlock x:Name="txtMessage" Foreground="Black"  Padding="5" Width="400" >
+            </TextBlock>
+        </Grid>
+
+    </Grid>
+</Window>

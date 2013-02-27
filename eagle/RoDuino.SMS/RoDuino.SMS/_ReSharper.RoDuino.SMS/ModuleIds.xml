@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="320BDA98-D614-4527-96CB-410421C6E4A8" ModuleId="RoDuino.SMS" />
+  <Module PersistentId="8A1E8F37-EB76-4AD4-9435-BD28A0A46CB2" ModuleId="RoDuino.SMS.Bll" />
+  <Module PersistentId="DFC87B1C-D036-4327-8C41-1E6DB50501ED" ModuleId="RoDuino.SMS.Tests_1" />
+</Modules>

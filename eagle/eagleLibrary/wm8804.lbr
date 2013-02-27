@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="DISIGN_HISTORY" color="3" fill="1" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="14" fill="1" visible="no" active="no"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
+<layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
+<layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="15" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="OrgLBR" color="13" fill="1" visible="no" active="no"/>
+</layers>
+<library>
+<packages>
+<package name="SSOP20">
+<wire x1="-3.83" y1="-2.6" x2="3.83" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="3.83" y1="-2.6" x2="3.83" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="3.83" y1="2.6" x2="-3.83" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="-3.83" y1="2.6" x2="-3.83" y2="-2.6" width="0.2032" layer="21"/>
+<circle x="-4.191" y="-3.048" radius="0.5679" width="0.127" layer="21"/>
+<smd name="1" x="-2.955" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="2" x="-2.305" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="3" x="-1.655" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="4" x="-1.005" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="5" x="-0.355" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="6" x="0.295" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="7" x="0.945" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="8" x="1.595" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="9" x="2.245" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="10" x="2.895" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="11" x="2.895" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="12" x="2.245" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="13" x="1.595" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="14" x="0.945" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="15" x="0.295" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="16" x="-0.355" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="17" x="-1.005" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="18" x="-1.655" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="19" x="-2.305" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="20" x="-2.955" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<text x="-4.206" y="-2.6299" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-3.8999" y="-0.68" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-3.1328" y1="-3.937" x2="-2.7772" y2="-2.6416" layer="51"/>
+<rectangle x1="-2.4829" y1="-3.937" x2="-2.1273" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.8329" y1="-3.937" x2="-1.4773" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.1829" y1="-3.937" x2="-0.8273" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.5329" y1="-3.937" x2="-0.1773" y2="-2.6416" layer="51"/>
+<rectangle x1="0.1171" y1="-3.937" x2="0.4727" y2="-2.6416" layer="51"/>
+<rectangle x1="0.7671" y1="-3.937" x2="1.1227" y2="-2.6416" layer="51"/>
+<rectangle x1="1.4173" y1="-3.937" x2="1.7729" y2="-2.6416" layer="51"/>
+<rectangle x1="2.0673" y1="-3.937" x2="2.4229" y2="-2.6416" layer="51"/>
+<rectangle x1="2.7173" y1="-3.937" x2="3.0729" y2="-2.6416" layer="51"/>
+<rectangle x1="2.7173" y1="2.6416" x2="3.0729" y2="3.937" layer="51"/>
+<rectangle x1="2.0673" y1="2.6416" x2="2.4229" y2="3.937" layer="51"/>
+<rectangle x1="1.4173" y1="2.6416" x2="1.7729" y2="3.937" layer="51"/>
+<rectangle x1="0.7671" y1="2.6416" x2="1.1227" y2="3.937" layer="51"/>
+<rectangle x1="0.1171" y1="2.6416" x2="0.4727" y2="3.937" layer="51"/>
+<rectangle x1="-0.5329" y1="2.6416" x2="-0.1773" y2="3.937" layer="51"/>
+<rectangle x1="-1.1829" y1="2.6416" x2="-0.8273" y2="3.937" layer="51"/>
+<rectangle x1="-1.8329" y1="2.6416" x2="-1.4773" y2="3.937" layer="51"/>
+<rectangle x1="-2.4829" y1="2.6416" x2="-2.1273" y2="3.937" layer="51"/>
+<rectangle x1="-3.1328" y1="2.6416" x2="-2.7772" y2="3.937" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="WM8804">
+<wire x1="-17.78" y1="27.94" x2="10.16" y2="27.94" width="0.254" layer="94"/>
+<wire x1="10.16" y1="27.94" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-25.4" x2="-17.78" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-25.4" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
+<text x="-12.7" y="29.21" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="DVDD" x="-20.32" y="25.4" length="short" direction="pwr"/>
+<pin name="PGND" x="-20.32" y="15.24" length="short" direction="pwr"/>
+<pin name="SDOUT/GPO2" x="12.7" y="25.4" length="short" direction="out" rot="R180"/>
+<pin name="SDIN/HWMODE" x="12.7" y="22.86" length="short" direction="in" rot="R180"/>
+<pin name="SLCK" x="12.7" y="20.32" length="short" direction="in" rot="R180"/>
+<pin name="CSB/GPO1" x="12.7" y="17.78" length="short" direction="in" rot="R180"/>
+<pin name="GPO0/SWIFMODE" x="12.7" y="15.24" length="short" direction="out" rot="R180"/>
+<pin name="RESTB" x="12.7" y="12.7" length="short" direction="in" rot="R180"/>
+<pin name="BCLK" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="LRCLK" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="DOUT" x="12.7" y="2.54" length="short" direction="out" rot="R180"/>
+<pin name="DIN" x="12.7" y="0" length="short" direction="in" rot="R180"/>
+<pin name="XIN" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="XOP" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="PVDD" x="-20.32" y="22.86" length="short" direction="pwr"/>
+<pin name="DGND" x="-20.32" y="17.78" length="short" direction="pwr"/>
+<pin name="RXO" x="-20.32" y="-22.86" length="short" direction="in"/>
+<pin name="CLKOUT" x="12.7" y="-15.24" length="short" direction="out" rot="R180"/>
+<pin name="MCLK" x="12.7" y="-12.7" length="short" rot="R180"/>
+<pin name="TXO" x="12.7" y="-22.86" length="short" direction="out" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WM8804">
+<description>&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrSingle"&gt; TRANSCEIVER, S/PDIF, 1:1, 20SSOP&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; Supply Voltage Range:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;2.7V to 3.6V&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; Logic Case Style:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;SSOP&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; No. of Pins:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;20&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; Operating Temperature Range:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;-40°C to +85°C&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; SVHC:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;No SVHC (19-Dec-2011)&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; Interface Type:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;Serial, 2 / 3 Wire&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; Line / Bus Driver / Receiver / Transceiver Type:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;Digital Interface Transceiver with PLL&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; No. of Channels:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;2&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; Package / Case:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;SSOP&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; Supply Current:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;14.9mA&lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; Supply Voltage Max:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;3.6V&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; Supply Voltage Min:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;2.7V&lt;/span&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;span class="prodAttrIcon"&gt;&lt;/span&gt;
+&lt;span class="prodAttrName"&gt; Termination Type:&lt;/span&gt;
+&lt;span class="prodAttrValue"&gt;SMD&lt;/span&gt;
+&lt;br/&gt;
+&lt;strong&gt;&lt;a href="http://roduino.ro/wp-content/uploads/2012/06/wm8804.pdf"&gt;datasheet&lt;/a&gt;&lt;/strong&gt;</description>
+<gates>
+<gate name="G$1" symbol="WM8804" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP20">
+<connects>
+<connect gate="G$1" pin="BCLK" pad="14"/>
+<connect gate="G$1" pin="CLKOUT" pad="9"/>
+<connect gate="G$1" pin="CSB/GPO1" pad="5"/>
+<connect gate="G$1" pin="DGND" pad="18"/>
+<connect gate="G$1" pin="DIN" pad="13"/>
+<connect gate="G$1" pin="DOUT" pad="12"/>
+<connect gate="G$1" pin="DVDD" pad="19"/>
+<connect gate="G$1" pin="GPO0/SWIFMODE" pad="2"/>
+<connect gate="G$1" pin="LRCLK" pad="15"/>
+<connect gate="G$1" pin="MCLK" pad="16"/>
+<connect gate="G$1" pin="PGND" pad="8"/>
+<connect gate="G$1" pin="PVDD" pad="7"/>
+<connect gate="G$1" pin="RESTB" pad="6"/>
+<connect gate="G$1" pin="RXO" pad="20"/>
+<connect gate="G$1" pin="SDIN/HWMODE" pad="3"/>
+<connect gate="G$1" pin="SDOUT/GPO2" pad="4"/>
+<connect gate="G$1" pin="SLCK" pad="1"/>
+<connect gate="G$1" pin="TXO" pad="17"/>
+<connect gate="G$1" pin="XIN" pad="11"/>
+<connect gate="G$1" pin="XOP" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

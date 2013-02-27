@@ -1,0 +1,40 @@
+power up  p.12
+DEVICE ADDRESS
+CBS=0 ADDRESS=0111010x  0x74,x=0; 0x75,x=1
+CBS=1 ADDRESS=0111011x  0x76,x=0; 0x77,x=1
+
+Control interface
+SDIN/HWMODE 0- hardware; 1 -software
+2 WIRE GPO0/SWIFMODE 0; 1-3 wire interface
+
+MASTER/SLAVE MODE p.18
+	hardware: SLCK=0=slave; SLCK=1=master
+	software: AIFRX register, AIF_MS; 0=slave; 1=master
+
+DIGITAL ROUTING CONTROL p.19 configure source for transmiter
+	hardware: CBS 0=S/PDIF Rx; 1=AIF_Rx
+	software: register TXSRC
+
+DIGITAL AUDIO CONTROL p.19
+	hardware: 
+		GPO0	SDOUT	Desc
+		0	0	16-bit I2S
+		0	1	24-bit I2S
+		1	0	24 left justified
+		1	1	16 right justified
+
+R30 1eh
+	0 PLLPD ;PLL enabled=0;def=1
+	1 SPDIFRXPD; rec enable=0; def 1
+	2 SPDIFTXPD; tr enable=0; def 1
+	3 OSCPD; osc power up=0; def 0
+	4 AIFPD; dig audio int power up=0; def 0
+	5 TRIOP; tri-state out =1; def 0
+R00 00h p18 - reset register
+	7:0 writing on this register reset the device
+	7:0 readin get second part of device ID:00000101=0x05
+R01 01h p.18  - device ID
+	7:0 read only, second part of ID 10001000=0x88
+R02 02h p.18 - device revision
+	3:0 read only, revision ID,0x1=revision 1
+

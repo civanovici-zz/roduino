@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="PIN8">
+<smd name="TACT_SW" x="21.5" y="0.5" dx="4" dy="1" layer="1"/>
+<smd name="VCC" x="21.5" y="-1.5" dx="4" dy="1" layer="1"/>
+<smd name="OB" x="21.5" y="2.5" dx="4" dy="1" layer="1"/>
+<smd name="FORMAT" x="21.5" y="4.5" dx="4" dy="1" layer="1"/>
+<smd name="USER_BIT" x="21.5" y="6.5" dx="4" dy="1" layer="1"/>
+<smd name="DAC_L" x="21.5" y="-3.5" dx="4" dy="1" layer="1"/>
+<smd name="GND" x="21.5" y="-5.5" dx="4" dy="1" layer="1"/>
+<smd name="DAC_R" x="21.5" y="-7.5" dx="4" dy="1" layer="1"/>
+<smd name="CH_MODE" x="21.5" y="6.5" dx="4" dy="1" layer="16"/>
+<smd name="ID0" x="21.5" y="4.5" dx="4" dy="1" layer="16"/>
+<smd name="ID1" x="21.5" y="2.5" dx="4" dy="1" layer="16"/>
+<smd name="ID2" x="21.5" y="0.5" dx="4" dy="1" layer="16"/>
+<smd name="ID3" x="21.5" y="-1.5" dx="4" dy="1" layer="16"/>
+<smd name="SW0" x="21.5" y="-3.5" dx="4" dy="1" layer="16"/>
+<smd name="SW1" x="21.5" y="-5.5" dx="4" dy="1" layer="16"/>
+<smd name="SW2" x="21.5" y="-7.5" dx="4" dy="1" layer="16"/>
+<wire x1="19.5" y1="-8.5" x2="19.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="19.5" y1="7.5" x2="-20.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-20.5" y1="7.5" x2="-20.5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="-20.5" y1="6.5" x2="-20.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-20.5" y1="4.5" x2="-20.5" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="-20.5" y1="-8.5" x2="19.5" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="-20.5" y1="6.5" x2="-50.5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="-50.5" y1="6.5" x2="-50.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-50.5" y1="4.5" x2="-20.5" y2="4.5" width="0.127" layer="21"/>
+</package>
+<package name="AUREL-TX-AUDIO-2.4GHZ">
+<smd name="TACT_SW" x="21.5" y="0.5" dx="4" dy="1" layer="16"/>
+<smd name="VCC" x="21.5" y="-1.5" dx="4" dy="1" layer="16"/>
+<smd name="OB" x="21.5" y="2.5" dx="4" dy="1" layer="16"/>
+<smd name="FORMAT" x="21.5" y="4.5" dx="4" dy="1" layer="16"/>
+<smd name="USER_BIT" x="21.5" y="6.5" dx="4" dy="1" layer="16"/>
+<smd name="DAC_L" x="21.5" y="-3.5" dx="4" dy="1" layer="16"/>
+<smd name="GND" x="21.5" y="-5.5" dx="4" dy="1" layer="16"/>
+<smd name="DAC_R" x="21.5" y="-7.5" dx="4" dy="1" layer="16"/>
+<smd name="CH_MODE" x="21.5" y="6.5" dx="4" dy="1" layer="1"/>
+<smd name="ID0" x="21.5" y="4.5" dx="4" dy="1" layer="1"/>
+<smd name="ID1" x="21.5" y="2.5" dx="4" dy="1" layer="1"/>
+<smd name="ID2" x="21.5" y="0.5" dx="4" dy="1" layer="1"/>
+<smd name="ID3" x="21.5" y="-1.5" dx="4" dy="1" layer="1"/>
+<smd name="SW0" x="21.5" y="-3.5" dx="4" dy="1" layer="1"/>
+<smd name="SW1" x="21.5" y="-5.5" dx="4" dy="1" layer="1"/>
+<smd name="SW2" x="21.5" y="-7.5" dx="4" dy="1" layer="1"/>
+<wire x1="19.5" y1="-8.5" x2="19.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="19.5" y1="7.5" x2="-20.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-20.5" y1="7.5" x2="-20.5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="-20.5" y1="6.5" x2="-20.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-20.5" y1="4.5" x2="-20.5" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="-20.5" y1="-8.5" x2="19.5" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="-20.5" y1="6.5" x2="-50.5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="-50.5" y1="6.5" x2="-50.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-50.5" y1="4.5" x2="-20.5" y2="4.5" width="0.127" layer="21"/>
+<text x="26.5" y="6" size="0.8128" layer="26">USER_BIT</text>
+<text x="26.5" y="-6" size="0.8128" layer="26">GND</text>
+</package>
+<package name="AUREL-RX-AUDIO-2.4GHZ">
+<smd name="SW0" x="0" y="1" dx="4" dy="1" layer="1"/>
+<smd name="SW1" x="0" y="-1" dx="4" dy="1" layer="1"/>
+<smd name="ID3" x="0" y="3" dx="4" dy="1" layer="1"/>
+<smd name="ID2" x="0" y="5" dx="4" dy="1" layer="1"/>
+<smd name="ID1" x="0" y="7" dx="4" dy="1" layer="1"/>
+<smd name="DAC_L2" x="0" y="-15" dx="4" dy="1" layer="1"/>
+<smd name="TACT_SW2" x="0" y="-5" dx="4" dy="1" layer="1"/>
+<smd name="GND5" x="0" y="-7" dx="4" dy="1" layer="1"/>
+<smd name="OB" x="0" y="7" dx="4" dy="1" layer="16"/>
+<smd name="TACT_SW" x="0" y="5" dx="4" dy="1" layer="16"/>
+<smd name="VCC" x="0" y="3" dx="4" dy="1" layer="16"/>
+<smd name="DAC_L" x="0" y="1" dx="4" dy="1" layer="16"/>
+<smd name="GND" x="0" y="-1" dx="4" dy="1" layer="16"/>
+<smd name="DAC_R" x="0" y="-3" dx="4" dy="1" layer="16"/>
+<smd name="GND2" x="0" y="-5" dx="4" dy="1" layer="16"/>
+<smd name="DC_IN" x="0" y="-7" dx="4" dy="1" layer="16"/>
+<smd name="FORMAT" x="0" y="9" dx="4" dy="1" layer="16"/>
+<smd name="USER_BIT" x="0" y="11" dx="4" dy="1" layer="16"/>
+<smd name="MUTE" x="0" y="13" dx="4" dy="1" layer="16"/>
+<smd name="PWR_ON" x="0" y="15" dx="4" dy="1" layer="16"/>
+<smd name="GND3" x="0" y="-9" dx="4" dy="1" layer="16"/>
+<smd name="CH_R" x="0" y="-11" dx="4" dy="1" layer="16"/>
+<smd name="GND4" x="0" y="-13" dx="4" dy="1" layer="16"/>
+<smd name="CH_L" x="0" y="-15" dx="4" dy="1" layer="16"/>
+<smd name="SW2" x="0" y="-3" dx="4" dy="1" layer="1"/>
+<smd name="AMP_L" x="0" y="-9" dx="4" dy="1" layer="1"/>
+<smd name="AMP_R" x="0" y="-11" dx="4" dy="1" layer="1"/>
+<smd name="DAC_R2" x="0" y="-13" dx="4" dy="1" layer="1"/>
+<smd name="ID0" x="0" y="9" dx="4" dy="1" layer="1"/>
+<smd name="CH_MODE" x="0" y="11" dx="4" dy="1" layer="1"/>
+<smd name="TACT_SCAN" x="0" y="13" dx="4" dy="1" layer="1"/>
+<smd name="CT_INU" x="0" y="15" dx="4" dy="1" layer="1"/>
+<wire x1="-3.5" y1="-4" x2="3.5" y2="-4" width="0.127" layer="21"/>
+<wire x1="-2" y1="16" x2="-46" y2="16" width="0.127" layer="21"/>
+<wire x1="-46" y1="16" x2="-46" y2="-16" width="0.127" layer="21"/>
+<wire x1="-46" y1="-16" x2="-2" y2="-16" width="0.127" layer="21"/>
+<wire x1="-2" y1="-16" x2="-2" y2="16" width="0.127" layer="21"/>
+<text x="5.08" y="-15.74" size="0.8128" layer="21" rot="MR0">CH_L</text>
+<text x="5.08" y="-11.43" size="0.8128" layer="21" rot="MR0">CH_R</text>
+<text x="5.08" y="-13.7" size="0.8128" layer="21" rot="MR0">GND</text>
+<text x="5.08" y="-9.43" size="0.8128" layer="21" rot="MR0">GND</text>
+<text x="5.08" y="-5.43" size="0.8128" layer="21" rot="MR0">GND</text>
+<text x="5.08" y="-7.43" size="0.8128" layer="21" rot="MR0">3.3V</text>
+<text x="4.58" y="-1.43" size="0.8128" layer="21" rot="MR0">GND</text>
+<text x="2.08" y="-3.43" size="0.8128" layer="21">SW2</text>
+<text x="4.58" y="2.57" size="0.8128" layer="21" rot="MR0">VCC</text>
+<text x="7.08" y="14.57" size="0.8128" layer="21" rot="MR0">PWR_ON</text>
+<text x="5.08" y="12.57" size="0.8128" layer="21" rot="MR0">MUTE</text>
+<text x="2.58" y="-1.43" size="0.8128" layer="22">SW1</text>
+<text x="2.08" y="0.57" size="0.8128" layer="22">SW0</text>
+<text x="2.08" y="10.57" size="0.8128" layer="22">CH_MODE</text>
+<text x="2.08" y="-7.43" size="0.8128" layer="21">GND</text>
+<text x="2.08" y="-9.43" size="0.8128" layer="21">AMP_L</text>
+<text x="2.08" y="-11.43" size="0.8128" layer="21">AMP_R</text>
+<text x="2.08" y="-13.43" size="0.8128" layer="21">DAC_R2</text>
+<text x="2.08" y="-15.43" size="0.8128" layer="21">DAC_L2</text>
+</package>
+<package name="AUREL-TX-AUDIO-2.4GH-TRH">
+<pad name="ID2" x="1" y="1" drill="0.6" shape="offset"/>
+<pad name="TACT_SW" x="-1" y="1" drill="0.6" shape="offset" rot="R180"/>
+<pad name="OB" x="-1" y="3" drill="0.6" shape="offset" rot="R180"/>
+<pad name="FORMAT" x="-1" y="5" drill="0.6" shape="offset" rot="R180"/>
+<pad name="USER_BIT" x="-1" y="7" drill="0.6" shape="offset" rot="R180"/>
+<pad name="ID1" x="1" y="3" drill="0.6" shape="offset"/>
+<pad name="ID0" x="1" y="5" drill="0.6" shape="offset"/>
+<pad name="CH_MODE" x="1" y="7" drill="0.6" shape="offset"/>
+<pad name="ID3" x="1" y="-1" drill="0.6" shape="offset"/>
+<pad name="SW0" x="1" y="-3" drill="0.6" shape="offset"/>
+<pad name="SW1" x="1" y="-5" drill="0.6" shape="offset"/>
+<pad name="SW2" x="1" y="-7" drill="0.6" shape="offset"/>
+<pad name="VCC" x="-1" y="-1" drill="0.6" shape="offset" rot="R180"/>
+<pad name="DAC_L" x="-1" y="-3" drill="0.6" shape="offset" rot="R180"/>
+<pad name="GND" x="-1" y="-5" drill="0.6" shape="offset" rot="R180"/>
+<pad name="DAC_R" x="-1" y="-7" drill="0.6" shape="offset" rot="R180"/>
+<wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="0.127" layer="21"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="7.62" width="0.127" layer="21"/>
+</package>
+<package name="AUREL_RX-AUDIO-2.4GH-TRH">
+<pad name="GND" x="-1" y="-1" drill="0.6" shape="offset" rot="R180"/>
+<pad name="DAC_L" x="-1" y="1" drill="0.6" shape="offset" rot="R180"/>
+<pad name="VCC" x="-1" y="3" drill="0.6" shape="offset" rot="R180"/>
+<pad name="TACT_SW" x="-1" y="5" drill="0.6" shape="offset" rot="R180"/>
+<pad name="OB" x="-1" y="7" drill="0.6" shape="offset" rot="R180"/>
+<pad name="FORMAT" x="-1" y="9" drill="0.6" shape="offset" rot="R180"/>
+<pad name="USER_BIT" x="-1" y="11" drill="0.6" shape="offset" rot="R180"/>
+<pad name="MUTE" x="-1" y="13" drill="0.6" shape="offset" rot="R180"/>
+<pad name="PWR_ON" x="-1" y="15" drill="0.6" shape="offset" rot="R180"/>
+<pad name="DAC_R" x="-1" y="-3" drill="0.6" shape="offset" rot="R180"/>
+<pad name="GND2" x="-1" y="-5" drill="0.6" shape="offset" rot="R180"/>
+<pad name="DC_IN" x="-1" y="-7" drill="0.6" shape="offset" rot="R180"/>
+<pad name="GND3" x="-1" y="-9" drill="0.6" shape="offset" rot="R180"/>
+<pad name="CH_R" x="-1" y="-11" drill="0.6" shape="offset" rot="R180"/>
+<pad name="GND4" x="-1" y="-13" drill="0.6" shape="offset" rot="R180"/>
+<pad name="CH_L" x="-1" y="-15" drill="0.6" shape="offset" rot="R180"/>
+<pad name="SW0" x="1" y="1" drill="0.6" shape="offset"/>
+<pad name="ID3" x="1" y="3" drill="0.6" shape="offset"/>
+<pad name="ID2" x="1" y="5" drill="0.6" shape="offset"/>
+<pad name="ID1" x="1" y="7" drill="0.6" shape="offset"/>
+<pad name="ID0" x="1" y="9" drill="0.6" shape="offset"/>
+<pad name="CH_MODE" x="1" y="11" drill="0.6" shape="offset"/>
+<pad name="TACT_SCAN" x="1" y="13" drill="0.6" shape="offset"/>
+<pad name="CT_INU" x="1" y="15" drill="0.6" shape="offset"/>
+<pad name="SW1" x="1" y="-1" drill="0.6" shape="offset"/>
+<pad name="SW2" x="1" y="-3" drill="0.6" shape="offset"/>
+<pad name="TACT_SW2" x="1" y="-5" drill="0.6" shape="offset"/>
+<pad name="GND5" x="1" y="-7" drill="0.6" shape="offset"/>
+<pad name="AMP_L" x="1" y="-9" drill="0.6" shape="offset"/>
+<pad name="AMP_R" x="1" y="-11" drill="0.6" shape="offset"/>
+<pad name="DAC_R2" x="1" y="-13" drill="0.6" shape="offset"/>
+<pad name="DAC_L2" x="1" y="-15" drill="0.6" shape="offset"/>
+<wire x1="-2.5" y1="16" x2="3.5" y2="16" width="0.127" layer="21"/>
+<wire x1="3.5" y1="16" x2="3.5" y2="-16" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-16" x2="-3.5" y2="-16" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-16" x2="-3.5" y2="16" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="16" x2="-2.5" y2="16" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PIN8">
+<pin name="USER_BIT" x="-10.16" y="20.32" length="middle"/>
+<pin name="FORMAT" x="-10.16" y="15.24" length="middle"/>
+<pin name="OB" x="-10.16" y="10.16" length="middle"/>
+<pin name="TACT_SW" x="-10.16" y="5.08" length="middle"/>
+<pin name="VCC" x="-10.16" y="0" length="middle"/>
+<pin name="DAC_L" x="-10.16" y="-5.08" length="middle"/>
+<pin name="GND" x="-10.16" y="-10.16" length="middle"/>
+<pin name="DAC_R" x="-10.16" y="-15.24" length="middle"/>
+<pin name="CH_MODE" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="ID0" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="ID1" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="ID2" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="ID3" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="SW0" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="SW1" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="SW2" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="22.86" x2="-5.08" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-17.78" x2="20.32" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-17.78" x2="20.32" y2="22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="22.86" x2="-5.08" y2="22.86" width="0.254" layer="94"/>
+</symbol>
+<symbol name="AUREL-TX-AUDIO-2.4GHZ">
+<pin name="USER_BIT" x="-17.78" y="17.78" length="middle"/>
+<pin name="FORMAT" x="-17.78" y="12.7" length="middle"/>
+<pin name="OB" x="-17.78" y="7.62" length="middle"/>
+<pin name="TACT_SW" x="-17.78" y="2.54" length="middle"/>
+<pin name="VCC" x="-17.78" y="-2.54" length="middle"/>
+<pin name="DAC_L" x="-17.78" y="-7.62" length="middle"/>
+<pin name="GND" x="-17.78" y="-12.7" length="middle"/>
+<pin name="DAC_R" x="-17.78" y="-17.78" length="middle"/>
+<pin name="CH_MODE" x="17.78" y="17.78" length="middle" rot="R180"/>
+<pin name="ID0" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="ID1" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="ID2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="ID3" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="SW0" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="SW1" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="SW2" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+</symbol>
+<symbol name="AUREL-RX-AUDIO-2.4GHZ">
+<pin name="USER_BIT" x="-20.32" y="25.4" length="middle"/>
+<pin name="FORMAT" x="-20.32" y="20.32" length="middle"/>
+<pin name="OB" x="-20.32" y="15.24" length="middle"/>
+<pin name="TACT_SW" x="-20.32" y="10.16" length="middle"/>
+<pin name="VCC" x="-20.32" y="5.08" length="middle"/>
+<pin name="DAC_L" x="-20.32" y="0" length="middle"/>
+<pin name="GND" x="-20.32" y="-5.08" length="middle"/>
+<pin name="DAC_R" x="-20.32" y="-10.16" length="middle"/>
+<pin name="GND2" x="-20.32" y="-15.24" length="middle"/>
+<pin name="DC_IN" x="-20.32" y="-20.32" length="middle"/>
+<pin name="GND3" x="-20.32" y="-25.4" length="middle"/>
+<pin name="CH_R" x="-20.32" y="-30.48" length="middle"/>
+<pin name="MUTE" x="-20.32" y="30.48" length="middle"/>
+<pin name="PWR_ON" x="-20.32" y="35.56" length="middle"/>
+<pin name="GND4" x="-20.32" y="-35.56" length="middle"/>
+<pin name="CH_L" x="-20.32" y="-40.64" length="middle"/>
+<pin name="CT_INU" x="12.7" y="35.56" length="middle" rot="R180"/>
+<pin name="TACT_SCAN" x="12.7" y="30.48" length="middle" rot="R180"/>
+<pin name="CH_MODE" x="12.7" y="25.4" length="middle" rot="R180"/>
+<pin name="ID0" x="12.7" y="20.32" length="middle" rot="R180"/>
+<pin name="ID1" x="12.7" y="15.24" length="middle" rot="R180"/>
+<pin name="ID2" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="ID3" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="SW0" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="SW1" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="SW2" x="12.7" y="-10.16" length="middle" rot="R180"/>
+<pin name="TACT_SW1" x="12.7" y="-15.24" length="middle" rot="R180"/>
+<pin name="GND5" x="12.7" y="-20.32" length="middle" rot="R180"/>
+<pin name="AMP_L" x="12.7" y="-25.4" length="middle" rot="R180"/>
+<pin name="AMP_R" x="12.7" y="-30.48" length="middle" rot="R180"/>
+<pin name="DAC_R1" x="12.7" y="-35.56" length="middle" rot="R180"/>
+<pin name="DAC_L1" x="12.7" y="-40.64" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="38.1" x2="7.62" y2="38.1" width="0.254" layer="94"/>
+<wire x1="7.62" y1="38.1" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-43.18" x2="-15.24" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-43.18" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="-15.24" y2="38.1" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TX-AUDIO-2.4">
+<description>&lt;b&gt;MODULE, TRANSMITTER, 2.4GHZ, AUDIO&lt;/b&gt;&lt;br/&gt;
+&lt;b&gt;Development Tool Type&lt;/b&gt;: Hardware - Module&lt;br/&gt;
+&lt;b&gt;Kit Features&lt;/b&gt;: 2.4GHz Digital Audio Signal Transmitter, 10dBm Transmit Power&lt;br/&gt;
+&lt;b&gt;Tool / Board Application&lt;/b&gt;: Digital Audio Transmitter&lt;br/&gt;
+&lt;b&gt;Type&lt;/b&gt;: Digital Audio Transmitter &lt;br/&gt;
+&lt;a href="http://ro.farnell.com/aurel/tx-audio-2-4-ae/module-transmitter-2-4ghz-audio/dp/1699492?in_merch=true&amp;MER=i-9b10-00001460"&gt;farnell.com&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="AUREL-TX-AUDIO-2.4GHZ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="HORIZONTAL" package="AUREL-TX-AUDIO-2.4GHZ">
+<connects>
+<connect gate="G$1" pin="CH_MODE" pad="CH_MODE"/>
+<connect gate="G$1" pin="DAC_L" pad="DAC_L"/>
+<connect gate="G$1" pin="DAC_R" pad="DAC_R"/>
+<connect gate="G$1" pin="FORMAT" pad="FORMAT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="ID0" pad="ID0"/>
+<connect gate="G$1" pin="ID1" pad="ID1"/>
+<connect gate="G$1" pin="ID2" pad="ID2"/>
+<connect gate="G$1" pin="ID3" pad="ID3"/>
+<connect gate="G$1" pin="OB" pad="OB"/>
+<connect gate="G$1" pin="SW0" pad="SW0"/>
+<connect gate="G$1" pin="SW1" pad="SW1"/>
+<connect gate="G$1" pin="SW2" pad="SW2"/>
+<connect gate="G$1" pin="TACT_SW" pad="TACT_SW"/>
+<connect gate="G$1" pin="USER_BIT" pad="USER_BIT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="VERTICAL" package="AUREL-TX-AUDIO-2.4GH-TRH">
+<connects>
+<connect gate="G$1" pin="CH_MODE" pad="CH_MODE"/>
+<connect gate="G$1" pin="DAC_L" pad="DAC_L"/>
+<connect gate="G$1" pin="DAC_R" pad="DAC_R"/>
+<connect gate="G$1" pin="FORMAT" pad="FORMAT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="ID0" pad="ID0"/>
+<connect gate="G$1" pin="ID1" pad="ID1"/>
+<connect gate="G$1" pin="ID2" pad="ID2"/>
+<connect gate="G$1" pin="ID3" pad="ID3"/>
+<connect gate="G$1" pin="OB" pad="OB"/>
+<connect gate="G$1" pin="SW0" pad="SW0"/>
+<connect gate="G$1" pin="SW1" pad="SW1"/>
+<connect gate="G$1" pin="SW2" pad="SW2"/>
+<connect gate="G$1" pin="TACT_SW" pad="TACT_SW"/>
+<connect gate="G$1" pin="USER_BIT" pad="USER_BIT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RX-AUDIO-2.4">
+<description>&lt;b&gt;MODULE, RECEIVER, 2.4GHZ, AUDIO&lt;/b&gt;&lt;br/&gt;
+&lt;b&gt;Development Tool Type&lt;/b&gt;: Hardware - Module&lt;br/&gt;
+&lt;b&gt;Kit Features&lt;/b&gt;: 2.5GHz Frequency, Compatible with Digital Audio Transmitter TX-AUDIO-2.4&lt;br/&gt;
+&lt;b&gt;Tool / Board Application&lt;/b&gt;: Digital Audio Receiver&lt;br/&gt;
+&lt;b&gt;Tool / Board Applications&lt;/b&gt;: Ideal to Drive Wireless Speaker, Home Theatre, Headphone Amplifier&lt;br/&gt;
+&lt;b&gt;Type&lt;/b&gt;: Digital Audio Receiver &lt;br/&gt;
+
+&lt;a href="http://ro.farnell.com/jsp/search/productdetail.jsp?SKU=1699493"&gt;url&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="AUREL-RX-AUDIO-2.4GHZ" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="HORIZONTAL" package="AUREL-RX-AUDIO-2.4GHZ">
+<connects>
+<connect gate="G$1" pin="AMP_L" pad="AMP_L"/>
+<connect gate="G$1" pin="AMP_R" pad="AMP_R"/>
+<connect gate="G$1" pin="CH_L" pad="CH_L"/>
+<connect gate="G$1" pin="CH_MODE" pad="CH_MODE"/>
+<connect gate="G$1" pin="CH_R" pad="CH_R"/>
+<connect gate="G$1" pin="CT_INU" pad="CT_INU"/>
+<connect gate="G$1" pin="DAC_L" pad="DAC_L"/>
+<connect gate="G$1" pin="DAC_L1" pad="DAC_L2"/>
+<connect gate="G$1" pin="DAC_R" pad="DAC_R"/>
+<connect gate="G$1" pin="DAC_R1" pad="DAC_R2"/>
+<connect gate="G$1" pin="DC_IN" pad="DC_IN"/>
+<connect gate="G$1" pin="FORMAT" pad="FORMAT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="GND3" pad="GND3"/>
+<connect gate="G$1" pin="GND4" pad="GND4"/>
+<connect gate="G$1" pin="GND5" pad="GND5"/>
+<connect gate="G$1" pin="ID0" pad="ID0"/>
+<connect gate="G$1" pin="ID1" pad="ID1"/>
+<connect gate="G$1" pin="ID2" pad="ID2"/>
+<connect gate="G$1" pin="ID3" pad="ID3"/>
+<connect gate="G$1" pin="MUTE" pad="MUTE"/>
+<connect gate="G$1" pin="OB" pad="OB"/>
+<connect gate="G$1" pin="PWR_ON" pad="PWR_ON"/>
+<connect gate="G$1" pin="SW0" pad="SW0"/>
+<connect gate="G$1" pin="SW1" pad="SW1"/>
+<connect gate="G$1" pin="SW2" pad="SW2"/>
+<connect gate="G$1" pin="TACT_SCAN" pad="TACT_SCAN"/>
+<connect gate="G$1" pin="TACT_SW" pad="TACT_SW"/>
+<connect gate="G$1" pin="TACT_SW1" pad="TACT_SW2"/>
+<connect gate="G$1" pin="USER_BIT" pad="USER_BIT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name="HORIZONTAL"/>
+</technologies>
+</device>
+<device name="VERTICAL" package="AUREL_RX-AUDIO-2.4GH-TRH">
+<connects>
+<connect gate="G$1" pin="AMP_L" pad="AMP_L"/>
+<connect gate="G$1" pin="AMP_R" pad="AMP_R"/>
+<connect gate="G$1" pin="CH_L" pad="CH_L"/>
+<connect gate="G$1" pin="CH_MODE" pad="CH_MODE"/>
+<connect gate="G$1" pin="CH_R" pad="CH_R"/>
+<connect gate="G$1" pin="CT_INU" pad="CT_INU"/>
+<connect gate="G$1" pin="DAC_L" pad="DAC_L"/>
+<connect gate="G$1" pin="DAC_L1" pad="DAC_L2"/>
+<connect gate="G$1" pin="DAC_R" pad="DAC_R"/>
+<connect gate="G$1" pin="DAC_R1" pad="DAC_R2"/>
+<connect gate="G$1" pin="DC_IN" pad="DC_IN"/>
+<connect gate="G$1" pin="FORMAT" pad="FORMAT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="GND3" pad="GND3"/>
+<connect gate="G$1" pin="GND4" pad="GND4"/>
+<connect gate="G$1" pin="GND5" pad="GND5"/>
+<connect gate="G$1" pin="ID0" pad="ID0"/>
+<connect gate="G$1" pin="ID1" pad="ID1"/>
+<connect gate="G$1" pin="ID2" pad="ID2"/>
+<connect gate="G$1" pin="ID3" pad="ID3"/>
+<connect gate="G$1" pin="MUTE" pad="MUTE"/>
+<connect gate="G$1" pin="OB" pad="OB"/>
+<connect gate="G$1" pin="PWR_ON" pad="PWR_ON"/>
+<connect gate="G$1" pin="SW0" pad="SW0"/>
+<connect gate="G$1" pin="SW1" pad="SW1"/>
+<connect gate="G$1" pin="SW2" pad="SW2"/>
+<connect gate="G$1" pin="TACT_SCAN" pad="TACT_SCAN"/>
+<connect gate="G$1" pin="TACT_SW" pad="TACT_SW"/>
+<connect gate="G$1" pin="TACT_SW1" pad="TACT_SW2"/>
+<connect gate="G$1" pin="USER_BIT" pad="USER_BIT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

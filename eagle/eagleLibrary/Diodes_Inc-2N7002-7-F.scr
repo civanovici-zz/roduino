@@ -1,0 +1,90 @@
+# Created by Ultra Librarian Gold 5.3.71 Copyright © 1999-2010
+# Tanvir Mohammed, Premier Farnell
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'SOT103P240X110-3N.pac';
+Layer 1;
+Smd '1' 52 22 -0 R0 (-40 40);
+Layer 1;
+Smd '2' 52 22 -0 R0 (-40 -40);
+Layer 1;
+Smd '3' 52 22 -0 R0 (40 0);
+Layer 21;
+Wire 6 (28 24) (28 59);
+Wire 6 (-4 -59) (28 -59);
+Wire 6 (28 -59) (28 -24);
+Wire 6 (28 59) (-4 59);
+Wire 6 (-28 16) (-28 -16);
+Wire 6 (12 59) -95 (-1 47);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (-73 57);
+Layer 51;
+Wire 0 (-28 -59) (28 -59);
+Wire 0 (28 -59) (28 59);
+Wire 0 (28 59) (-28 59);
+Wire 0 (-28 59) (-28 -59);
+Wire 0 (-28 30) (-28 50);
+Wire 0 (-28 50) (-49 50);
+Wire 0 (-49 50) (-49 30);
+Wire 0 (-49 30) (-28 30);
+Wire 0 (-28 -50) (-28 -30);
+Wire 0 (-28 -30) (-49 -30);
+Wire 0 (-49 -30) (-49 -50);
+Wire 0 (-49 -50) (-28 -50);
+Wire 0 (28 10) (28 -10);
+Wire 0 (28 -10) (49 -10);
+Wire 0 (49 -10) (49 10);
+Wire 0 (49 10) (28 10);
+Wire 0 (12 59) -180 (-12 59);
+Change Size 50;
+Change Ratio 6;
+Text '*' SR0 (-73 57);
+Layer 25;
+Change Size 82;
+Change Ratio 10;
+Text '>NAME' SR0 (-136 100);
+Layer 27;
+Change Size 82;
+Change Ratio 10;
+Text '>VALUE' SR0 (-136 -175);
+
+
+Edit '2N7002-7-F.sym';
+Layer 94;
+Pin 'G' In None Middle R0 Both 0 (-700 0);
+Pin 'S' Pas None Middle R0 Both 0 (-700 -200);
+Pin 'D' Out None Middle R180 Both 0 (700 0);
+Wire 16 (-500 200) (-500 -400);
+Wire 16 (-500 -400) (500 -400);
+Wire 16 (500 -400) (500 200);
+Wire 16 (500 200) (-500 200);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 10;
+Text '>NAME' SR0 (-189 299);
+Layer 96;
+Change Size 82;
+Change Ratio 10;
+Text '>VALUE' SR0 (-109 -576);
+
+Edit '2N7002-7-F.dev';
+Prefix 'U';
+
+Value Off;
+Add 2N7002-7-F 'A' Next  0 (0 0);
+Package 'SOT103P240X110-3N';
+Technology '';
+Attribute MPN '2N7002-7-F';
+Attribute Package 'SOT-23-3';
+Attribute OC_FARNELL '1713823';
+Attribute OC_NEWARK '25R5679';
+Attribute Supplier 'DIODES INC.';
+Description 'N-CHANNEL ENHANCEMENT MODE FIELD EFFECT TRANSISTOR';
+Connect 'A.G' '1';
+Connect 'A.S' '2';
+Connect 'A.D' '3';
